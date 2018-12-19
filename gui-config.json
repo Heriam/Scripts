@@ -1,0 +1,89 @@
+{
+    "configs": [
+        {
+            "server": "hk1-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u9999\u6e2f,Rate:1.00"
+        },
+        {
+            "server": "hk3-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u9999\u6e2f,Rate:0.01"
+        },
+        {
+            "server": "hk5-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u9999\u6e2f,Rate:1.00"
+        },
+        {
+            "server": "jp1-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u65e5\u672c,Rate:1.50"
+        },
+        {
+            "server": "jp2-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u65e5\u672c,Rate:1.00"
+        },
+        {
+            "server": "ru1-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u4fc4\u7f57\u65af,Rate:1.20"
+        },
+        {
+            "server": "uk1-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u82f1\u56fd,Rate:0.10"
+        },
+        {
+            "server": "us1-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u7f8e\u56fd,Rate:0.01"
+        },
+        {
+            "server": "us2-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u7f8e\u56fd,Rate:0.01"
+        },
+        {
+            "server": "us3-sta81.x9b83.website",
+            "server_port": 63584,
+            "local_port": 1080,
+            "password": "JQGY4RtT3qycdMS",
+            "method": "chacha20-ietf-poly1305",
+            "remarks": "\u7f8e\u56fd,Rate:0.01"
+        }
+    ],
+    "localPort": 1080,
+    "index": 0,
+    "global": false,
+    "enabled": true,
+    "isDefault": false
+}
