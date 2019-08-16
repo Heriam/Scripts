@@ -1,0 +1,34 @@
+syntax = "proto2";
+import "grpc_service.proto";
+package  ipfw_event;
+
+message EventStream {                  //设备上报ERSPAN TCP session事件
+    optional string stream_name = 1;   //流名称ipfw_event
+}
+service ipfw_eventService {
+    rpc SubscribeEventStream(EventStream) returns (grpc_service.SubscribeReply) {}  //获取订阅的事件方法，输入为获取订阅事件请求，返回结果为设备上报的事件
+}
+
+// 事件返回数据示例：
+// **********************EVENT COME************************
+// TOKEN: 00000000021b710e87a95e7d0ef96435598a
+// StreamName: ipfw_event
+// EventName: eventName
+// JsonText without format:
+// Notification:{2017-11-29T14:56:16TcpHandshakingEvent:{DataBase64:AOD8AGhRABAUAAAQgQAP/wgARQAAbr3mAAD/Bt6PEAAACg8AAAoEAAQAAAHiQAADlEdQEBAA9GEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGVRpGCIXLKArS6SPWZeWErhCr0=}}
+// JsonText Formated: Notification:
+// {
+// 2017-11-29T14:56:16TcpHandshakingEvent:
+// {
+// 设备获取到ERSPAN报文事件，格式为BASE64格式
+// DataBase64:AOD8AGhRABAUAAAQgQAP/wgARQAAbr3mAAD/Bt6PEAAACg8AAAoEAAQAAAHiQAADlEdQEBAA9GEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGVRpGCIXLKArS6SPWZeWErhCr0=
+// }
+// }
+// 将BASE64字符串转成十六进制报文格式
+// [root@localhost ~]# echo AOD8AGhRABAUAAAQgQAP/wgARQAAbr3mAAD/Bt6PEAAACg8AAAoEAAQAAAHiQAADlEdQEBAA9GEAAAAAAAAAAAA
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGVRpGCIXLKArS6SPWZe9WErhCr0= | base64 -d | xxd -ps
+// 00e0fc00685100101400001081000fff08004500006ebde60000ff06de8f
+// 1000000a0f00000a040004000001e2400003944750101000f46100000000
+// 000000000000000000000000000000000000000000000000000000000000
+// 0000000000000000000000000000000000001954691822172ca02b4ba48f
+// 5997bd584ae10abd

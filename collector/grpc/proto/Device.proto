@@ -1,0 +1,25 @@
+syntax = "proto2";
+import "grpc_service.proto";
+package  device;
+message DeviceBase {
+    optional string HostName = 1;
+    optional string HostOid = 2;
+    optional uint32 MaxChassisNum = 3;
+    optional uint32 MaxSlotNum = 4;
+    optional string HostDescription = 5;
+}
+message DevicePhysicalEntities {
+    message Entity {
+        optional uint32 PhysicalIndex = 1;
+        optional string VendorType = 2;
+        optional uint32 EntityClass = 3;
+        optional string SoftwareRev = 4;
+        optional string SerialNumber = 5;
+        optional string Model = 6;
+    }
+    repeated Entity entity = 1;
+}
+service DeviceService {
+    rpc GetJsonDeviceBase(DeviceBase) returns (grpc_service.GetJsonReply) {}
+    rpc GetJsonDevicePhysicalEntities(DevicePhysicalEntities) returns (grpc_service.GetJsonReply) {}
+}

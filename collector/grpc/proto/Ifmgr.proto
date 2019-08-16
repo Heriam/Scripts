@@ -1,0 +1,30 @@
+syntax = "proto2";
+import "grpc_service.proto";
+package  ifmgr;
+message IfmgrInterfaces {
+    message Interface {
+        optional uint32 IfIndex = 1;
+        optional string Name = 2;
+        optional string Description = 3;
+        optional uint32 AdminStatus = 4;
+        optional string InetAddressIPV4 = 5;
+        optional string InetAddressIPV4Mask = 6;
+    }
+    repeated Interface interface = 1;
+}
+message IfmgrTypeCapabilities {
+    message Capability {
+        optional uint32 IfTypeExt = 1;
+        optional uint32 MinNum = 2;
+        optional uint32 MaxNum = 3;
+        optional uint32 MinSubNum = 4;
+        optional uint32 MaxSubNum = 5;
+        optional uint32 MaxCreateNum = 6;
+        optional uint32 MaxCreateSubNum = 7;
+    }
+    repeated Capability capability = 1;
+}
+service IfmgrService {
+    rpc GetJsonIfmgrInterfaces(IfmgrInterfaces) returns (grpc_service.GetJsonReply) {}
+    rpc GetJsonIfmgrTypeCapabilities(IfmgrTypeCapabilities) returns (grpc_service.GetJsonReply) {}
+}

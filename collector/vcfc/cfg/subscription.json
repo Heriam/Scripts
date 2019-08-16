@@ -1,0 +1,19 @@
+{
+  "vcfcIp": "192.168.168.61",
+  "kafkaAddr": "172.31.210.191:9094",
+  "topic": "avro.vcfc.rest",
+  "sensors": [
+    {
+      "path": "/nem/v1.0/devices",
+      "interval": 5
+    },
+    {
+      "path": "/sdn/v2.0/tradition_devices",
+      "interval": 5
+    },
+    {
+      "path": "/sdn/v2.0/net/links/Undelay",
+      "interval": 5
+    }
+  ]
+}

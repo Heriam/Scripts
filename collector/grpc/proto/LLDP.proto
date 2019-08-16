@@ -1,0 +1,20 @@
+syntax = "proto2";
+import "grpc_service.proto";
+package  lldp;
+message NeighborEvent {
+    message Neighbor {
+        optional string IfName = 1;
+        optional uint32 AgentID = 2;
+        optional string NeighborChassisId = 3;
+        optional string NeighborPortId = 4;
+        optional uint32 Neighborevent = 5;
+    }
+    repeated Neighbor neighbor = 1;
+}
+message EventStream {
+    optional string stream_name = 1;
+}
+service LLDPService {
+    rpc SubscribeNeighborEvent(NeighborEvent) returns (grpc_service.SubscribeReply) {}
+    rpc SubscribeEventStream(EventStream) returns (grpc_service.SubscribeReply) {}
+}

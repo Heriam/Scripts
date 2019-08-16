@@ -1,0 +1,772 @@
+BEGIN:VCALENDAR
+X-WR-CALNAME:面试日程
+BEGIN:VEVENT
+SUMMARY:文欢 浙江大学
+DTSTART;VALUE=DATE-TIME:20190628T093000
+DTEND;VALUE=DATE-TIME:20190628T113000
+UID:1561685400.0:15167141646.0:527436ac-e416-4641-856d-5db855034969
+DESCRIPTION:\nEMAIL: 512740994@qq.com\n专业: 生物信息学\n匹配: OK
+ \n姓名: 文欢\n学历: 硕士\n学校: 浙江大学\n应聘职位: 大
+ 数据开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n
+ 手机: 15167141646.0\n简历来源: /\n预约面试地点: 杭州\n预约
+ 面试时间: 06.28上午09:30面试\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:胡峰刚 武汉理工大学
+DTSTART;VALUE=DATE-TIME:20190628T140000
+DTEND;VALUE=DATE-TIME:20190628T160000
+UID:1561701600.0:13035144322.0:7bd84ce9-7dbc-4e39-850f-88a56172217a
+DESCRIPTION:\nEMAIL: 13035144322@163.com\n专业: 信息工程\n匹配: OK
+ \n姓名: 胡峰刚\n学历: 本科\n学校: 武汉理工大学\n应聘职
+ 位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性别
+ : 男\n手机: 13035144322.0\n简历来源: 猎聘\n预约面试地点: 
+ 杭州\n预约面试时间: 06.28下午14:00面试\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:邹亚平 华东理工大学
+DTSTART;VALUE=DATE-TIME:20190703T140000
+DTEND;VALUE=DATE-TIME:20190703T160000
+UID:1562133600.0:18170873805.0:caa4ffdc-490b-41eb-9fcc-8369f4fd16da
+DESCRIPTION:\nEMAIL: daydayup_zyp@163.com\n专业: 数学与应用数学\n
+ 匹配: OK\n姓名: 邹亚平\n学历: 本科\n学校: 华东理工大学\
+ n应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 18170873805.0\n简历来源: 51job\n预约面试
+ 地点: 杭州\n预约面试时间: 07.03下午14:00面试\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:叶海烽 同济大学
+DTSTART;VALUE=DATE-TIME:20190701T140000
+DTEND;VALUE=DATE-TIME:20190701T160000
+UID:1561960800.0:13636328909.0:017c0c25-cb60-41f6-9c7a-b511f1d6de23
+DESCRIPTION:\nEMAIL: 925534599@qq.com\n专业: 计算机科学与技术\n
+ 匹配: OK\n姓名: 叶海烽\n学历: 本科\n学校: 同济大学\n应
+ 聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n
+ 性别: 男\n手机: 13636328909.0\n简历来源: null\n预约面试地点
+ : 杭州\n预约面试时间: 7.1 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:王远洋 华东师范大学
+DTSTART;VALUE=DATE-TIME:20190701T140000
+DTEND;VALUE=DATE-TIME:20190701T160000
+UID:1561960800.0:15669966021.0:8b775dfa-4894-4cfc-88e8-91da9399bed5
+DESCRIPTION:\nEMAIL: 1047709128@qq.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 王远洋\n学历: 硕士\n学校: 华东师范大学\n应聘职
+ 位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性别
+ : 男\n手机: 15669966021.0\n简历来源: null\n预约面试地点: 杭
+ 州\n预约面试时间: 7.1 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:王超悦 中国计量大学
+DTSTART;VALUE=DATE-TIME:20190701T090000
+DTEND;VALUE=DATE-TIME:20190701T110000
+UID:1561942800.0:18667112385.0:a58c04df-dab2-4c1a-b757-20f02062bfba
+DESCRIPTION:\nEMAIL: beyond879355400@me.com\n专业: 测控技术与仪器
+ （软控）\n匹配: OK\n姓名: 王超悦\n学历: 本科\n学校: 中
+ 国计量大学\n应聘职位: 大数据开发工程师\n应聘部门: 智
+ 能引擎开发部\n性别: 男\n手机: 18667112385.0\n简历来源: null
+ \n预约面试地点: 杭州\n预约面试时间: 7.1 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:刘亚卿 中国计量大学
+DTSTART;VALUE=DATE-TIME:20190701T090000
+DTEND;VALUE=DATE-TIME:20190701T110000
+UID:1561942800.0:18358171093.0:bd2c03cb-d874-4e9a-9150-1edeb2deaac5
+DESCRIPTION:\nEMAIL: 844392143@qq.com\n专业: 计算机应用技术\n匹
+ 配: OK\n姓名: 刘亚卿\n学历: 硕士\n学校: 中国计量大学\n
+ 应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 18358171093.0\n简历来源: null\n预约面试
+ 地点: 杭州\n预约面试时间: 7.1 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:雷超 中国计量学院
+DTSTART;VALUE=DATE-TIME:20190708T090000
+DTEND;VALUE=DATE-TIME:20190708T110000
+UID:1562547600.0:15068748734.0:5171b28e-aa39-4c91-92bc-488fcee8479d
+DESCRIPTION:\nEMAIL: 280841866@qq.com\n专业: 计算机科学与技术\n
+ 匹配: OK\n姓名: 雷超\n学历: 本科\n学校: 中国计量学院\n
+ 应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 15068748734.0\n简历来源: null\n预约面试
+ 地点: 杭州\n预约面试时间: 7.8 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:王小柯 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190705T140000
+DTEND;VALUE=DATE-TIME:20190705T160000
+UID:1562306400.0:13750895952.0:4072c88b-20b8-449a-803b-b21eab365501
+DESCRIPTION:\nEMAIL: wg_xiaoke@163.com\n专业: null\n匹配: OK\n姓名: 
+ 王小柯\n学历: 硕士\n学校: 杭州电子科技大学\n应聘职位:
+  大数据开发工程师\n应聘部门: 智能引擎开发部\n性别: 
+ 男\n手机: 13750895952.0\n简历来源: null\n预约面试地点: 杭州
+ \n预约面试时间: 7.5 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李栋 南京航空航天大学
+DTSTART;VALUE=DATE-TIME:20190710T140000
+DTEND;VALUE=DATE-TIME:20190710T160000
+UID:1562738400.0:15651876927.0:055ffd45-8096-4f38-8552-20e9e0c86f89
+DESCRIPTION:\nEMAIL: lidong949866723@163.com\n专业: 计算机科学与
+ 技术\n匹配: OK\n姓名: 李栋\n学历: 本科\n学校: 南京航空
+ 航天大学\n应聘职位: 大数据开发工程师\n应聘部门: 智能
+ 引擎开发部\n性别: 男\n手机: 15651876927.0\n简历来源: null\n
+ 预约面试地点: 杭州\n预约面试时间: 7.10 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:陈绍迪 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190712T140000
+DTEND;VALUE=DATE-TIME:20190712T160000
+UID:1562911200.0:17826800434.0:73f9462a-14d5-402d-b99f-070bb566f459
+DESCRIPTION:\nEMAIL: chenzebedee@gmail.com\n专业: null\n匹配: OK\n姓
+ 名: 陈绍迪\n学历: 本科\n学校: 杭州电子科技大学\n应聘
+ 职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性
+ 别: 男\n手机: 17826800434.0\n简历来源: null\n预约面试地点: 
+ 杭州\n预约面试时间: 7.12 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:窦银亮 浙江工业大学
+DTSTART;VALUE=DATE-TIME:20190718T140000
+DTEND;VALUE=DATE-TIME:20190718T160000
+UID:1563429600.0:17816875611.0:12605146-bad4-4baa-8b04-dfa5a542d48b
+DESCRIPTION:\nEMAIL: 714189283@qq.com\n专业: 电子与通信工程\n匹
+ 配: OK\n姓名: 窦银亮\n学历: 硕士\n学校: 浙江工业大学\n
+ 应聘职位: web前端开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 17816875611.0\n简历来源: null\n预约面试
+ 地点: 杭州\n预约面试时间: 7.18周四下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:黄艳波 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190719T140000
+DTEND;VALUE=DATE-TIME:20190719T160000
+UID:1563516000.0:13750894471.0:98d4f79a-66ae-4ac0-a9d0-221d800a65d4
+DESCRIPTION:\nEMAIL: 969053262@qq.com\n专业: 通信与信息工程\n匹
+ 配: OK\n姓名: 黄艳波\n学历: 硕士\n学校: 杭州电子科技大
+ 学\n应聘职位: web前端开发工程师\n应聘部门: 智能引擎开
+ 发部\n性别: 女\n手机: 13750894471.0\n简历来源: null\n预约面
+ 试地点: 杭州\n预约面试时间: 7.19周五下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:籍素芳 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190717T100000
+DTEND;VALUE=DATE-TIME:20190717T120000
+UID:1563328800.0:18268002251.0:0b748f9d-2940-4686-ad03-31bc7b440173
+DESCRIPTION:\nEMAIL: jisufang2015@163.com\n专业: 控制科学与工程\n
+ 匹配: OK\n姓名: 籍素芳\n学历: 硕士\n学校: 杭州电子科技
+ 大学\n应聘职位: web前端开发工程师\n应聘部门: 智能引擎
+ 开发部\n性别: 女\n手机: 18268002251.0\n简历来源: null\n预约
+ 面试地点: 杭州\n预约面试时间: 7.17周三上午10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李瑞梅 聊城大学
+DTSTART;VALUE=DATE-TIME:20190724T140000
+DTEND;VALUE=DATE-TIME:20190724T160000
+UID:1563948000.0:15700190122.0:23041d66-aed9-4048-950c-a90116395070
+DESCRIPTION:\nEMAIL: 1227845265@qq.com\n专业: 通信工程\n匹配: OK\n
+ 姓名: 李瑞梅\n学历: 本科\n学校: 聊城大学\n应聘职位: web
+ 前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 女\n
+ 手机: 15700190122.0\n简历来源: null\n预约面试地点: 杭州\n预
+ 约面试时间: 7.24周五下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:裘骋操 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190717T093000
+DTEND;VALUE=DATE-TIME:20190717T113000
+UID:1563327000.0:18989878326.0:ed10cd06-17b9-494c-acf7-1ba4dd0c9f13
+DESCRIPTION:\nEMAIL: qiuchengcao@126.com\n专业: 应用物理\n匹配: OK
+ \n姓名: 裘骋操\n学历: 本科\n学校: 杭州电子科技大学\n应
+ 聘职位: web前端开发工程师\n应聘部门: 智能引擎开发部\n
+ 性别: 男\n手机: 18989878326.0\n简历来源: null\n预约面试地点
+ : 杭州\n预约面试时间: 7.17周三上午9:30\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:陶群 浙江工业大学
+DTSTART;VALUE=DATE-TIME:20190717T140000
+DTEND;VALUE=DATE-TIME:20190717T160000
+UID:1563343200.0:15158133710.0:41d2069c-ae7b-437a-ad6e-9a498fdb9268
+DESCRIPTION:\nEMAIL: qingxo@sina.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 陶群\n学历: 本科\n学校: 浙江工业大学\n应聘职位: 
+ web前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 男
+ \n手机: 15158133710.0\n简历来源: null\n预约面试地点: 杭州\n
+ 预约面试时间: 7.17周三下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:洪广坤 苏州大学
+DTSTART;VALUE=DATE-TIME:20190716T140000
+DTEND;VALUE=DATE-TIME:20190716T160000
+UID:1563256800.0:18862110906.0:afe60597-ebfd-419b-b76c-e598947d891f
+DESCRIPTION:\nEMAIL: honggk@163.com\n专业: 计算机科学与技术\n匹
+ 配: OK\n姓名: 洪广坤\n学历: 本科\n学校: 苏州大学\n应聘
+ 职位: 网络人工智能开发工程师\n应聘部门: 智能引擎开
+ 发部\n性别: 男\n手机: 18862110906.0\n简历来源: null\n预约面
+ 试地点: 杭州\n预约面试时间: 7.16周二下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:王阳 兰州大学
+DTSTART;VALUE=DATE-TIME:20190718T090000
+DTEND;VALUE=DATE-TIME:20190718T110000
+UID:1563411600.0:13082805712.0:0c0ccca6-5d2b-4a89-8fe8-55ebf3acedad
+DESCRIPTION:\nEMAIL: 1146049426@qq.com\n专业: 信息科学与技术\n匹
+ 配: OK\n姓名: 王阳\n学历: 本科\n学校: 兰州大学\n应聘职
+ 位: 网络人工智能开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 13082805712.0\n简历来源: null\n预约面试
+ 地点: 杭州\n预约面试时间: 7.18周四上午9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:袁泉 重庆大学
+DTSTART;VALUE=DATE-TIME:20190726T100000
+DTEND;VALUE=DATE-TIME:20190726T120000
+UID:1564106400.0:13329985989.0:749936d9-1165-4e9a-baa6-d30993360086
+DESCRIPTION:\nEMAIL: yuanquan2011@qq.com\n专业: 自动化\n匹配: OK\n
+ 姓名: 袁泉\n学历: 本科\n学校: 重庆大学\n应聘职位: 网络
+ 人工智能开发工程师\n应聘部门: 智能引擎开发部\n性别: 
+ 男\n手机: 13329985989.0\n简历来源: null\n预约面试地点: 杭州
+ \n预约面试时间: 7.26下周五上午10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:张琛雪 汉诺威应用科技大学
+DTSTART;VALUE=DATE-TIME:20190718T090000
+DTEND;VALUE=DATE-TIME:20190718T110000
+UID:1563411600.0:15267320942.0:168beb5d-e430-466a-8a6e-b07cffb94007
+DESCRIPTION:\nEMAIL: chenxue.zhang@outlook.de\n专业: 计算机科学与
+ 技术\n匹配: OK\n姓名: 张琛雪\n学历: 硕士\n学校: 汉诺威
+ 应用科技大学\n应聘职位: 网络人工智能开发工程师\n应
+ 聘部门: 智能引擎开发部\n性别: 女\n手机: 15267320942.0\n简
+ 历来源: null\n预约面试地点: 杭州\n预约面试时间: 7.18周
+ 四上午9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:孙通 西安电子科技大学
+DTSTART;VALUE=DATE-TIME:20190719T090000
+DTEND;VALUE=DATE-TIME:20190719T110000
+UID:1563498000.0:13221063101.0:e8303c87-0dc5-4c3a-92f1-f0b60283415d
+DESCRIPTION:\nEMAIL: dao_chong@163.com\n专业: 通信工程\n匹配: OK\n
+ 姓名: 孙通\n学历: 本科\n学校: 西安电子科技大学\n应聘
+ 职位: 网络人工智能开发工程师\n应聘部门: 智能引擎开
+ 发部\n性别: 男\n手机: 13221063101.0\n简历来源: 猎聘\n预约
+ 面试地点: 杭州\n预约面试时间: 7.19周五上午9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:郭锐 哈尔滨工程大学
+DTSTART;VALUE=DATE-TIME:20190718T140000
+DTEND;VALUE=DATE-TIME:20190718T160000
+UID:1563429600.0:13206538750.0:6d2ae233-6a47-4d54-b39f-75baeeb3a2e3
+DESCRIPTION:\nEMAIL: grw2018@yeah.net\n专业: 自动化\n匹配: OK\n姓
+ 名: 郭锐\n学历: 硕士\n学校: 哈尔滨工程大学\n应聘职位: 
+ 大数据开发工程师\n应聘部门: 智能引擎开发部\n性别: 男
+ \n手机: 13206538750.0\n简历来源: null\n预约面试地点: 杭州\n
+ 预约面试时间: 7.18 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:黄柳仁 上海外国语大学
+DTSTART;VALUE=DATE-TIME:20190720T100000
+DTEND;VALUE=DATE-TIME:20190720T120000
+UID:1563588000.0:15201852552.0:a327997c-db8c-4e9b-a789-fdef51866494
+DESCRIPTION:\nEMAIL: huangliuren@yeah.net\n专业: null\n匹配: OK\n姓
+ 名: 黄柳仁\n学历: 硕士\n学校: 上海外国语大学\n应聘职
+ 位: 前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 
+ 女\n手机: 15201852552.0\n简历来源: null\n预约面试地点: 杭州
+ \n预约面试时间: 7.20下周一上午10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:马龙 普渡大学
+DTSTART;VALUE=DATE-TIME:20190718T100000
+DTEND;VALUE=DATE-TIME:20190718T120000
+UID:1563415200.0:17681811709.0:ebce7d4e-c11b-49dd-abd5-6a6f7dc433a4
+DESCRIPTION:\nEMAIL: malongtime@163.com\n专业: 电子与计算机工程\
+ n匹配: OK\n姓名: 马龙\n学历: 硕士\n学校: 普渡大学\n应聘
+ 职位: 前端开发工程师\n应聘部门: 智能引擎开发部\n性别
+ : 男\n手机: 17681811709.0\n简历来源: null\n预约面试地点: 杭
+ 州\n预约面试时间: 7.18周四上午10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:赵月 浙江理工大学
+DTSTART;VALUE=DATE-TIME:20190719T140000
+DTEND;VALUE=DATE-TIME:20190719T160000
+UID:1563516000.0:18768143138.0:a54ad350-8083-4818-8081-b8933fd8fcc7
+DESCRIPTION:\nEMAIL: yueluoxingliu@163.com\n专业: 通信工程\n匹配: 
+ OK\n姓名: 赵月\n学历: 本科\n学校: 浙江理工大学\n应聘职
+ 位: 前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 
+ 女\n手机: 18768143138.0\n简历来源: null\n预约面试地点: 杭州
+ \n预约面试时间: 7.19周五下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李雷 北京理工大学
+DTSTART;VALUE=DATE-TIME:20190723T150000
+DTEND;VALUE=DATE-TIME:20190723T170000
+UID:1563865200.0:18600449071.0:ff6665e8-aa73-4896-8760-1123b4fa147a
+DESCRIPTION:\nEMAIL: ray_0014@126.com\n专业: 生物工程\n匹配: OK\n
+ 姓名: 李雷\n学历: 本科\n学校: 北京理工大学\n应聘职位: 
+ 大数据工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手
+ 机: 18600449071.0\n简历来源: null\n预约面试地点: 杭州\n预约
+ 面试时间: 7.23下周二下午15:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:黄柳仁 上海外国语大学
+DTSTART;VALUE=DATE-TIME:20190723T140000
+DTEND;VALUE=DATE-TIME:20190723T160000
+UID:1563861600.0:15201850552.0:21e4d9bc-628d-4b3c-bdd8-339747a6972a
+DESCRIPTION:\nEMAIL: huangliuren@yeah.net\n专业: null\n匹配: OK\n姓
+ 名: 黄柳仁\n学历: 本科\n学校: 上海外国语大学\n应聘职
+ 位: null\n应聘部门: 智能引擎开发部\n性别: 女\n手机: 15201
+ 850552.0\n简历来源: null\n预约面试地点: 杭州\n预约面试时
+ 间: 下周二（7.23）下午两点\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:徐仙明 浙江工业大学
+DTSTART;VALUE=DATE-TIME:20190730T090000
+DTEND;VALUE=DATE-TIME:20190730T110000
+UID:1564448400.0:15157157875.0:7b34b78d-ab2e-4cb4-ab2e-24d82f5c0b73
+DESCRIPTION:\nEMAIL: xianming1013@163.com\n专业: 电子与通信工程\n
+ 匹配: OK\n姓名: 徐仙明\n学历: 硕士\n学校: 浙江工业大学\
+ n应聘职位: 大数据\n应聘部门: 智能引擎开发部\n性别: 男
+ \n手机: 15157157875.0\n简历来源: 内推\n预约面试地点: 杭州\
+ n预约面试时间: 7.30 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:林剑辉 南昌大学
+DTSTART;VALUE=DATE-TIME:20190719T090000
+DTEND;VALUE=DATE-TIME:20190719T110000
+UID:1563498000.0:13738051286.0:72ae4951-be84-497d-ad87-55a62a4da12b
+DESCRIPTION:\nEMAIL: ljhtoljh@163.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 林剑辉\n学历: 本科\n学校: 南昌大学\n应聘职位: 大
+ 数据\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 13738051
+ 286.0\n简历来源: 内推\n预约面试地点: 杭州\n预约面试时
+ 间: 7.19 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:王晶晶 中国科学技术大学 
+DTSTART;VALUE=DATE-TIME:20190723T150000
+DTEND;VALUE=DATE-TIME:20190723T170000
+UID:1563865200.0:18667931421.0:9dab42f4-e1c2-4de2-9e7a-469dc1c7496d
+DESCRIPTION:\nEMAIL: 903603746@qq.com \n专业: 软件工程\n匹配: OK\n
+ 姓名: 王晶晶\n学历: 硕士\n学校: 中国科学技术大学 \n应
+ 聘职位: Web前端开发工程师\n应聘部门: 智能引擎开发部\n
+ 性别: 男\n手机: 18667931421.0\n简历来源: null\n预约面试地点
+ : 杭州\n预约面试时间: 7.23 下午15:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:安德智 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190723T150000
+DTEND;VALUE=DATE-TIME:20190723T170000
+UID:1563865200.0:18969043227.0:95b55e7a-ace9-489d-b937-7a6f5ea0ea32
+DESCRIPTION:\nEMAIL: 18969043227@163. com\n专业: 计算机科学与技
+ 术专业\n匹配: OK\n姓名: 安德智\n学历: 本科\n学校: 杭州
+ 电子科技大学\n应聘职位: Spark大数据开发\n应聘部门: 智
+ 能引擎开发部\n性别: 男\n手机: 18969043227.0\n简历来源: null
+ \n预约面试地点: 杭州\n预约面试时间: 7.23 下午15:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:彭峰 中国科学院电子学研究所
+DTSTART;VALUE=DATE-TIME:20190723T140000
+DTEND;VALUE=DATE-TIME:20190723T160000
+UID:1563861600.0:18930122676.0:93ce2234-cc72-41ea-b2da-d49b51caf6ca
+DESCRIPTION:\nEMAIL: 18930122676@189.cn\n专业: 电子与通信工程\n
+ 匹配: OK\n姓名: 彭峰\n学历: 硕士\n学校: 中国科学院电子
+ 学研究所\n应聘职位: 大数据开发/数据分析 \n应聘部门: 
+ 智能引擎开发部\n性别: 男\n手机: 18930122676.0\n简历来源: n
+ ull\n预约面试地点: 杭州\n预约面试时间: 7.23 下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:张霖 中南大学
+DTSTART;VALUE=DATE-TIME:20190729T090000
+DTEND;VALUE=DATE-TIME:20190729T110000
+UID:1564362000.0:15558127305.0:2650b958-4521-4842-bded-dbc5d5d4ac50
+DESCRIPTION:\nEMAIL: luoyelin1989@126.com\n专业: 电子信息科学与
+ 技术\n匹配: OK\n姓名: 张霖\n学历: 本科\n学校: 中南大学\n
+ 应聘职位: 后端开发\n应聘部门: 智能引擎开发部\n性别: 
+ 男\n手机: 15558127305.0\n简历来源: 猎聘\n预约面试地点: 杭
+ 州\n预约面试时间: 7.29 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李要辉 浙江理工大学
+DTSTART;VALUE=DATE-TIME:20190725T140000
+DTEND;VALUE=DATE-TIME:20190725T160000
+UID:1564034400.0:15355710068.0:723b258e-151e-4a6a-a152-4a8ee7db9f14
+DESCRIPTION:\nEMAIL: leeyh1988@163.com\n专业: 应用经济学\n匹配: O
+ K\n姓名: 李要辉\n学历: 硕士\n学校: 浙江理工大学\n应聘
+ 职位: Java开发\n应聘部门: 智能引擎开发部\n性别: 男\n手
+ 机: 15355710068.0\n简历来源: 猎聘\n预约面试地点: 杭州\n预
+ 约面试时间: 7.25 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:章华栋   中国计量大学
+DTSTART;VALUE=DATE-TIME:20190726T140000
+DTEND;VALUE=DATE-TIME:20190726T160000
+UID:1564120800.0:18758895772.0:8236777f-36c8-4d20-9f5a-ce8d8b69119a
+DESCRIPTION:\nEMAIL: 1090993978@qq.com\n专业: 计算机科学与技术\n
+ 匹配: OK\n姓名: 章华栋\n学历: 本科\n学校:   中国计量大
+ 学\n应聘职位: java 开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 18758895772.0\n简历来源: null\n预约面试
+ 地点: 杭州\n预约面试时间: 7.26 下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:张祺桢 南京大学
+DTSTART;VALUE=DATE-TIME:20190725T140000
+DTEND;VALUE=DATE-TIME:20190725T160000
+UID:1564034400.0:15251833185.0:358464fc-f366-495c-9d48-d8a00b8ee2a6
+DESCRIPTION:\nEMAIL: zqznju@foxmail.com\n专业: 物理学\n匹配: OK\n
+ 姓名: 张祺桢\n学历: 硕士\n学校: 南京大学\n应聘职位: 人
+ 工智能\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 15251
+ 833185.0\n简历来源: null\n预约面试地点: 杭州\n预约面试时
+ 间: 7.25 下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李冲 太原理工大学
+DTSTART;VALUE=DATE-TIME:20190724T140000
+DTEND;VALUE=DATE-TIME:20190724T160000
+UID:1563948000.0:18410134274.0:20659a89-b4d1-4eae-a784-56df329932cb
+DESCRIPTION:\nEMAIL: lc289680@163.com\n专业: 计算机科学与技术\n
+ 匹配: OK\n姓名: 李冲\n学历: 本科\n学校: 太原理工大学\n
+ 应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 18410134274.0\n简历来源: null\n预约面试
+ 地点: 杭州\n预约面试时间: 7.24 下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:梁浩 西安电子科技大学
+DTSTART;VALUE=DATE-TIME:20190729T140000
+DTEND;VALUE=DATE-TIME:20190729T160000
+UID:1564380000.0:13216189869.0:4289d5bc-8055-4f62-9dd8-07145966333d
+DESCRIPTION:\nEMAIL: 2444722858@qq.com\n专业: 计算机信息管理\n匹
+ 配: OK\n姓名: 梁浩\n学历: 本科\n学校: 西安电子科技大学\
+ n应聘职位: JAVA架构师\n应聘部门: 智能引擎开发部\n性别:
+  男\n手机: 13216189869.0\n简历来源: 猎聘\n预约面试地点: 杭
+ 州\n预约面试时间: 7.29 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:许嘉怡 湖南师范大学
+DTSTART;VALUE=DATE-TIME:20190730T140000
+DTEND;VALUE=DATE-TIME:20190730T160000
+UID:1564466400.0:15111169366.0:7098011f-ac24-457b-9455-830ce7ead96e
+DESCRIPTION:\nEMAIL: kyzy1010@outlook.com\n专业: 理论物理\n匹配: O
+ K\n姓名: 许嘉怡\n学历: 硕士\n学校: 湖南师范大学\n应聘
+ 职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 15
+ 111169366.0\n简历来源: null\n预约面试地点: 杭州\n预约面试
+ 时间: 7.30 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:刘永红 吉林大学
+DTSTART;VALUE=DATE-TIME:20190801T140000
+DTEND;VALUE=DATE-TIME:20190801T160000
+UID:1564639200.0:18258259727.0:8a0ba143-702d-4a27-893d-aace937fb306
+DESCRIPTION:\nEMAIL: liuyh0805@126.com\n专业: 材料加工工程 \n匹
+ 配: OK\n姓名: 刘永红\n学历: 硕士\n学校: 吉林大学\n应聘
+ 职位: Java，大数据开发\n应聘部门: 智能引擎开发部\n性
+ 别: 男\n手机: 18258259727.0\n简历来源: 刘理厅内推\n预约面
+ 试地点: 杭州\n预约面试时间: 8.1 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:淘亚萌 中国科学技术大学
+DTSTART;VALUE=DATE-TIME:20190802T090000
+DTEND;VALUE=DATE-TIME:20190802T110000
+UID:1564707600.0:13329048171.0:204957c9-fa3c-46a4-a222-c091b01490d1
+DESCRIPTION:\nEMAIL: tcgoodboy@126.com\n专业: 软件系统设计\n匹配
+ : OK\n姓名: 淘亚萌\n学历: 硕士\n学校: 中国科学技术大学\
+ n应聘职位: java开发\n应聘部门: 智能引擎开发部\n性别: 
+ 男\n手机: 13329048171.0\n简历来源: 猎聘\n预约面试地点: 杭
+ 州\n预约面试时间: 8.2 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:黄斌 南昌大学
+DTSTART;VALUE=DATE-TIME:20190806T140000
+DTEND;VALUE=DATE-TIME:20190806T160000
+UID:1565071200.0:18720995529.0:e355a9ca-84f1-4cf8-a1e1-e2cdbee598f0
+DESCRIPTION:\nEMAIL: 771759420@qq.com\n专业: null\n匹配: OK\n姓名: 
+ 黄斌\n学历: 本科\n学校: 南昌大学\n应聘职位: Java开发\n
+ 应聘部门: 智能引擎开发部\n性别: 男\n手机: 18720995529.0\n
+ 简历来源: BOSS直聘\n预约面试地点: 杭州\n预约面试时间: 
+ 8.6 下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李先琨 哈尔滨工程大学
+DTSTART;VALUE=DATE-TIME:20190801T140000
+DTEND;VALUE=DATE-TIME:20190801T160000
+UID:1564639200.0:18846121140.0:acff0110-ceda-400f-bdcf-5b56ece559ba
+DESCRIPTION:\nEMAIL: 18846121140@163.com\n专业: 信息与通信工程学
+ 院\n匹配: OK\n姓名: 李先琨\n学历: 硕士\n学校: 哈尔滨工
+ 程大学\n应聘职位: 大数据开发工程师\n应聘部门: 智能引
+ 擎开发部\n性别: 男\n手机: 18846121140.0\n简历来源: 内推(李
+ 辉)\n预约面试地点: 杭州\n预约面试时间: 8.1 下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:覃事银 华南师范大学
+DTSTART;VALUE=DATE-TIME:20190808T140000
+DTEND;VALUE=DATE-TIME:20190808T160000
+UID:1565244000.0:13516821970.0:7f31730a-54c8-46e1-ac1f-56e95587cebc
+DESCRIPTION:\nEMAIL: qin411858963@163.com\n专业: 地理信息系统\n匹
+ 配: OK\n姓名: 覃事银\n学历: 硕士\n学校: 华南师范大学\n
+ 应聘职位: 大数据\n应聘部门: 智能引擎开发部\n性别: 男\
+ n手机: 13516821970.0\n简历来源: 51job\n预约面试地点: 杭州\n
+ 预约面试时间: 8.8 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:刘畅 北京邮电大学
+DTSTART;VALUE=DATE-TIME:20190808T100000
+DTEND;VALUE=DATE-TIME:20190808T120000
+UID:1565229600.0:13020031212.0:fccd19b2-9670-41a2-9bc3-5ef95aa55226
+DESCRIPTION:\nEMAIL: 2394712542@qq.com\n专业: 电子与通信工程\n匹
+ 配: OK\n姓名: 刘畅\n学历: 硕士\n学校: 北京邮电大学\n应
+ 聘职位: null\n应聘部门: 智能引擎开发部\n性别: 女\n手机:
+  13020031212.0\n简历来源: null\n预约面试地点: 杭州\n预约面
+ 试时间: 　8.8上午10点\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:邹典坤 中南大学
+DTSTART;VALUE=DATE-TIME:20190809T140000
+DTEND;VALUE=DATE-TIME:20190809T160000
+UID:1565330400.0:15084887937.0:582588e3-0176-42cf-bb7c-9a701781276a
+DESCRIPTION:\nEMAIL: diankun.zou@qq.com\n专业: 机械设计制造及其
+ 自动化\n匹配: OK\n姓名: 邹典坤\n学历: 本科\n学校: 中南
+ 大学\n应聘职位: 数据分析师\n应聘部门: 智能引擎开发部
+ \n性别: 男\n手机: 15084887937.0\n简历来源: 猎聘\n预约面试
+ 地点: 杭州\n预约面试时间: 8.9 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:郑程贤 英国赫瑞瓦特大学
+DTSTART;VALUE=DATE-TIME:20190807T140000
+DTEND;VALUE=DATE-TIME:20190807T160000
+UID:1565157600.0:18658384249.0:de82026f-11cf-43ba-8ecf-e987c7480e4e
+DESCRIPTION:\nEMAIL: 396558141@qq.com\n专业: 可持续建筑设计\n匹
+ 配: OK\n姓名: 郑程贤\n学历: 硕士\n学校: 英国赫瑞瓦特大
+ 学\n应聘职位: java开发\n应聘部门: 智能引擎开发部\n性别
+ : 男\n手机: 18658384249.0\n简历来源: BOSS直聘\n预约面试地点
+ : 杭州\n预约面试时间: 8月7号 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:雷璐 长春理工大学
+DTSTART;VALUE=DATE-TIME:20190808T140000
+DTEND;VALUE=DATE-TIME:20190808T160000
+UID:1565244000.0:15754316682.0:a92b197d-d7d0-4932-be1f-e29aa419b339
+DESCRIPTION:\nEMAIL: 15754316682@163.com\n专业: 探测制导与控制技
+ 术\n匹配: OK\n姓名: 雷璐\n学历: 本科\n学校: 长春理工大
+ 学\n应聘职位: 大数据开发\n应聘部门: 智能引擎开发部\n
+ 性别: 男\n手机: 15754316682.0\n简历来源: BOSS直聘\n预约面试
+ 地点: 杭州\n预约面试时间: 8月8号 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:陈辉辉 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190812T140000
+DTEND;VALUE=DATE-TIME:20190812T160000
+UID:1565589600.0:17774012683.0:110da69b-cbc5-448f-bd67-e0e135f7a9ab
+DESCRIPTION:\nEMAIL: 690598092@qq.com\n专业: 控制工程\n匹配: OK\n
+ 姓名: 陈辉辉\n学历: 硕士\n学校: 杭州电子科技大学\n应
+ 聘职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手机:
+  17774012683.0\n简历来源: BOSS直聘\n预约面试地点: 杭州\n预
+ 约面试时间: 8.12 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:汪凯峰 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190809T140000
+DTEND;VALUE=DATE-TIME:20190809T160000
+UID:1565330400.0:13511326492.0:f98e9e2d-1960-4cef-9b33-f525c6930e25
+DESCRIPTION:\nEMAIL: 782603716@qq.com\n专业: 网络工程\n匹配: OK\n
+ 姓名: 汪凯峰\n学历: 本科\n学校: 杭州电子科技大学\n应
+ 聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n
+ 性别: 男\n手机: 13511326492.0\n简历来源: BOSS直聘\n预约面试
+ 地点: 杭州\n预约面试时间: 8月9号 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:虞泽华 吉林大学
+DTSTART;VALUE=DATE-TIME:20190812T140000
+DTEND;VALUE=DATE-TIME:20190812T160000
+UID:1565589600.0:18867635378.0:1771f554-0114-47f0-bfd2-a83704e144e2
+DESCRIPTION:\nEMAIL: 330477677@qq.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 虞泽华\n学历: 本科\n学校: 吉林大学\n应聘职位: 软
+ 件开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手
+ 机: 18867635378.0\n简历来源: 51job\n预约面试地点: 杭州\n预
+ 约面试时间: 8.12 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:潘进勇 河海大学
+DTSTART;VALUE=DATE-TIME:20190814T140000
+DTEND;VALUE=DATE-TIME:20190814T160000
+UID:1565762400.0:15996260085.0:8fc7cb9d-22ae-4ba0-8bf2-f398e4261127
+DESCRIPTION:\nEMAIL: ssjy0512@163.com\n专业: 信号与信息处理\n匹
+ 配: OK\n姓名: 潘进勇\n学历: 硕士\n学校: 河海大学\n应聘
+ 职位: 数据分析师\n应聘部门: 智能引擎开发部\n性别: 男\
+ n手机: 15996260085.0\n简历来源: 猎聘\n预约面试地点: 杭州\n
+ 预约面试时间: 8.14 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:何超 浙江大学
+DTSTART;VALUE=DATE-TIME:20190813T090000
+DTEND;VALUE=DATE-TIME:20190813T110000
+UID:1565658000.0:13250818051.0:e703e959-b062-4c12-994c-127e876e4c2d
+DESCRIPTION:\nEMAIL: 13250818051@163.com\n专业: 软件工程\n匹配: OK
+ \n姓名: 何超\n学历: 硕士\n学校: 浙江大学\n应聘职位: null
+ \n应聘部门: 智能引擎开发部\n性别: 男\n手机: 13250818051.0\
+ n简历来源: null\n预约面试地点: 杭州\n预约面试时间: 8.13 
+ 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:郝树良 重庆邮电大学
+DTSTART;VALUE=DATE-TIME:20190819T140000
+DTEND;VALUE=DATE-TIME:20190819T160000
+UID:1566194400.0:13963581534.0:d54aec2d-9a7d-45f1-b2a2-a4d264d19c1e
+DESCRIPTION:\nEMAIL: shulianghao@163.com  \n专业: 信息与通信工程\
+ n匹配: OK\n姓名: 郝树良\n学历: 硕士\n学校: 重庆邮电大学
+ \n应聘职位: 网络人工智能开发工程师\n应聘部门: 智能引
+ 擎开发部\n性别: 男\n手机: 13963581534.0\n简历来源: BOSS直聘
+ \n预约面试地点: 杭州\n预约面试时间: 8月19号 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:茹 雪 德布勒森大学
+DTSTART;VALUE=DATE-TIME:20190813T140000
+DTEND;VALUE=DATE-TIME:20190813T160000
+UID:1565676000.0:15631261856.0:f0b391df-3141-4634-bb5a-0cf4ba2802da
+DESCRIPTION:\nEMAIL: 976571389@qq.com\n专业: 计算机科学\n匹配: OK
+ \n姓名: 茹 雪\n学历: 硕士\n学校: 德布勒森大学\n应聘职
+ 位: 网络人工智能开发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 女\n手机: 15631261856.0\n简历来源: BOSS直聘\n预约
+ 面试地点: 杭州\n预约面试时间: 8月13 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李定祥 东北农业大学
+DTSTART;VALUE=DATE-TIME:20190813T140000
+DTEND;VALUE=DATE-TIME:20190813T160000
+UID:1565676000.0:15145017857.0:f23f5c52-e103-4869-9bf2-d69b595aea36
+DESCRIPTION:\nEMAIL: 445972387@qq.com\n专业: 统计学\n匹配: OK\n姓
+ 名: 李定祥\n学历: 本科\n学校: 东北农业大学\n应聘职位: 
+ 数据分析/数据挖掘/机器学习岗位\n应聘部门: 智能引擎
+ 开发部\n性别: 男\n手机: 15145017857.0\n简历来源: BOSS直聘\n
+ 预约面试地点: 杭州\n预约面试时间: 8.13 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:余彬 马萨诸塞大学安姆斯特分校
+DTSTART;VALUE=DATE-TIME:20190813T150000
+DTEND;VALUE=DATE-TIME:20190813T170000
+UID:1565679600.0:18667162311.0:f1add17b-744f-4746-8c78-06327f5b405f
+DESCRIPTION:\nEMAIL: binyu@umass.edu\n专业: 计算机科学\n匹配: OK\
+ n姓名: 余彬\n学历: 硕士\n学校: 马萨诸塞大学安姆斯特分
+ 校\n应聘职位: 网络人工智能开发工程师\n应聘部门: 智能
+ 引擎开发部\n性别: 男\n手机: 18667162311.0\n简历来源: BOSS直
+ 聘\n预约面试地点: 杭州\n预约面试时间: 8.13 15:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:杜飞 北京航空航天大学
+DTSTART;VALUE=DATE-TIME:20190815T150000
+DTEND;VALUE=DATE-TIME:20190815T170000
+UID:1565852400.0:17310839279.0:6b70a934-cff6-49ab-94a6-9a3b82583834
+DESCRIPTION:\nEMAIL: 813540660@qq.com\n专业: 航空工程 \n匹配: OK\n
+ 姓名: 杜飞\n学历: 硕士\n学校: 北京航空航天大学\n应聘
+ 职位: 机器学习算法岗\n应聘部门: 智能引擎开发部\n性别
+ : 男\n手机: 17310839279.0\n简历来源: BOSS直聘\n预约面试地点
+ : 杭州\n预约面试时间: 8.15 15:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:赵辽浙 大连理工大学
+DTSTART;VALUE=DATE-TIME:20190819T090000
+DTEND;VALUE=DATE-TIME:20190819T110000
+UID:1566176400.0:17826800199.0:2e09ca70-28ed-4699-900f-9ebae31820a3
+DESCRIPTION:\nEMAIL: 1044136268@qq.com\n专业: 机电工程与自动化\n
+ 匹配: OK\n姓名: 赵辽浙\n学历: 本科\n学校: 大连理工大学\
+ n应聘职位: 后端开发\n应聘部门: 智能引擎开发部\n性别: 
+ 男\n手机: 17826800199.0\n简历来源: 猎聘\n预约面试地点: 杭
+ 州\n预约面试时间: 8.19 9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:李剑 杭州电子科技大学
+DTSTART;VALUE=DATE-TIME:20190819T140000
+DTEND;VALUE=DATE-TIME:20190819T160000
+UID:1566194400.0:15657675672.0:18be689f-f18f-4ff2-b5a2-fe5853f2736e
+DESCRIPTION:\nEMAIL: 2713117989@qq.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 李剑\n学历: 本科\n学校: 杭州电子科技大学\n应聘
+ 职位: java开发\n应聘部门: 智能引擎开发部\n性别: 男\n手
+ 机: 15657675672.0\n简历来源: 51.0\n预约面试地点: 杭州\n预约
+ 面试时间: 8.19 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:黄建平 中国科学技术大学
+DTSTART;VALUE=DATE-TIME:20190819T100000
+DTEND;VALUE=DATE-TIME:20190819T120000
+UID:1566180000.0:13818272376.0:ff80923e-fb56-488d-934b-3ea4c9bbea66
+DESCRIPTION:\nEMAIL: hardon123a@163.com\n专业: 软件工程\n匹配: OK\
+ n姓名: 黄建平\n学历: 硕士\n学校: 中国科学技术大学\n应
+ 聘职位: java开发\n应聘部门: 智能引擎开发部\n性别: 男\n
+ 手机: 13818272376.0\n简历来源: 51.0\n预约面试地点: 杭州\n预
+ 约面试时间: 8.19 10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:朱光志 武汉理工大学
+DTSTART;VALUE=DATE-TIME:20190816T140000
+DTEND;VALUE=DATE-TIME:20190816T160000
+UID:1565935200.0:18673130685.0:bfe5f4b5-b55f-4dab-9736-7fce2604f133
+DESCRIPTION:\nEMAIL: 18673130685@139.com\n专业: 光信息科学与技术
+ \n匹配: OK\n姓名: 朱光志\n学历: 本科\n学校: 武汉理工大
+ 学\n应聘职位: java开发\n应聘部门: 智能引擎开发部\n性别
+ : 男\n手机: 18673130685.0\n简历来源: 51.0\n预约面试地点: 杭
+ 州\n预约面试时间: 8.16 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:江昊 华东理工大学
+DTSTART;VALUE=DATE-TIME:20190816T090000
+DTEND;VALUE=DATE-TIME:20190816T110000
+UID:1565917200.0:13738084639.0:753d90d1-2333-4dbc-bc2a-6dfc4859d468
+DESCRIPTION:\nEMAIL: badjh2005@163.com\n专业: 计算机软件与理论\n
+ 匹配: OK\n姓名: 江昊\n学历: 硕士\n学校: 华东理工大学\n
+ 应聘职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手
+ 机: 13738084639.0\n简历来源: BOSS直聘\n预约面试地点: 杭州\n
+ 预约面试时间: 8.16 9:00\n
+LOCATION:杭州
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,19 @@
+syntax = "proto2";
+import "grpc_service.proto";
+package  sys_log;
+message LOGEvent {
+    message LOG {
+        optional string Group = 1;
+        optional string Code = 2;
+        optional uint32 Severity = 3;
+        optional string Content = 4;
+    }
+    repeated LOG log = 1;
+}
+message EventStream {
+    optional string stream_name = 1;
+}
+service SyslogService {
+    rpc SubscribeLOGEvent(LOGEvent) returns (grpc_service.SubscribeReply) {}
+    rpc SubscribeEventStream(EventStream) returns (grpc_service.SubscribeReply) {}
+}

@@ -1,0 +1,10 @@
+{"namespace": "h3c.seer",
+ "type": "record",
+ "name": "event",
+ "fields": [
+     {"name": "timestamp",   "type": "long"},
+     {"name": "src",         "type": "string"},
+     {"name": "ip",     "type": "string"},
+     {"name": "data",     "type": "bytes"}
+ ]
+}
