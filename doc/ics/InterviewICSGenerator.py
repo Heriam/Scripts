@@ -1,7 +1,7 @@
 import xlwings as xw
 from icalendar import Calendar, Event
-from datetime import datetime, timedelta
-import os,sys,re,json,uuid
+from datetime import datetime,timedelta,timezone
+import os,sys,re,json,uuid,pytz
 from npl.TimeNormalizer import TimeNormalizer
 import logging
 logging.basicConfig(
@@ -13,7 +13,8 @@ logging.basicConfig(
 
 DIR = "."
 COLON = ":"
-NOW = datetime.now()
+TIMEZONE = pytz.timezone("Asia/Shanghai")
+NOW = datetime.now(tz=TIMEZONE)
 COLUMN_START = "A"
 COLUMN_END = "M"
 COLUMN_NAME_ROW = 1
@@ -80,7 +81,7 @@ class InterviewICSGenerator:
             timestamp = TimeNormalizer().parse(target=slotReserved,timeBase=NOW.replace(month=1,day=1,hour=0,second=0,microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
             parsedTime = eval(timestamp).get("timestamp")
 
-            dtstart = datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")
+            dtstart = datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S").replace(tzinfo=TIMEZONE).astimezone(tz=timezone.utc)
             dtend = dtstart + timedelta(hours=2)
             summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
             location = interview.pop(LOCATION)
