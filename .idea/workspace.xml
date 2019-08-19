@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4816a14d-28d9-4149-b427-ae02848aa9b9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/ics/InterviewICSGenerator.py" afterPath="$PROJECT_DIR$/doc/ics/InterviewICSGenerator.py" />
-    </list>
+    <list default="true" id="4816a14d-28d9-4149-b427-ae02848aa9b9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +13,7 @@
     <SUITE FILE_PATH="coverage/Scripts$DELETE.coverage" NAME="DELETE Coverage Results" MODIFIED="1565922169476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rest" />
     <SUITE FILE_PATH="coverage/Scripts$MakeInterview.coverage" NAME="MakeInterview Coverage Results" MODIFIED="1566039683213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc/ics" />
     <SUITE FILE_PATH="coverage/Scripts$RunREST.coverage" NAME="RunREST Coverage Results" MODIFIED="1565920837731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rest" />
-    <SUITE FILE_PATH="coverage/Scripts$updateScript.coverage" NAME="updateScript Coverage Results" MODIFIED="1566191151465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Scripts" />
+    <SUITE FILE_PATH="coverage/Scripts$updateScript.coverage" NAME="updateScript Coverage Results" MODIFIED="1566191262429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Scripts" />
     <SUITE FILE_PATH="coverage/Scripts$Unnamed.coverage" NAME="Run Coverage Results" MODIFIED="1565864988337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc/ics" />
     <SUITE FILE_PATH="coverage/Scripts$gRPC_Collector.coverage" NAME="gRPC Collector Coverage Results" MODIFIED="1565927824996" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/collector/grpc" />
     <SUITE FILE_PATH="coverage/Scripts$Run.coverage" NAME="MakeInterview Coverage Results" MODIFIED="1565923640312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc/ics" />
@@ -41,7 +38,7 @@
         <entry file="file://E:/Scripts/gitpush.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+              <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -995,7 +992,7 @@
     <entry file="file://E:/Scripts/gitpush.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
