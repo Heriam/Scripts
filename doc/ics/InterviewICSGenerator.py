@@ -50,6 +50,7 @@ class InterviewICSGenerator:
     calendar = Calendar()
 
     def __init__(self):
+        print("instance started")
         self.calendar.add("x-wr-calname", "面试日程")
         self._load_interviews()
 
