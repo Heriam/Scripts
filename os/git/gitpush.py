@@ -6,8 +6,8 @@ from doc.ics.InterviewICSGenerator import InterviewICSGenerator
 # os.chdir(ROOT_DIR)
 # subprocess.call("git pull", shell=True)
 InterviewICSGenerator().run()
-subprocess.call("git add .", shell=True)
-subprocess.call('git commit -m "auto-updated by Outlook mail"')
-subprocess.call("git push", shell=True)
+# subprocess.call("git add .", shell=True)
+# subprocess.call('git commit -m "auto-updated by Outlook mail"')
+# subprocess.call("git push", shell=True)
 
 
