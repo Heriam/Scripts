@@ -111,5 +111,8 @@ class InterviewICSGenerator:
 if __name__ == "__main__":
     try:
         InterviewICSGenerator().generate_ics()
-    except Exception:
+    except Exception as err:
+        import traceback
+        logger.error(traceback.print_exc())
+    finally:
         xw.apps.active.quit()
