@@ -2,16 +2,21 @@ import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime,timedelta,timezone
 import os,sys,re,json,uuid,pytz
+sys.path.append('C:\\Users\\j16492\\PycharmProjects\\Scripts')
 from npl.TimeNormalizer import TimeNormalizer
 import logging
-logging.basicConfig(
-    level=logging.INFO,
-    filemode="w",
-    filename="ics.log",
-    format="[%(asctime)s][%(levelname)s]:%(message)s"
-)
+logger = logging.getLogger('ICS')
+logger.setLevel(logging.DEBUG)
+while logger.hasHandlers():
+    for i in logger.handlers:
+        logger.removeHandler(i)
+formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
+fh = logging.FileHandler(filename='C:\\Users\\j16492\\PycharmProjects\\Scripts\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
 
-DIR = "."
+DIR = "E:\\OutlookAttachments\\"
 COLON = ":"
 TIMEZONE = pytz.timezone("Asia/Shanghai")
 NOW = datetime.now(tz=TIMEZONE)
@@ -42,19 +47,17 @@ class InterviewICSGenerator:
     columnNames = []
     interviews = []
     calendar = Calendar()
-    logger = None
 
     def __init__(self):
-        self.logger = logging.getLogger(self.__class__.__name__)
         self.calendar.add("x-wr-calname", "面试日程")
         self._load_interviews()
 
     def _load_interviews(self):
         for filename in os.listdir(DIR):
             if re.match(FILENAME_PATTERN, filename):
-                self.sheet = xw.Book(filename).sheets[0]
+                self.sheet = xw.Book(DIR+filename).sheets[0]
         if not self.sheet:
-            self.logger.warning("未找到招聘汇总EXCEL表格")
+            logger.warning("未找到招聘汇总EXCEL表格")
             sys.exit(0)
         self.columnNames = self.sheet.range(COLUMN_START+str(COLUMN_NAME_ROW)+COLON+COLUMN_END+str(COLUMN_NAME_ROW)).value
         row = COLUMN_NAME_ROW+1
@@ -98,10 +101,11 @@ class InterviewICSGenerator:
             event.add("description", description)
             event.add("location", location)
             self.calendar.add_component(event)
-            self.logger.info("%s %s %s -> %s -> %s" % (interview.get(DEPARTMENT),interview.get(NAME),slotOriginal,slotReserved,dtstart))
+            logger.info("%s %s %s -> %s -> %s" % (interview.get(DEPARTMENT),interview.get(NAME),slotOriginal,slotReserved,dtstart))
         with open('interview.ics', 'wb') as f:
             f.write(self.calendar.to_ical())
             f.close()
 
 if __name__ == "__main__":
     InterviewICSGenerator().generate_ics()
+    xw.apps.active.quit()
