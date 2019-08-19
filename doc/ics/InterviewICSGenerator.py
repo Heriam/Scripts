@@ -3,7 +3,7 @@ from icalendar import Calendar, Event
 from datetime import datetime,timedelta,timezone
 import os,sys,re,json,uuid,pytz
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-sys.path.append(ROOT_DIR)
+# sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
 import logging
 
@@ -108,11 +108,11 @@ class InterviewICSGenerator:
             f.write(self.calendar.to_ical())
             f.close()
 
-if __name__ == "__main__":
-    try:
-        InterviewICSGenerator().generate_ics()
-    except Exception as err:
-        import traceback
-        logger.error(traceback.print_exc())
-    finally:
-        xw.apps.active.quit()
+    def run(self):
+        try:
+            InterviewICSGenerator().generate_ics()
+        except Exception as err:
+            import traceback
+            logger.error(traceback.print_exc())
+        finally:
+            xw.apps.active.quit()
