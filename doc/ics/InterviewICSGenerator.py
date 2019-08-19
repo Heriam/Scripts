@@ -1,6 +1,6 @@
 import xlwings as xw
 from icalendar import Calendar, Event
-from datetime import datetime,timedelta,timezone
+from datetime import datetime,timedelta
 import os,sys,re,json,uuid,pytz
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 sys.path.append(ROOT_DIR)
@@ -50,7 +50,6 @@ class InterviewICSGenerator:
     calendar = Calendar()
 
     def __init__(self):
-        print("instance started")
         self.calendar.add("x-wr-calname", "面试日程")
         self._load_interviews()
 
@@ -86,7 +85,7 @@ class InterviewICSGenerator:
             timestamp = TimeNormalizer().parse(target=slotReserved,timeBase=NOW.replace(month=1,day=1,hour=0,second=0,microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
             parsedTime = eval(timestamp).get("timestamp")
 
-            dtstart = datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S").replace(tzinfo=TIMEZONE).astimezone(tz=timezone.utc)
+            dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
             dtend = dtstart + timedelta(hours=2)
             summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
             location = interview.pop(LOCATION)
