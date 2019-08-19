@@ -2,23 +2,12 @@ import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime,timedelta,timezone
 import os,sys,re,json,uuid,pytz
-
-sys.path.append('C:\\Users\\j16492\\PycharmProjects\\Scripts')
+ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
+sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
-
 import logging
-logger = logging.getLogger('ICS')
-logger.setLevel(logging.DEBUG)
-while logger.hasHandlers():
-    for i in logger.handlers:
-        logger.removeHandler(i)
-formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
-fh = logging.FileHandler(filename='C:\\Users\\j16492\\PycharmProjects\\Scripts\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
-fh.setLevel(logging.DEBUG)
-fh.setFormatter(formatter)
-logger.addHandler(fh)
 
-DIR = "E:\\OutlookAttachments\\"
+EXCEL_DIR = "E:\\OutlookAttachments\\"
 COLON = ":"
 TIMEZONE = pytz.timezone("Asia/Shanghai")
 NOW = datetime.now(tz=TIMEZONE)
@@ -43,6 +32,16 @@ RESUME = "简历来源"
 RESERVED_SLOT = "预约面试时间"
 LOCATION = "预约面试地点\n北京/杭州/合肥"
 
+logger = logging.getLogger('ICS')
+logger.setLevel(logging.DEBUG)
+while logger.hasHandlers():
+    for i in logger.handlers:
+        logger.removeHandler(i)
+formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
+fh = logging.FileHandler(filename=ROOT_DIR+'\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
 
 class InterviewICSGenerator:
     sheet = None
@@ -55,9 +54,9 @@ class InterviewICSGenerator:
         self._load_interviews()
 
     def _load_interviews(self):
-        for filename in os.listdir(DIR):
+        for filename in os.listdir(EXCEL_DIR):
             if re.match(FILENAME_PATTERN, filename):
-                self.sheet = xw.Book(DIR+filename).sheets[0]
+                self.sheet = xw.Book(EXCEL_DIR+filename).sheets[0]
         if not self.sheet:
             logger.warning("未找到招聘汇总EXCEL表格")
             sys.exit(0)
@@ -92,6 +91,7 @@ class InterviewICSGenerator:
             location = interview.pop(LOCATION)
             location = location if location else "杭州"
             interview[LOCATION.split("\n")[0]] = location
+            interview[MOBILE] = int(interview[MOBILE])
             description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
             description = re.sub("[\"{},]", "", description)
 
@@ -104,10 +104,12 @@ class InterviewICSGenerator:
             event.add("location", location)
             self.calendar.add_component(event)
             logger.info("%s %s %s -> %s -> %s" % (interview.get(DEPARTMENT),interview.get(NAME),slotOriginal,slotReserved,dtstart))
-        with open('interview.ics', 'wb') as f:
+        with open(ROOT_DIR+'\\doc\\ics\\interview.ics', 'wb') as f:
             f.write(self.calendar.to_ical())
             f.close()
 
 if __name__ == "__main__":
-    InterviewICSGenerator().generate_ics()
-    xw.apps.active.quit()
+    try:
+        InterviewICSGenerator().generate_ics()
+    except Exception:
+        xw.apps.active.quit()

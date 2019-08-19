@@ -56,7 +56,7 @@ class TimeNormalizer:
         self.invalidSpan = False
         self.timeSpan = ''
         self.target = str(target)
-        self.timeBase = arrow.get(timeBase).format('YYYY-M-D-H-m-s')
+        self.timeBase = arrow.get(timeBase).format()
         self.oldTimeBase = self.timeBase
         self.__preHandling()
         self.timeToken = self.__timeEx()

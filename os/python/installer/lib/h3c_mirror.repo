@@ -1,0 +1,28 @@
+[base]
+name=CentOS-mycompany – Base
+baseurl=http://10.153.3.130/centos/$releasever/os/$basearch/
+gpgcheck=1
+gpgkey=http://10.153.3.130/centos/RPM-GPG-KEY-CentOS-$releasever
+
+#released updates
+[updates]
+name=CentOS-mycompany – Updates
+baseurl=http://10.153.3.130/centos/$releasever/updates/$basearch/
+gpgcheck=1
+gpgkey=http://10.153.3.130/centos/RPM-GPG-KEY-CentOS-$releasever
+
+#additional packages that may be useful
+[extras]
+name=CentOS-mycompany – Extras
+baseurl=http://10.153.3.130/centos/$releasever/extras/$basearch/
+gpgcheck=1
+gpgkey=http://10.153.3.130/centos/RPM-GPG-KEY-CentOS-$releasever
+enabled=1
+
+#additional packages that extend functionality of existing packages
+[centosplus]
+name=CentOS-mycompany – Plus
+baseurl=http://10.153.3.130/centos/$releasever/centosplus/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=http://10.153.3.130/centos/RPM-GPG-KEY-CentOS-$releasever
