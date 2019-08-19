@@ -109,11 +109,11 @@ class InterviewICSGenerator:
             f.write(self.calendar.to_ical())
             f.close()
 
-    def run(self):
-        try:
-            InterviewICSGenerator().generate_ics()
-        except Exception as err:
-            import traceback
-            logger.error(traceback.print_exc())
-        finally:
-            xw.apps.active.quit()
+if __name__=="__main__":
+    try:
+        InterviewICSGenerator().generate_ics()
+    except Exception as err:
+        import traceback
+        logger.error(traceback.print_exc())
+    finally:
+        xw.apps.active.quit()
