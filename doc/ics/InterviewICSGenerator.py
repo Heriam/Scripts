@@ -2,8 +2,10 @@ import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime,timedelta,timezone
 import os,sys,re,json,uuid,pytz
+# to import npl.*
 sys.path.append('C:\\Users\\j16492\\PycharmProjects\\Scripts')
 from npl.TimeNormalizer import TimeNormalizer
+
 import logging
 logger = logging.getLogger('ICS')
 logger.setLevel(logging.DEBUG)
