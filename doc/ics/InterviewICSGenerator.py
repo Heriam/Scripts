@@ -1,7 +1,8 @@
 import xlwings as xw
 from icalendar import Calendar, Event
-from datetime import datetime,timedelta
-import os,sys,re,json,uuid,pytz
+from datetime import datetime, timedelta
+import os, sys, re, json, uuid, pytz
+
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
@@ -38,10 +39,11 @@ while logger.hasHandlers():
     for i in logger.handlers:
         logger.removeHandler(i)
 formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
-fh = logging.FileHandler(filename=ROOT_DIR+'\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
+fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
+
 
 class InterviewICSGenerator:
     sheet = None
@@ -56,19 +58,21 @@ class InterviewICSGenerator:
     def _load_interviews(self):
         for filename in os.listdir(EXCEL_DIR):
             if re.match(FILENAME_PATTERN, filename):
-                self.sheet = xw.Book(EXCEL_DIR+filename).sheets[0]
+                self.sheet = xw.Book(EXCEL_DIR + filename).sheets[0]
         if not self.sheet:
             logger.warning("未找到招聘汇总EXCEL表格")
             sys.exit(0)
-        self.columnNames = self.sheet.range(COLUMN_START+str(COLUMN_NAME_ROW)+COLON+COLUMN_END+str(COLUMN_NAME_ROW)).value
-        row = COLUMN_NAME_ROW+1
+        self.columnNames = self.sheet.range(
+            COLUMN_START + str(COLUMN_NAME_ROW) + COLON + COLUMN_END + str(COLUMN_NAME_ROW)).value
+        row = COLUMN_NAME_ROW + 1
         while self.sheet.range(KEY_COLUMN + str(row)).value:
             interview = {}
             for i in range(len(self.columnNames)):
-                interview[self.columnNames[i]] = self.sheet.range(COLUMN_START+str(row)+COLON+COLUMN_END+str(row)).value[i]
+                interview[self.columnNames[i]] = \
+                self.sheet.range(COLUMN_START + str(row) + COLON + COLUMN_END + str(row)).value[i]
             if DEPARTMENT_SEERANALYZER in interview.get(DEPARTMENT):
                 self.interviews.append(interview)
-            row+=1
+            row += 1
 
     def _format_date(self, match):
         text = re.sub("[./\-]", "月", match.group())
@@ -80,9 +84,12 @@ class InterviewICSGenerator:
         for interview in self.interviews:
             slotOriginal = interview.get(RESERVED_SLOT)
             slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", slotOriginal)
-            slotFormated = re.sub("((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",self._format_date, slotStripped)
+            slotFormated = re.sub("((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
+                                  self._format_date, slotStripped)
             slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>/?！￥…（）《》【】‘；”“’。，、？]", "", slotFormated)
-            timestamp = TimeNormalizer().parse(target=slotReserved,timeBase=NOW.replace(month=1,day=1,hour=0,second=0,microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
+            timestamp = TimeNormalizer().parse(target=slotReserved,
+                                               timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
+                                                                    microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
             parsedTime = eval(timestamp).get("timestamp")
 
             dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
@@ -96,23 +103,26 @@ class InterviewICSGenerator:
             description = re.sub("[\"{},]", "", description)
 
             event = Event()
-            event.add("uid", "%s:%s:%s"%(dtstart.timestamp(),interview.get(MOBILE),uuid.uuid4()))
+            event.add("uid", "%s:%s:%s" % (dtstart.timestamp(), interview.get(MOBILE), uuid.uuid4()))
             event.add("summary", summary)
             event["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%SZ")
             event["dtend"] = dtend.strftime("%Y%m%dT%H%M%SZ")
             event.add("description", description)
             event.add("location", location)
             self.calendar.add_component(event)
-            logger.info("%s %s %s -> %s -> %s" % (interview.get(DEPARTMENT),interview.get(NAME),slotOriginal,slotReserved,dtstart))
-        with open(ROOT_DIR+'\\doc\\ics\\interview.ics', 'wb') as f:
+            logger.info("%s %s %s -> %s -> %s" % (
+            interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, slotReserved, dtstart))
+        with open(ROOT_DIR + '\\doc\\ics\\interview.ics', 'wb') as f:
             f.write(self.calendar.to_ical())
             f.close()
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     try:
         InterviewICSGenerator().generate_ics()
     except Exception as err:
         import traceback
+
         logger.error(traceback.print_exc())
     finally:
         xw.apps.active.quit()
