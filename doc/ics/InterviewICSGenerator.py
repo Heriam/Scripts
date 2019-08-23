@@ -95,7 +95,9 @@ class InterviewICSGenerator:
                 timestamp = TimeNormalizer().parse(target=slotReserved,
                                                    timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
                                                                         microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
-                if eval(timestamp).get("error"):
+                err = eval(timestamp).get("error")
+                if err:
+                    logger.error(err + interview)
                     continue
                 parsedTime = eval(timestamp).get("timestamp") or eval(timestamp).get("timespan")[0]
                 dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
