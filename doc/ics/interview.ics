@@ -4,7 +4,7 @@ BEGIN:VEVENT
 SUMMARY:文欢 浙江大学
 DTSTART:20190628T013000Z
 DTEND:20190628T033000Z
-UID:1561685400.0:15167141646:fb12a852-263c-40f0-8f8f-2fe0caa18cbd
+UID:1561685400.0:15167141646:41c29776-c246-486a-8e08-4f9adeb2b34b
 DESCRIPTION:\nEMAIL: 512740994@qq.com\n专业: 生物信息学\n匹配: OK
  \n姓名: 文欢\n学历: 硕士\n学校: 浙江大学\n应聘职位: 大
  数据开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n
@@ -16,7 +16,7 @@ BEGIN:VEVENT
 SUMMARY:胡峰刚 武汉理工大学
 DTSTART:20190628T060000Z
 DTEND:20190628T080000Z
-UID:1561701600.0:13035144322:5849a775-131b-4a30-9e12-9e2ac17a4e58
+UID:1561701600.0:13035144322:fd74ab98-de4e-4f1c-8462-98adc349065d
 DESCRIPTION:\nEMAIL: 13035144322@163.com\n专业: 信息工程\n匹配: OK
  \n姓名: 胡峰刚\n学历: 本科\n学校: 武汉理工大学\n应聘职
  位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性别
@@ -28,7 +28,7 @@ BEGIN:VEVENT
 SUMMARY:邹亚平 华东理工大学
 DTSTART:20190703T060000Z
 DTEND:20190703T080000Z
-UID:1562133600.0:18170873805:426d719d-ae53-4115-9f1a-981d8a90ea39
+UID:1562133600.0:18170873805:44abe797-74bb-4492-98c1-0969bf65a906
 DESCRIPTION:\nEMAIL: daydayup_zyp@163.com\n专业: 数学与应用数学\n
  匹配: OK\n姓名: 邹亚平\n学历: 本科\n学校: 华东理工大学\
  n应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
@@ -40,7 +40,7 @@ BEGIN:VEVENT
 SUMMARY:叶海烽 同济大学
 DTSTART:20190701T060000Z
 DTEND:20190701T080000Z
-UID:1561960800.0:13636328909:8a5eb96e-ca1d-4698-9f7f-6ed12ecfcbe7
+UID:1561960800.0:13636328909:406aba93-2125-4e42-b7c1-6f0207b2df56
 DESCRIPTION:\nEMAIL: 925534599@qq.com\n专业: 计算机科学与技术\n
  匹配: OK\n姓名: 叶海烽\n学历: 本科\n学校: 同济大学\n应
  聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n
@@ -52,7 +52,7 @@ BEGIN:VEVENT
 SUMMARY:王远洋 华东师范大学
 DTSTART:20190701T060000Z
 DTEND:20190701T080000Z
-UID:1561960800.0:15669966021:8640db03-1fc5-4101-8b07-5d5291f8ba49
+UID:1561960800.0:15669966021:4440e754-4a6d-48d6-ac9f-81761714bd6c
 DESCRIPTION:\nEMAIL: 1047709128@qq.com\n专业: 软件工程\n匹配: OK\n
  姓名: 王远洋\n学历: 硕士\n学校: 华东师范大学\n应聘职
  位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性别
@@ -64,7 +64,7 @@ BEGIN:VEVENT
 SUMMARY:王超悦 中国计量大学
 DTSTART:20190701T010000Z
 DTEND:20190701T030000Z
-UID:1561942800.0:18667112385:1c305cd3-ba05-4dc4-bd1e-3905285344fe
+UID:1561942800.0:18667112385:33c02437-3888-45c2-816e-e2f87683d78f
 DESCRIPTION:\nEMAIL: beyond879355400@me.com\n专业: 测控技术与仪器
  （软控）\n匹配: OK\n姓名: 王超悦\n学历: 本科\n学校: 中
  国计量大学\n应聘职位: 大数据开发工程师\n应聘部门: 智
@@ -76,7 +76,7 @@ BEGIN:VEVENT
 SUMMARY:刘亚卿 中国计量大学
 DTSTART:20190701T010000Z
 DTEND:20190701T030000Z
-UID:1561942800.0:18358171093:823e8d5e-2f33-4dce-9886-0f924693a199
+UID:1561942800.0:18358171093:a694dfc2-d697-4a1e-8f1f-09354c2f1b27
 DESCRIPTION:\nEMAIL: 844392143@qq.com\n专业: 计算机应用技术\n匹
  配: OK\n姓名: 刘亚卿\n学历: 硕士\n学校: 中国计量大学\n
  应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
@@ -88,7 +88,7 @@ BEGIN:VEVENT
 SUMMARY:雷超 中国计量学院
 DTSTART:20190708T010000Z
 DTEND:20190708T030000Z
-UID:1562547600.0:15068748734:7de9cc33-15e5-4cb8-83c0-5020153f81ba
+UID:1562547600.0:15068748734:567cf2cd-a81e-496f-af73-a41f2580b393
 DESCRIPTION:\nEMAIL: 280841866@qq.com\n专业: 计算机科学与技术\n
  匹配: OK\n姓名: 雷超\n学历: 本科\n学校: 中国计量学院\n
  应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
@@ -100,7 +100,7 @@ BEGIN:VEVENT
 SUMMARY:王小柯 杭州电子科技大学
 DTSTART:20190705T060000Z
 DTEND:20190705T080000Z
-UID:1562306400.0:13750895952:9d5fac13-9a77-4ddd-8b1d-438be7a5acd3
+UID:1562306400.0:13750895952:8986197d-9ff5-4973-b3e5-359a8feb1b8e
 DESCRIPTION:\nEMAIL: wg_xiaoke@163.com\n专业: null\n匹配: OK\n姓名: 
  王小柯\n学历: 硕士\n学校: 杭州电子科技大学\n应聘职位:
   大数据开发工程师\n应聘部门: 智能引擎开发部\n性别: 
@@ -112,7 +112,7 @@ BEGIN:VEVENT
 SUMMARY:李栋 南京航空航天大学
 DTSTART:20190710T060000Z
 DTEND:20190710T080000Z
-UID:1562738400.0:15651876927:dab7089d-5347-4d16-b3b8-44ccc25bf2d6
+UID:1562738400.0:15651876927:5c86b381-5a05-4d6c-8c6f-ef17647f035c
 DESCRIPTION:\nEMAIL: lidong949866723@163.com\n专业: 计算机科学与
  技术\n匹配: OK\n姓名: 李栋\n学历: 本科\n学校: 南京航空
  航天大学\n应聘职位: 大数据开发工程师\n应聘部门: 智能
@@ -124,7 +124,7 @@ BEGIN:VEVENT
 SUMMARY:陈绍迪 杭州电子科技大学
 DTSTART:20190712T060000Z
 DTEND:20190712T080000Z
-UID:1562911200.0:17826800434:b789603b-b44f-4fdd-b57f-9a0afce28c29
+UID:1562911200.0:17826800434:ce573ae4-020b-4a73-aa42-e8bcbffa26c6
 DESCRIPTION:\nEMAIL: chenzebedee@gmail.com\n专业: null\n匹配: OK\n姓
  名: 陈绍迪\n学历: 本科\n学校: 杭州电子科技大学\n应聘
  职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性
@@ -136,7 +136,7 @@ BEGIN:VEVENT
 SUMMARY:窦银亮 浙江工业大学
 DTSTART:20190718T060000Z
 DTEND:20190718T080000Z
-UID:1563429600.0:17816875611:350ade41-1131-4268-9e42-a609773f5281
+UID:1563429600.0:17816875611:8506acb3-2fb9-4bf0-9cc1-7c592a5c1814
 DESCRIPTION:\nEMAIL: 714189283@qq.com\n专业: 电子与通信工程\n匹
  配: OK\n姓名: 窦银亮\n学历: 硕士\n学校: 浙江工业大学\n
  应聘职位: web前端开发工程师\n应聘部门: 智能引擎开发
@@ -148,7 +148,7 @@ BEGIN:VEVENT
 SUMMARY:黄艳波 杭州电子科技大学
 DTSTART:20190719T060000Z
 DTEND:20190719T080000Z
-UID:1563516000.0:13750894471:453c0b7e-4e5f-4597-8b8b-97f7c2ebbc2a
+UID:1563516000.0:13750894471:a36dc846-b881-4f54-a9a9-8b3713b8ba74
 DESCRIPTION:\nEMAIL: 969053262@qq.com\n专业: 通信与信息工程\n匹
  配: OK\n姓名: 黄艳波\n学历: 硕士\n学校: 杭州电子科技大
  学\n应聘职位: web前端开发工程师\n应聘部门: 智能引擎开
@@ -160,7 +160,7 @@ BEGIN:VEVENT
 SUMMARY:籍素芳 杭州电子科技大学
 DTSTART:20190717T020000Z
 DTEND:20190717T040000Z
-UID:1563328800.0:18268002251:bb10a77e-f2cd-476c-a601-fcd3082dbb85
+UID:1563328800.0:18268002251:439f728c-98f2-445d-8871-0b09a2c9b68e
 DESCRIPTION:\nEMAIL: jisufang2015@163.com\n专业: 控制科学与工程\n
  匹配: OK\n姓名: 籍素芳\n学历: 硕士\n学校: 杭州电子科技
  大学\n应聘职位: web前端开发工程师\n应聘部门: 智能引擎
@@ -172,7 +172,7 @@ BEGIN:VEVENT
 SUMMARY:李瑞梅 聊城大学
 DTSTART:20190724T060000Z
 DTEND:20190724T080000Z
-UID:1563948000.0:15700190122:f5b44e82-9200-4ca7-ba11-53bb4210a790
+UID:1563948000.0:15700190122:c8a0c1c3-e666-4c7d-bdd7-c4081dc82d43
 DESCRIPTION:\nEMAIL: 1227845265@qq.com\n专业: 通信工程\n匹配: OK\n
  姓名: 李瑞梅\n学历: 本科\n学校: 聊城大学\n应聘职位: web
  前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 女\n
@@ -184,7 +184,7 @@ BEGIN:VEVENT
 SUMMARY:裘骋操 杭州电子科技大学
 DTSTART:20190717T013000Z
 DTEND:20190717T033000Z
-UID:1563327000.0:18989878326:3e340834-1cc9-43da-9eb3-0a55a4691465
+UID:1563327000.0:18989878326:eb5d3922-28a3-4851-9d84-10cc76cde60f
 DESCRIPTION:\nEMAIL: qiuchengcao@126.com\n专业: 应用物理\n匹配: OK
  \n姓名: 裘骋操\n学历: 本科\n学校: 杭州电子科技大学\n应
  聘职位: web前端开发工程师\n应聘部门: 智能引擎开发部\n
@@ -196,7 +196,7 @@ BEGIN:VEVENT
 SUMMARY:陶群 浙江工业大学
 DTSTART:20190717T060000Z
 DTEND:20190717T080000Z
-UID:1563343200.0:15158133710:2229b342-60f8-448f-8bb7-65d57ed676a8
+UID:1563343200.0:15158133710:0b18396f-b034-4f2d-a798-fe511c3b7b70
 DESCRIPTION:\nEMAIL: qingxo@sina.com\n专业: 软件工程\n匹配: OK\n
  姓名: 陶群\n学历: 本科\n学校: 浙江工业大学\n应聘职位: 
  web前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 男
@@ -208,7 +208,7 @@ BEGIN:VEVENT
 SUMMARY:洪广坤 苏州大学
 DTSTART:20190716T060000Z
 DTEND:20190716T080000Z
-UID:1563256800.0:18862110906:3f9f0e2b-bbd6-46e9-8f33-eb0efd95c331
+UID:1563256800.0:18862110906:98a678ed-a9bb-4924-9526-a9eb22f2901c
 DESCRIPTION:\nEMAIL: honggk@163.com\n专业: 计算机科学与技术\n匹
  配: OK\n姓名: 洪广坤\n学历: 本科\n学校: 苏州大学\n应聘
  职位: 网络人工智能开发工程师\n应聘部门: 智能引擎开
@@ -220,7 +220,7 @@ BEGIN:VEVENT
 SUMMARY:王阳 兰州大学
 DTSTART:20190718T010000Z
 DTEND:20190718T030000Z
-UID:1563411600.0:13082805712:5ef72ac5-8365-479c-9ffb-503c2d2306ec
+UID:1563411600.0:13082805712:c8a50cd8-90f8-4552-a451-3cdbd23a9147
 DESCRIPTION:\nEMAIL: 1146049426@qq.com\n专业: 信息科学与技术\n匹
  配: OK\n姓名: 王阳\n学历: 本科\n学校: 兰州大学\n应聘职
  位: 网络人工智能开发工程师\n应聘部门: 智能引擎开发
@@ -232,7 +232,7 @@ BEGIN:VEVENT
 SUMMARY:袁泉 重庆大学
 DTSTART:20190726T020000Z
 DTEND:20190726T040000Z
-UID:1564106400.0:13329985989:7d1a0c96-111f-4442-91d5-831296bd084f
+UID:1564106400.0:13329985989:bfe693dd-dc88-4072-a6bf-f761b786492e
 DESCRIPTION:\nEMAIL: yuanquan2011@qq.com\n专业: 自动化\n匹配: OK\n
  姓名: 袁泉\n学历: 本科\n学校: 重庆大学\n应聘职位: 网络
  人工智能开发工程师\n应聘部门: 智能引擎开发部\n性别: 
@@ -244,7 +244,7 @@ BEGIN:VEVENT
 SUMMARY:张琛雪 汉诺威应用科技大学
 DTSTART:20190718T010000Z
 DTEND:20190718T030000Z
-UID:1563411600.0:15267320942:41dabc59-2e60-4709-9dfa-5c55e2411e81
+UID:1563411600.0:15267320942:ba7a9e50-0b21-47e0-981e-4212acee7dfa
 DESCRIPTION:\nEMAIL: chenxue.zhang@outlook.de\n专业: 计算机科学与
  技术\n匹配: OK\n姓名: 张琛雪\n学历: 硕士\n学校: 汉诺威
  应用科技大学\n应聘职位: 网络人工智能开发工程师\n应
@@ -257,7 +257,7 @@ BEGIN:VEVENT
 SUMMARY:孙通 西安电子科技大学
 DTSTART:20190719T010000Z
 DTEND:20190719T030000Z
-UID:1563498000.0:13221063101:51c22979-2560-472f-bd11-c38db6c44a53
+UID:1563498000.0:13221063101:e16df496-10eb-416e-a8d6-cd45286ab420
 DESCRIPTION:\nEMAIL: dao_chong@163.com\n专业: 通信工程\n匹配: OK\n
  姓名: 孙通\n学历: 本科\n学校: 西安电子科技大学\n应聘
  职位: 网络人工智能开发工程师\n应聘部门: 智能引擎开
@@ -269,7 +269,7 @@ BEGIN:VEVENT
 SUMMARY:郭锐 哈尔滨工程大学
 DTSTART:20190718T060000Z
 DTEND:20190718T080000Z
-UID:1563429600.0:13206538750:25bfd723-6e93-49d6-9c2c-b284ea743558
+UID:1563429600.0:13206538750:7f66a5c7-3f9c-45fb-bc52-7234d45d5e21
 DESCRIPTION:\nEMAIL: grw2018@yeah.net\n专业: 自动化\n匹配: OK\n姓
  名: 郭锐\n学历: 硕士\n学校: 哈尔滨工程大学\n应聘职位: 
  大数据开发工程师\n应聘部门: 智能引擎开发部\n性别: 男
@@ -281,7 +281,7 @@ BEGIN:VEVENT
 SUMMARY:黄柳仁 上海外国语大学
 DTSTART:20190720T020000Z
 DTEND:20190720T040000Z
-UID:1563588000.0:15201852552:ec9e3a88-6910-408d-8e49-7edc3f57dd4c
+UID:1563588000.0:15201852552:3673590b-d650-41af-81fb-18584ed715e0
 DESCRIPTION:\nEMAIL: huangliuren@yeah.net\n专业: null\n匹配: OK\n姓
  名: 黄柳仁\n学历: 硕士\n学校: 上海外国语大学\n应聘职
  位: 前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 
@@ -293,7 +293,7 @@ BEGIN:VEVENT
 SUMMARY:马龙 普渡大学
 DTSTART:20190718T020000Z
 DTEND:20190718T040000Z
-UID:1563415200.0:17681811709:21596ca2-44d6-4062-bb7f-d305e07e8ab9
+UID:1563415200.0:17681811709:0e3de24e-324e-4b93-bd81-f2f15944a672
 DESCRIPTION:\nEMAIL: malongtime@163.com\n专业: 电子与计算机工程\
  n匹配: OK\n姓名: 马龙\n学历: 硕士\n学校: 普渡大学\n应聘
  职位: 前端开发工程师\n应聘部门: 智能引擎开发部\n性别
@@ -305,7 +305,7 @@ BEGIN:VEVENT
 SUMMARY:赵月 浙江理工大学
 DTSTART:20190719T060000Z
 DTEND:20190719T080000Z
-UID:1563516000.0:18768143138:47f92e55-d895-4bd8-a30a-b09d99aa7790
+UID:1563516000.0:18768143138:2049bc0e-fc9a-4e07-8bfc-3fa4530a83fc
 DESCRIPTION:\nEMAIL: yueluoxingliu@163.com\n专业: 通信工程\n匹配: 
  OK\n姓名: 赵月\n学历: 本科\n学校: 浙江理工大学\n应聘职
  位: 前端开发工程师\n应聘部门: 智能引擎开发部\n性别: 
@@ -317,7 +317,7 @@ BEGIN:VEVENT
 SUMMARY:李雷 北京理工大学
 DTSTART:20190723T070000Z
 DTEND:20190723T090000Z
-UID:1563865200.0:18600449071:33f0a81e-a4df-4145-9a91-ac4c3015457b
+UID:1563865200.0:18600449071:9983dbfb-dc6e-416a-932c-556aebd8c7f3
 DESCRIPTION:\nEMAIL: ray_0014@126.com\n专业: 生物工程\n匹配: OK\n
  姓名: 李雷\n学历: 本科\n学校: 北京理工大学\n应聘职位: 
  大数据工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手
@@ -329,7 +329,7 @@ BEGIN:VEVENT
 SUMMARY:黄柳仁 上海外国语大学
 DTSTART:20190723T060000Z
 DTEND:20190723T080000Z
-UID:1563861600.0:15201850552:364850a9-d840-4e2e-a50c-d1e978d2c9d8
+UID:1563861600.0:15201850552:5cb8ca39-c3c6-4317-936c-8311302935ae
 DESCRIPTION:\nEMAIL: huangliuren@yeah.net\n专业: null\n匹配: OK\n姓
  名: 黄柳仁\n学历: 本科\n学校: 上海外国语大学\n应聘职
  位: null\n应聘部门: 智能引擎开发部\n性别: 女\n手机: 15201
@@ -341,7 +341,7 @@ BEGIN:VEVENT
 SUMMARY:徐仙明 浙江工业大学
 DTSTART:20190730T010000Z
 DTEND:20190730T030000Z
-UID:1564448400.0:15157157875:469f8229-93e5-4dd0-b656-cd85e1b13738
+UID:1564448400.0:15157157875:a9374e14-27e3-4101-acfe-2d81e5524832
 DESCRIPTION:\nEMAIL: xianming1013@163.com\n专业: 电子与通信工程\n
  匹配: OK\n姓名: 徐仙明\n学历: 硕士\n学校: 浙江工业大学\
  n应聘职位: 大数据\n应聘部门: 智能引擎开发部\n性别: 男
@@ -353,7 +353,7 @@ BEGIN:VEVENT
 SUMMARY:林剑辉 南昌大学
 DTSTART:20190719T010000Z
 DTEND:20190719T030000Z
-UID:1563498000.0:13738051286:21d69fc7-3f70-4e2a-ba14-815d8aa3b1db
+UID:1563498000.0:13738051286:1a0b8f53-b4de-41ae-aa3f-8212bbe3d568
 DESCRIPTION:\nEMAIL: ljhtoljh@163.com\n专业: 软件工程\n匹配: OK\n
  姓名: 林剑辉\n学历: 本科\n学校: 南昌大学\n应聘职位: 大
  数据\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 13738051
@@ -365,7 +365,7 @@ BEGIN:VEVENT
 SUMMARY:王晶晶 中国科学技术大学 
 DTSTART:20190723T070000Z
 DTEND:20190723T090000Z
-UID:1563865200.0:18667931421:88abef33-7f9d-4269-827a-9ff387eed499
+UID:1563865200.0:18667931421:4edfd3c0-a176-4767-9b28-bdb790812f9b
 DESCRIPTION:\nEMAIL: 903603746@qq.com \n专业: 软件工程\n匹配: OK\n
  姓名: 王晶晶\n学历: 硕士\n学校: 中国科学技术大学 \n应
  聘职位: Web前端开发工程师\n应聘部门: 智能引擎开发部\n
@@ -377,7 +377,7 @@ BEGIN:VEVENT
 SUMMARY:安德智 杭州电子科技大学
 DTSTART:20190723T070000Z
 DTEND:20190723T090000Z
-UID:1563865200.0:18969043227:f0bab019-472f-4e3b-b143-f2c19af54270
+UID:1563865200.0:18969043227:71c71bfa-36c0-4256-9922-a01e3ed3c54b
 DESCRIPTION:\nEMAIL: 18969043227@163. com\n专业: 计算机科学与技
  术专业\n匹配: OK\n姓名: 安德智\n学历: 本科\n学校: 杭州
  电子科技大学\n应聘职位: Spark大数据开发\n应聘部门: 智
@@ -389,7 +389,7 @@ BEGIN:VEVENT
 SUMMARY:彭峰 中国科学院电子学研究所
 DTSTART:20190723T060000Z
 DTEND:20190723T080000Z
-UID:1563861600.0:18930122676:831e474f-c98f-48f1-87de-bb710330ac1c
+UID:1563861600.0:18930122676:a1a13ad9-e994-4259-8295-bec821dedab5
 DESCRIPTION:\nEMAIL: 18930122676@189.cn\n专业: 电子与通信工程\n
  匹配: OK\n姓名: 彭峰\n学历: 硕士\n学校: 中国科学院电子
  学研究所\n应聘职位: 大数据开发/数据分析 \n应聘部门: 
@@ -401,7 +401,7 @@ BEGIN:VEVENT
 SUMMARY:张霖 中南大学
 DTSTART:20190729T010000Z
 DTEND:20190729T030000Z
-UID:1564362000.0:15558127305:a679e1ab-2d8c-405d-ab02-d357acf660dc
+UID:1564362000.0:15558127305:a18d57e8-adf3-45b3-b5ec-79270f70558a
 DESCRIPTION:\nEMAIL: luoyelin1989@126.com\n专业: 电子信息科学与
  技术\n匹配: OK\n姓名: 张霖\n学历: 本科\n学校: 中南大学\n
  应聘职位: 后端开发\n应聘部门: 智能引擎开发部\n性别: 
@@ -413,7 +413,7 @@ BEGIN:VEVENT
 SUMMARY:李要辉 浙江理工大学
 DTSTART:20190725T060000Z
 DTEND:20190725T080000Z
-UID:1564034400.0:15355710068:1bc1e9ea-3d63-4173-a0ff-a2525ea4e3ce
+UID:1564034400.0:15355710068:11b01f41-cf76-4d93-b7cd-124d90421319
 DESCRIPTION:\nEMAIL: leeyh1988@163.com\n专业: 应用经济学\n匹配: O
  K\n姓名: 李要辉\n学历: 硕士\n学校: 浙江理工大学\n应聘
  职位: Java开发\n应聘部门: 智能引擎开发部\n性别: 男\n手
@@ -425,7 +425,7 @@ BEGIN:VEVENT
 SUMMARY:章华栋   中国计量大学
 DTSTART:20190726T060000Z
 DTEND:20190726T080000Z
-UID:1564120800.0:18758895772:a49283e4-a65a-4baf-9803-cd3baa929965
+UID:1564120800.0:18758895772:14a3fe37-ebd8-4c3b-ba42-e6895603f598
 DESCRIPTION:\nEMAIL: 1090993978@qq.com\n专业: 计算机科学与技术\n
  匹配: OK\n姓名: 章华栋\n学历: 本科\n学校:   中国计量大
  学\n应聘职位: java 开发工程师\n应聘部门: 智能引擎开发
@@ -437,7 +437,7 @@ BEGIN:VEVENT
 SUMMARY:张祺桢 南京大学
 DTSTART:20190725T060000Z
 DTEND:20190725T080000Z
-UID:1564034400.0:15251833185:426771f6-4c75-48e9-8b9f-9e93319e0f3f
+UID:1564034400.0:15251833185:9ddc35f6-23db-4f8c-ac5a-85d306225f28
 DESCRIPTION:\nEMAIL: zqznju@foxmail.com\n专业: 物理学\n匹配: OK\n
  姓名: 张祺桢\n学历: 硕士\n学校: 南京大学\n应聘职位: 人
  工智能\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 15251
@@ -449,7 +449,7 @@ BEGIN:VEVENT
 SUMMARY:李冲 太原理工大学
 DTSTART:20190724T060000Z
 DTEND:20190724T080000Z
-UID:1563948000.0:18410134274:c908ddcd-f9e0-4585-829b-2887b319f938
+UID:1563948000.0:18410134274:db415692-601f-4641-8e3b-fa806bbebcff
 DESCRIPTION:\nEMAIL: lc289680@163.com\n专业: 计算机科学与技术\n
  匹配: OK\n姓名: 李冲\n学历: 本科\n学校: 太原理工大学\n
  应聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发
@@ -461,7 +461,7 @@ BEGIN:VEVENT
 SUMMARY:梁浩 西安电子科技大学
 DTSTART:20190729T060000Z
 DTEND:20190729T080000Z
-UID:1564380000.0:13216189869:ac3d4611-919e-4c9f-87fd-b5bddd0a69ae
+UID:1564380000.0:13216189869:458cee4d-c3f5-4926-84f4-291fd33d178e
 DESCRIPTION:\nEMAIL: 2444722858@qq.com\n专业: 计算机信息管理\n匹
  配: OK\n姓名: 梁浩\n学历: 本科\n学校: 西安电子科技大学\
  n应聘职位: JAVA架构师\n应聘部门: 智能引擎开发部\n性别:
@@ -470,22 +470,10 @@ DESCRIPTION:\nEMAIL: 2444722858@qq.com\n专业: 计算机信息管理\n匹
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:许嘉怡 湖南师范大学
-DTSTART:20190730T060000Z
-DTEND:20190730T080000Z
-UID:1564466400.0:15111169366:c7d8567c-38b8-4349-a0fb-d1acdb4dfe5d
-DESCRIPTION:\nEMAIL: kyzy1010@outlook.com\n专业: 理论物理\n匹配: 
- 重复\n姓名: 许嘉怡\n学历: 硕士\n学校: 湖南师范大学\n应
- 聘职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手机:
-  15111169366\n简历来源: null\n预约面试地点: 杭州\n预约面试
- 时间: 7.30 14:00\n
-LOCATION:杭州
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:刘永红 吉林大学
 DTSTART:20190801T060000Z
 DTEND:20190801T080000Z
-UID:1564639200.0:18258259727:f0180a96-a0f6-4a69-a956-7a5ea17c9498
+UID:1564639200.0:18258259727:d6a2407a-5e59-40f8-8551-f4293922198d
 DESCRIPTION:\nEMAIL: liuyh0805@126.com\n专业: 材料加工工程 \n匹
  配: OK\n姓名: 刘永红\n学历: 硕士\n学校: 吉林大学\n应聘
  职位: Java，大数据开发\n应聘部门: 智能引擎开发部\n性
@@ -497,7 +485,7 @@ BEGIN:VEVENT
 SUMMARY:淘亚萌 中国科学技术大学
 DTSTART:20190802T010000Z
 DTEND:20190802T030000Z
-UID:1564707600.0:13329048171:1b21ab39-df2e-49cb-aeae-9d8da1c334ee
+UID:1564707600.0:13329048171:c2c7fbe0-444d-42c0-b49b-0c9a460b170c
 DESCRIPTION:\nEMAIL: tcgoodboy@126.com\n专业: 软件系统设计\n匹配
  : OK\n姓名: 淘亚萌\n学历: 硕士\n学校: 中国科学技术大学\
  n应聘职位: java开发\n应聘部门: 智能引擎开发部\n性别: 
@@ -509,7 +497,7 @@ BEGIN:VEVENT
 SUMMARY:黄斌 南昌大学
 DTSTART:20190806T060000Z
 DTEND:20190806T080000Z
-UID:1565071200.0:18720995529:ada8d726-f914-4260-915d-cd1eed93865b
+UID:1565071200.0:18720995529:873e98ff-3b27-498e-8ced-0cec631e488c
 DESCRIPTION:\nEMAIL: 771759420@qq.com\n专业: null\n匹配: OK\n姓名: 
  黄斌\n学历: 本科\n学校: 南昌大学\n应聘职位: Java开发\n
  应聘部门: 智能引擎开发部\n性别: 男\n手机: 18720995529\n简
@@ -521,7 +509,7 @@ BEGIN:VEVENT
 SUMMARY:李先琨 哈尔滨工程大学
 DTSTART:20190801T060000Z
 DTEND:20190801T080000Z
-UID:1564639200.0:18846121140:02bd03f1-0195-46be-b0c2-ed0043fa7986
+UID:1564639200.0:18846121140:5f06573a-7b55-44f3-a084-4575483368e2
 DESCRIPTION:\nEMAIL: 18846121140@163.com\n专业: 信息与通信工程学
  院\n匹配: OK\n姓名: 李先琨\n学历: 硕士\n学校: 哈尔滨工
  程大学\n应聘职位: 大数据开发工程师\n应聘部门: 智能引
@@ -533,7 +521,7 @@ BEGIN:VEVENT
 SUMMARY:覃事银 华南师范大学
 DTSTART:20190808T060000Z
 DTEND:20190808T080000Z
-UID:1565244000.0:13516821970:a22fe6aa-641f-4c15-b397-0cdd5ce81c14
+UID:1565244000.0:13516821970:fdecda16-1d07-45fa-96b9-c26c9b638e1d
 DESCRIPTION:\nEMAIL: qin411858963@163.com\n专业: 地理信息系统\n匹
  配: OK\n姓名: 覃事银\n学历: 硕士\n学校: 华南师范大学\n
  应聘职位: 大数据\n应聘部门: 智能引擎开发部\n性别: 男\
@@ -545,7 +533,7 @@ BEGIN:VEVENT
 SUMMARY:刘畅 北京邮电大学
 DTSTART:20190808T020000Z
 DTEND:20190808T040000Z
-UID:1565229600.0:13020031212:28b460a9-405b-4afa-9611-7f7bbf2a783c
+UID:1565229600.0:13020031212:7e749774-3a60-46df-abac-5e35f27931ad
 DESCRIPTION:\nEMAIL: 2394712542@qq.com\n专业: 电子与通信工程\n匹
  配: OK\n姓名: 刘畅\n学历: 硕士\n学校: 北京邮电大学\n应
  聘职位: null\n应聘部门: 智能引擎开发部\n性别: 女\n手机:
@@ -557,7 +545,7 @@ BEGIN:VEVENT
 SUMMARY:邹典坤 中南大学
 DTSTART:20190809T060000Z
 DTEND:20190809T080000Z
-UID:1565330400.0:15084887937:53f0c3c3-4b78-48d7-822d-8a5bb276a7e2
+UID:1565330400.0:15084887937:4f22d7e9-371a-43a6-be91-d44e8f63bca8
 DESCRIPTION:\nEMAIL: diankun.zou@qq.com\n专业: 机械设计制造及其
  自动化\n匹配: OK\n姓名: 邹典坤\n学历: 本科\n学校: 中南
  大学\n应聘职位: 数据分析师\n应聘部门: 智能引擎开发部
@@ -569,7 +557,7 @@ BEGIN:VEVENT
 SUMMARY:郑程贤 英国赫瑞瓦特大学
 DTSTART:20190807T060000Z
 DTEND:20190807T080000Z
-UID:1565157600.0:18658384249:e546ec7b-9907-4b68-a107-91117aefdcca
+UID:1565157600.0:18658384249:d137b6ea-5c0d-45a6-ab55-220814bd685c
 DESCRIPTION:\nEMAIL: 396558141@qq.com\n专业: 可持续建筑设计\n匹
  配: OK\n姓名: 郑程贤\n学历: 硕士\n学校: 英国赫瑞瓦特大
  学\n应聘职位: java开发\n应聘部门: 智能引擎开发部\n性别
@@ -581,7 +569,7 @@ BEGIN:VEVENT
 SUMMARY:雷璐 长春理工大学
 DTSTART:20190808T060000Z
 DTEND:20190808T080000Z
-UID:1565244000.0:15754316682:8def30ac-c468-4b14-958c-2fd7ec7ad087
+UID:1565244000.0:15754316682:90761782-4407-4130-985e-e6bd24d5c6eb
 DESCRIPTION:\nEMAIL: 15754316682@163.com\n专业: 探测制导与控制技
  术\n匹配: OK\n姓名: 雷璐\n学历: 本科\n学校: 长春理工大
  学\n应聘职位: 大数据开发\n应聘部门: 智能引擎开发部\n
@@ -593,7 +581,7 @@ BEGIN:VEVENT
 SUMMARY:陈辉辉 杭州电子科技大学
 DTSTART:20190812T060000Z
 DTEND:20190812T080000Z
-UID:1565589600.0:17774012683:8d4af19d-afb6-4172-a1d2-9356cef95cdc
+UID:1565589600.0:17774012683:7f4eb7e5-9d90-4b2f-98d7-8dd2a4947784
 DESCRIPTION:\nEMAIL: 690598092@qq.com\n专业: 控制工程\n匹配: OK\n
  姓名: 陈辉辉\n学历: 硕士\n学校: 杭州电子科技大学\n应
  聘职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手机:
@@ -605,7 +593,7 @@ BEGIN:VEVENT
 SUMMARY:汪凯峰 杭州电子科技大学
 DTSTART:20190809T060000Z
 DTEND:20190809T080000Z
-UID:1565330400.0:13511326492:8eea167a-1abc-405b-83d9-7304e3cf4b2f
+UID:1565330400.0:13511326492:ffe6892a-59c9-422d-8474-e6d84d9efb0e
 DESCRIPTION:\nEMAIL: 782603716@qq.com\n专业: 网络工程\n匹配: OK\n
  姓名: 汪凯峰\n学历: 本科\n学校: 杭州电子科技大学\n应
  聘职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n
@@ -617,7 +605,7 @@ BEGIN:VEVENT
 SUMMARY:虞泽华 吉林大学
 DTSTART:20190812T060000Z
 DTEND:20190812T080000Z
-UID:1565589600.0:18867635378:6c66cab2-4123-4335-8d81-934b5684fdf3
+UID:1565589600.0:18867635378:7d910264-2949-4aa2-af22-a7e1d2c9138f
 DESCRIPTION:\nEMAIL: 330477677@qq.com\n专业: 软件工程\n匹配: OK\n
  姓名: 虞泽华\n学历: 本科\n学校: 吉林大学\n应聘职位: 软
  件开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手
@@ -629,7 +617,7 @@ BEGIN:VEVENT
 SUMMARY:潘进勇 河海大学
 DTSTART:20190814T060000Z
 DTEND:20190814T080000Z
-UID:1565762400.0:15996260085:193c3b44-187d-4e38-adac-62dafe2946f6
+UID:1565762400.0:15996260085:afa26134-55e6-4c6f-bbd6-c37a223feadc
 DESCRIPTION:\nEMAIL: ssjy0512@163.com\n专业: 信号与信息处理\n匹
  配: OK\n姓名: 潘进勇\n学历: 硕士\n学校: 河海大学\n应聘
  职位: 数据分析师\n应聘部门: 智能引擎开发部\n性别: 男\
@@ -641,7 +629,7 @@ BEGIN:VEVENT
 SUMMARY:何超 浙江大学
 DTSTART:20190813T010000Z
 DTEND:20190813T030000Z
-UID:1565658000.0:13250818051:dfd56773-78c6-40f4-b3af-a2581423ddca
+UID:1565658000.0:13250818051:5bcb2dad-2aa4-4632-9196-dea1e9042bbc
 DESCRIPTION:\nEMAIL: 13250818051@163.com\n专业: 软件工程\n匹配: OK
  \n姓名: 何超\n学历: 硕士\n学校: 浙江大学\n应聘职位: null
  \n应聘部门: 智能引擎开发部\n性别: 男\n手机: 13250818051\n
@@ -653,7 +641,7 @@ BEGIN:VEVENT
 SUMMARY:郝树良 重庆邮电大学
 DTSTART:20190819T060000Z
 DTEND:20190819T080000Z
-UID:1566194400.0:13963581534:4af11604-e936-42b7-8060-ce44c5336d27
+UID:1566194400.0:13963581534:8fded809-89a1-455f-9c8a-edc035e0a0f3
 DESCRIPTION:\nEMAIL: shulianghao@163.com  \n专业: 信息与通信工程\
  n匹配: OK\n姓名: 郝树良\n学历: 硕士\n学校: 重庆邮电大学
  \n应聘职位: 网络人工智能开发工程师\n应聘部门: 智能引
@@ -665,7 +653,7 @@ BEGIN:VEVENT
 SUMMARY:茹 雪 德布勒森大学
 DTSTART:20190813T060000Z
 DTEND:20190813T080000Z
-UID:1565676000.0:15631261856:770a4bb3-9382-4946-951f-bcde0beb25bb
+UID:1565676000.0:15631261856:4dde4878-9c6c-4f6a-be5f-fa2c7cd617a4
 DESCRIPTION:\nEMAIL: 976571389@qq.com\n专业: 计算机科学\n匹配: OK
  \n姓名: 茹 雪\n学历: 硕士\n学校: 德布勒森大学\n应聘职
  位: 网络人工智能开发工程师\n应聘部门: 智能引擎开发
@@ -677,28 +665,19 @@ BEGIN:VEVENT
 SUMMARY:李定祥 东北农业大学
 DTSTART:20190813T060000Z
 DTEND:20190813T080000Z
-UID:1565676000.0:15145017857:282db15f-333c-4954-a246-4eadccd9fc02
-DESCRIPTION:\nEMAIL: 445972387@qq.com\n专业: 统计学\n匹配:         
-                                                                           
-                                                                           
-                                                                           
-                                                                           
-                                                                           
-                                                                           
-                                                                           
-                                                                           
-                                          \n姓名: 李定祥\n学历: 本
- 科\n学校: 东北农业大学\n应聘职位: 数据分析/数据挖掘/
- 机器学习岗位\n应聘部门: 智能引擎开发部\n性别: 男\n手
- 机: 15145017857\n简历来源: BOSS直聘\n预约面试地点: 杭州\n
- 预约面试时间: 8.13 14:00\n
+UID:1565676000.0:15145017857:5ef9f101-0b9f-41e3-9b72-808ade9b36ad
+DESCRIPTION:\nEMAIL: 445972387@qq.com\n专业: 统计学\n匹配: OK\n姓
+ 名: 李定祥\n学历: 本科\n学校: 东北农业大学\n应聘职位: 
+ 数据分析/数据挖掘/机器学习岗位\n应聘部门: 智能引擎
+ 开发部\n性别: 男\n手机: 15145017857\n简历来源: BOSS直聘\n预
+ 约面试地点: 杭州\n预约面试时间: 8.13 14:00\n
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:余彬 马萨诸塞大学安姆斯特分校
 DTSTART:20190813T070000Z
 DTEND:20190813T090000Z
-UID:1565679600.0:18667162311:229f1437-35f5-40a7-8db2-e92ffa795294
+UID:1565679600.0:18667162311:0e3bbd86-fd51-4f05-8fcf-4ac7c7a92994
 DESCRIPTION:\nEMAIL: binyu@umass.edu\n专业: 计算机科学\n匹配: OK\
  n姓名: 余彬\n学历: 硕士\n学校: 马萨诸塞大学安姆斯特分
  校\n应聘职位: 网络人工智能开发工程师\n应聘部门: 智能
@@ -710,7 +689,7 @@ BEGIN:VEVENT
 SUMMARY:杜飞 北京航空航天大学
 DTSTART:20190815T070000Z
 DTEND:20190815T090000Z
-UID:1565852400.0:17310839279:e10d1233-6634-4d98-ad1f-36153776ac6e
+UID:1565852400.0:17310839279:c832f940-e0bc-4139-a92e-309f9b49c1ee
 DESCRIPTION:\nEMAIL: 813540660@qq.com\n专业: 航空工程 \n匹配: OK\n
  姓名: 杜飞\n学历: 硕士\n学校: 北京航空航天大学\n应聘
  职位: 机器学习算法岗\n应聘部门: 智能引擎开发部\n性别
@@ -722,7 +701,7 @@ BEGIN:VEVENT
 SUMMARY:赵辽浙 大连理工大学
 DTSTART:20190819T010000Z
 DTEND:20190819T030000Z
-UID:1566176400.0:17826800199:94a8144b-d7b3-4ce7-a3db-7a24b81eff1d
+UID:1566176400.0:17826800199:1b142022-c892-4acc-9823-3e2d052aca34
 DESCRIPTION:\nEMAIL: 1044136268@qq.com\n专业: 机电工程与自动化\n
  匹配: OK\n姓名: 赵辽浙\n学历: 本科\n学校: 大连理工大学\
  n应聘职位: 后端开发\n应聘部门: 智能引擎开发部\n性别: 
@@ -734,7 +713,7 @@ BEGIN:VEVENT
 SUMMARY:李剑 杭州电子科技大学
 DTSTART:20190819T060000Z
 DTEND:20190819T080000Z
-UID:1566194400.0:15657675672:340120c0-bce6-45d8-8cf4-c41f5afef352
+UID:1566194400.0:15657675672:e7a8bcc0-1966-43db-b822-8d6cf2362ec2
 DESCRIPTION:\nEMAIL: 2713117989@qq.com\n专业: 软件工程\n匹配: OK\n
  姓名: 李剑\n学历: 本科\n学校: 杭州电子科技大学\n应聘
  职位: java开发\n应聘部门: 智能引擎开发部\n性别: 男\n手
@@ -746,7 +725,7 @@ BEGIN:VEVENT
 SUMMARY:黄建平 中国科学技术大学
 DTSTART:20190819T020000Z
 DTEND:20190819T040000Z
-UID:1566180000.0:13818272376:be485cb2-552d-4208-ba89-78d61185a50d
+UID:1566180000.0:13818272376:0f14b1d3-63c1-4baa-ad0e-7d2627c66c68
 DESCRIPTION:\nEMAIL: hardon123a@163.com\n专业: 软件工程\n匹配: OK\
  n姓名: 黄建平\n学历: 硕士\n学校: 中国科学技术大学\n应
  聘职位: java开发\n应聘部门: 智能引擎开发部\n性别: 男\n
@@ -758,7 +737,7 @@ BEGIN:VEVENT
 SUMMARY:朱光志 武汉理工大学
 DTSTART:20190816T060000Z
 DTEND:20190816T080000Z
-UID:1565935200.0:18673130685:2375e8e5-d930-440c-925d-1635a8266e2f
+UID:1565935200.0:18673130685:9470db82-3d81-4345-8323-c9cb6260f98e
 DESCRIPTION:\nEMAIL: 18673130685@139.com\n专业: 光信息科学与技术
  \n匹配: OK\n姓名: 朱光志\n学历: 本科\n学校: 武汉理工大
  学\n应聘职位: java开发\n应聘部门: 智能引擎开发部\n性别
@@ -770,7 +749,7 @@ BEGIN:VEVENT
 SUMMARY:江昊 华东理工大学
 DTSTART:20190816T010000Z
 DTEND:20190816T030000Z
-UID:1565917200.0:13738084639:705ea716-9d09-407f-a8f2-df705f736354
+UID:1565917200.0:13738084639:64d78bef-87d7-444d-a607-9cfd88d80c84
 DESCRIPTION:\nEMAIL: badjh2005@163.com\n专业: 计算机软件与理论\n
  匹配: OK\n姓名: 江昊\n学历: 硕士\n学校: 华东理工大学\n
  应聘职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手
@@ -782,7 +761,7 @@ BEGIN:VEVENT
 SUMMARY:杨振 西北工业大学
 DTSTART:20190819T060000Z
 DTEND:20190819T080000Z
-UID:1566194400.0:1307189327:21a5037b-1b63-4de8-8fe8-04b2d1d8e4ea
+UID:1566194400.0:1307189327:2f17cd58-a00a-4f08-8d00-22ae8e62d4cf
 DESCRIPTION:\nEMAIL: 3101218930@qq.com\n专业: 统计学\n匹配: OK\n姓
  名: 杨振\n学历: 本科\n学校: 西北工业大学\n应聘职位: 网
  络人工智能开发工程师\n应聘部门: 智能引擎开发部\n性
@@ -794,7 +773,7 @@ BEGIN:VEVENT
 SUMMARY:叶雷 华中师范大学
 DTSTART:20190819T060000Z
 DTEND:20190819T080000Z
-UID:1566194400.0:13282196367:6cc88a00-df98-4cec-ae22-1c77ecd8cd21
+UID:1566194400.0:13282196367:ce6052de-1ddd-486a-9e46-5589647f76e1
 DESCRIPTION:\nEMAIL: 2439745857@qq.com\n专业: 应用统计学\n匹配: O
  K\n姓名: 叶雷\n学历: 硕士\n学校: 华中师范大学\n应聘职
  位: 网络人工智能开发工程师\n应聘部门: 智能引擎开发
@@ -803,22 +782,22 @@ DESCRIPTION:\nEMAIL: 2439745857@qq.com\n专业: 应用统计学\n匹配: O
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:潘祺涵 武汉理工大学
-DTSTART:20190820T060000Z
-DTEND:20190820T080000Z
-UID:1566280800.0:15869016086:aca9fba5-16d4-4837-8268-ae76a6b014d6
-DESCRIPTION:\nEMAIL: 15869016086@163.com\n专业: 机械自动化\n匹配:
-  OK\n姓名: 潘祺涵\n学历: 本科\n学校: 武汉理工大学\n应聘
- 职位: 大数据开发\n应聘部门: 智能引擎开发部\n性别: 男\
- n手机: 15869016086\n简历来源: BOSS直聘\n预约面试地点: 杭州
- \n预约面试时间: 8.20 14:00\n
+SUMMARY:刘英轲 浙江理工大学
+DTSTART:20190822T060000Z
+DTEND:20190822T080000Z
+UID:1566453600.0:15397020606:6a8e80b0-b732-4fe7-8dfb-605b2939829b
+DESCRIPTION:\nEMAIL: 826701692@qq.com\n专业: 通信工程\n匹配: OK\n
+ 姓名: 刘英轲\n学历: 本科\n学校: 浙江理工大学\n应聘职
+ 位: java开发\n应聘部门: 智能引擎开发部\n性别: 男\n手机:
+  15397020606\n简历来源: 51job\n预约面试地点: 杭州\n预约面
+ 试时间: 8.22 14:00\n
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:邹九 山东大学
 DTSTART:20190820T060000Z
 DTEND:20190820T080000Z
-UID:1566280800.0:17611197699:26bad26a-d02e-49c3-aab7-7df6c0f91d57
+UID:1566280800.0:17611197699:44ec07ec-cb75-402a-9162-0b8f4b010873
 DESCRIPTION:\nEMAIL: 1069679911@qq.com\n专业: 信息安全\n匹配: OK\n
  姓名: 邹九\n学历: 本科\n学校: 山东大学\n应聘职位: 算法
  工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 17611
@@ -830,19 +809,55 @@ BEGIN:VEVENT
 SUMMARY:张宇晟 杭州电子科技大学
 DTSTART:20190822T060000Z
 DTEND:20190822T080000Z
-UID:1566453600.0:13989895239:17465b0f-9f2b-470b-969d-ee5c5b4ce1e2
+UID:1566453600.0:13989895239:3b328fcb-2c36-4c2d-9868-a92f02ddd88a
 DESCRIPTION:\nEMAIL: 450736693@qq.com\n专业: 计算机科学与技术\n
  匹配: OK\n姓名: 张宇晟\n学历: 硕士\n学校: 杭州电子科技
  大学\n应聘职位: 大数据开发工程师\n应聘部门: 智能引擎
  开发部\n性别: 男\n手机: 13989895239\n简历来源: 51job\n预约
- 面试地点: 杭州\n预约面试时间: 8.22 14:00（本人取消）\n
+ 面试地点: 杭州\n预约面试时间: 8.22 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:邵萃明 浙江大学
+DTSTART:20190822T060000Z
+DTEND:20190822T080000Z
+UID:1566453600.0:15267040050:467e3f14-bea8-46b4-ab39-2a002953ecdc
+DESCRIPTION:\nEMAIL: channon_shawn@163.com\n专业:  机械工程及其自
+ 动化专业\n匹配: OK\n姓名: 邵萃明\n学历: 硕士\n学校: 浙
+ 江大学\n应聘职位: 机器学习/深度学习/数据挖掘\n应聘部
+ 门: 智能引擎开发部\n性别: 男\n手机: 15267040050\n简历来源
+ : BOSS直聘\n预约面试地点: 杭州\n预约面试时间: 8.22 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:周凡 浙江工业大学
+DTSTART:20190821T060000Z
+DTEND:20190821T080000Z
+UID:1566367200.0:15757174342:b76712a6-6fda-436b-aac2-f310cac93154
+DESCRIPTION:\nEMAIL: 530505576@qq.com\n专业: 光信息科学与技术\n
+ 匹配: OK\n姓名: 周凡\n学历: 本科\n学校: 浙江工业大学\n
+ 应聘职位: 大数据研发工程师\n应聘部门: 智能引擎开发
+ 部\n性别: 男\n手机: 15757174342\n简历来源: BOSS直聘\n预约面
+ 试地点: 杭州\n预约面试时间: 8.21 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:潘祺涵 武汉理工大学
+DTSTART:20190820T060000Z
+DTEND:20190820T080000Z
+UID:1566280800.0:15869016086:56439564-5398-42ad-b6ff-6555437174ca
+DESCRIPTION:\nEMAIL: 15869016086@163.com\n专业: 机械自动化\n匹配:
+  OK\n姓名: 潘祺涵\n学历: 本科\n学校: 武汉理工大学\n应聘
+ 职位: 大数据开发\n应聘部门: 智能引擎开发部\n性别: 男\
+ n手机: 15869016086\n简历来源: BOSS直聘\n预约面试地点: 杭州
+ \n预约面试时间: 8.20 14:00\n
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:代志豪 宁夏大学
 DTSTART:20190826T060000Z
 DTEND:20190826T080000Z
-UID:1566799200.0:13519214405:9d365692-249d-4de0-979f-6eb6fcb278f8
+UID:1566799200.0:13519214405:b802cb1b-c133-497f-aeec-dd986d914a0b
 DESCRIPTION:\nEMAIL: 792098618@qq.com\n专业: 通信工程\n匹配: OK\n
  姓名: 代志豪\n学历: 本科\n学校: 宁夏大学\n应聘职位: 网
  络人工智能开发工程师\n应聘部门: 智能引擎开发部\n性
@@ -851,22 +866,34 @@ DESCRIPTION:\nEMAIL: 792098618@qq.com\n专业: 通信工程\n匹配: OK\n
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
+SUMMARY:孙兴国 河南大学
+DTSTART:20190822T060000Z
+DTEND:20190822T080000Z
+UID:1566453600.0:15649904656:1694ee50-a441-4a99-afb0-6b512d83c4bf
+DESCRIPTION:\nEMAIL: sunXingGuoWin@163.com\n专业: 计算机科学与技
+ 术\n匹配: OK\n姓名: 孙兴国\n学历: 本科\n学校: 河南大学\n
+ 应聘职位: 网络人工智能开发工程师\n应聘部门: 智能引
+ 擎开发部\n性别: 男\n手机: 15649904656\n简历来源: BOSS直聘\n
+ 预约面试地点: 杭州\n预约面试时间: 8.22 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
 SUMMARY:齐振全 郑州大学
 DTSTART:20190823T060000Z
 DTEND:20190823T080000Z
-UID:1566540000.0:17611003900:c48e581d-8d6d-48a8-abf2-d34d0e745300
+UID:1566540000.0:17611003900:ceb8841f-223f-465b-bd43-8be757c41de4
 DESCRIPTION:\nEMAIL: q8266600@163.com\n专业: 计算机科学与技术\n
  匹配: OK\n姓名: 齐振全\n学历: 本科\n学校: 郑州大学\n应
  聘职位: java软件开发工程师\n应聘部门: 智能引擎开发部\
  n性别: 男\n手机: 17611003900\n简历来源: BOSS直聘\n预约面试
- 地点: 杭州\n预约面试时间: 8.23 14:00（本人取消）\n
+ 地点: 杭州\n预约面试时间: 8.23 14:00\n
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:梁越冰 武汉理工大学
 DTSTART:20190822T070000Z
 DTEND:20190822T090000Z
-UID:1566457200.0:18368039827:3cb5049f-8097-466b-89fd-f8482d2d898e
+UID:1566457200.0:18368039827:1ba3838e-826e-4e0c-ac48-40341436e7a1
 DESCRIPTION:\nEMAIL: 1031739984@qq.com\n专业: 船舶与海洋工程专
  业\n匹配: OK\n姓名: 梁越冰\n学历: 硕士\n学校: 武汉理工
  大学\n应聘职位: 网络人工智能开发工程师\n应聘部门: 智
@@ -878,7 +905,7 @@ BEGIN:VEVENT
 SUMMARY:俞敬元 明尼苏达州立大学
 DTSTART:20190822T063000Z
 DTEND:20190822T083000Z
-UID:1566455400.0:13738021706:2a6d4e01-bd1c-4b1f-a91a-8d68da9543b3
+UID:1566455400.0:13738021706:87021244-a45a-4231-b3fc-05a64ad6b2ab
 DESCRIPTION:\nEMAIL: 258027175@qq.com\n专业: 计算机科学专业\n匹
  配: OK\n姓名: 俞敬元\n学历: 本科\n学校: 明尼苏达州立大
  学\n应聘职位: java软件开发工程师\n应聘部门: 智能引擎
@@ -887,22 +914,10 @@ DESCRIPTION:\nEMAIL: 258027175@qq.com\n专业: 计算机科学专业\n匹
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:邵萃明 浙江大学
-DTSTART:20190822T060000Z
-DTEND:20190822T080000Z
-UID:1566453600.0:15267040050:9a69c3a4-3f55-4937-950a-cb411fa1777e
-DESCRIPTION:\nEMAIL: channon_shawn@163.com\n专业:  机械工程及其自
- 动化专业\n匹配: OK\n姓名: 邵萃明\n学历: 硕士\n学校: 浙
- 江大学\n应聘职位: 机器学习/深度学习/数据挖掘\n应聘部
- 门: 智能引擎开发部\n性别: 男\n手机: 15267040050\n简历来源
- : BOSS直聘\n预约面试地点: 杭州\n预约面试时间: 8.22 14:00\n
-LOCATION:杭州
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:朱峻 太原理工大学
 DTSTART:20190823T070000Z
 DTEND:20190823T090000Z
-UID:1566543600.0:15935152719:a82820dd-2419-4991-b391-4d34bfae396f
+UID:1566543600.0:15935152719:b07c0c01-ce35-4655-9549-adc69c497e1b
 DESCRIPTION:\nEMAIL: 15935152719@163.com\n专业: 电气工程及其自动
  化\n匹配: OK\n姓名: 朱峻\n学历: 本科\n学校: 太原理工大
  学\n应聘职位: 网络人工智能开发工程师\n应聘部门: 智能
@@ -914,7 +929,7 @@ BEGIN:VEVENT
 SUMMARY:谢欢 苏州大学
 DTSTART:20190826T070000Z
 DTEND:20190826T090000Z
-UID:1566802800.0:17621623857:f8b0d3b2-0d9a-4b16-99ba-57e4688874ca
+UID:1566802800.0:17621623857:2445f84a-1629-44c4-9888-5777aeb2f3b8
 DESCRIPTION:\nEMAIL: jshaxh0216@163.com\n专业: null\n匹配: OK\n姓名:
   谢欢\n学历: 本科\n学校: 苏州大学\n应聘职位: 大数据开
  发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 17
@@ -926,7 +941,7 @@ BEGIN:VEVENT
 SUMMARY:包锐 国防科技大学
 DTSTART:20190827T060000Z
 DTEND:20190827T080000Z
-UID:1566885600.0:13548940407:4d16a983-a07f-4308-b0e0-5310a8ff686b
+UID:1566885600.0:13548940407:c899ec4a-7319-455b-b49e-460cec1239cc
 DESCRIPTION:\nEMAIL: mr_rayleigh@163.com\n专业: 计算机科学与技术
  \n匹配: OK\n姓名: 包锐\n学历: 硕士\n学校: 国防科技大学\n
  应聘职位: 人工智能算法工程师\n应聘部门: 智能引擎开
@@ -935,22 +950,10 @@ DESCRIPTION:\nEMAIL: mr_rayleigh@163.com\n专业: 计算机科学与技术
 LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:许嘉怡 湖南师范大学
-DTSTART:20190823T070000Z
-DTEND:20190823T090000Z
-UID:1566543600.0:15111169366:eceab793-f10b-4297-bbe9-1818f9a266f9
-DESCRIPTION:\nEMAIL: kyzy1010@outlook.com\n专业: 理论物理\n匹配: 
- 重复\n姓名: 许嘉怡\n学历: 硕士\n学校: 湖南师范大学\n应
- 聘职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手机:
-  15111169366\n简历来源: BOSS直聘\n预约面试地点: 杭州\n预约
- 面试时间: 8.23 15:00\n
-LOCATION:杭州
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:李键 郑州大学
 DTSTART:20190823T010000Z
 DTEND:20190823T030000Z
-UID:1566522000.0:13732261165:766fc1ba-3226-4243-aa62-aa00acfdacc3
+UID:1566522000.0:13732261165:3beeca3f-141b-4917-a0f2-87e11038f23c
 DESCRIPTION:\nEMAIL: 1282195760@qq.com\n专业: 软件工程\n匹配: OK\n
  姓名: 李键\n学历: 本科\n学校: 郑州大学\n应聘职位: 数据
  库开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n手
@@ -960,14 +963,146 @@ LOCATION:杭州
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:张建 北京航天航空大学
-DTSTART:20190821T160000Z
-DTEND:20190821T180000Z
-UID:1566403200.0:13222786896:b96e83b0-769c-4aba-ae8e-55caa820d6bd
+DTSTART:20190822T160000Z
+DTEND:20190822T180000Z
+UID:1566489600.0:13222786896:fff61712-8331-49a2-b284-c123edf1a22a
 DESCRIPTION:\nEMAIL: 2515110376@qq.com\n专业: 大数据技术\n匹配: O
  K\n姓名: 张建\n学历: 硕士\n学校: 北京航天航空大学\n应
  聘职位: 大数据开发\n应聘部门: 智能引擎开发部\n性别: 
  男\n手机: 13222786896\n简历来源: BOSS直聘\n预约面试地点: 
- 杭州\n预约面试时间: 8.22 14：00\n
+ 杭州\n预约面试时间: 8.23 14：00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:黄武桐 电子科技大学
+DTSTART:20190101T060000Z
+DTEND:20190101T080000Z
+UID:1546322400.0:17381821835:8961047c-387c-4268-b3f4-cdf19507ebb6
+DESCRIPTION:\nEMAIL: huangwutongdd@126.com\n专业: 电气工程\n匹配: 
+ OK\n姓名: 黄武桐\n学历: 硕士\n学校: 电子科技大学\n应聘
+ 职位: Java开发工程师\n应聘部门: 智能引擎开发部\n性别: 
+ 男\n手机: 17381821835\n简历来源: 猎聘\n预约面试地点: 杭州
+ \n预约面试时间: 　下周二下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:尉佳媛 苏州大学
+DTSTART:20190101T010000Z
+DTEND:20190101T030000Z
+UID:1546304400.0:18944225875:32a2a461-d2a9-4868-bf6c-c8e28e8655cd
+DESCRIPTION:\nEMAIL: 　1125554153@qq.com\n专业: 应用统计学\n匹配
+ : OK\n姓名: 尉佳媛\n学历: 硕士\n学校: 苏州大学\n应聘职
+ 位: 大数据开发/分析\n应聘部门: 智能引擎开发部\n性别: 
+ 女\n手机: 18944225875\n简历来源: 51job\n预约面试地点: 杭州\
+ n预约面试时间: 　预约下周二上午9:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:夏献霸 四川大学
+DTSTART:20190101T060000Z
+DTEND:20190101T080000Z
+UID:1546322400.0:18515060757:e226cecc-eba8-4b87-8a64-18437c22dd2e
+DESCRIPTION:\nEMAIL: xiaxianba@qq.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 夏献霸\n学历: 本科\n学校: 四川大学\n应聘职位: 大
+ 数据开发/分析\n应聘部门: 智能引擎开发部\n性别: 男\n手
+ 机: 18515060757\n简历来源: 51job\n预约面试地点: 杭州\n预约
+ 面试时间: 预约下周二下午14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:邹启启 浙江工业大学
+DTSTART:20190827T063000Z
+DTEND:20190827T083000Z
+UID:1566887400.0:18358176537:5ce3b36d-3c70-4429-b8a8-91b1e67f6c2f
+DESCRIPTION:\nEMAIL: zqq_8@sina.com\n专业: null\n匹配: OK\n姓名: 邹
+ 启启\n学历: 本科\n学校: 浙江工业大学\n应聘职位: Java开
+ 发\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 18358176537
+ \n简历来源: BOSS直聘\n预约面试地点: 杭州\n预约面试时间
+ : 8.27 14:30\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:徐浩展 郑州大学
+DTSTART:20190829T060000Z
+DTEND:20190829T080000Z
+UID:1567058400.0:13213050463:424b5032-eec1-4bb7-a78c-eb9427263df0
+DESCRIPTION:\nEMAIL: 710542410@qq.com\n专业:  计算机科学与技术\n
+ 匹配: OK\n姓名: 徐浩展\n学历: 本科\n学校: 郑州大学\n应
+ 聘职位: java软件开发工程师\n应聘部门: 智能引擎开发部\
+ n性别: 男\n手机: 13213050463\n简历来源: BOSS直聘\n预约面试
+ 地点: 杭州\n预约面试时间: 8.29 14:00（29/30时间待定） \n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:祝节胜 南昌大学
+DTSTART:20190906T060000Z
+DTEND:20190906T080000Z
+UID:1567749600.0:15910712697:1772cccc-6222-4e88-9eaf-ba23a288b428
+DESCRIPTION:\nEMAIL: porryuse@163.com\n专业: 软件工程\n匹配: OK\n
+ 姓名: 祝节胜\n学历: 本科\n学校: 南昌大学\n应聘职位: jav
+ a软件开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n
+ 手机: 15910712697\n简历来源: BOSS直聘\n预约面试地点: 杭州\
+ n预约面试时间: 9.6 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:卢文强 郑州大学
+DTSTART:20190827T070000Z
+DTEND:20190827T090000Z
+UID:1566889200.0:16638210824:85d8cbfa-61fa-43cd-9aab-6d02a64930cf
+DESCRIPTION:\nEMAIL: 16638210824@163.com\n专业: 嵌入式软件\n匹配:
+  OK\n姓名: 卢文强\n学历: 本科\n学校: 郑州大学\n应聘职位
+ : Java开发工程师\n应聘部门: 智能引擎开发部\n性别: 男\n
+ 手机: 16638210824\n简历来源: BOSS直聘\n预约面试地点: 杭州\
+ n预约面试时间: 8.27 15:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:杜智垚 大连理工大学
+DTSTART:20190828T060000Z
+DTEND:20190828T080000Z
+UID:1566972000.0:13857112387:4be626ec-8564-4783-aa00-93653aae62fd
+DESCRIPTION:\nEMAIL: santoodlut@163.com\n专业: 动力工程（编程建
+ 模方向）\n匹配: OK\n姓名: 杜智垚\n学历: 硕士\n学校: 大
+ 连理工大学\n应聘职位: Java网络开发工程师\n应聘部门: 
+ 智能引擎开发部\n性别: 男\n手机: 13857112387\n简历来源: BOS
+ S直聘\n预约面试地点: 杭州\n预约面试时间: 8.28 14:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:钟一成 杭州电子科技大学
+DTSTART:20190827T020000Z
+DTEND:20190827T040000Z
+UID:1566871200.0:15988404510:6c96f2fd-4edd-47f0-a571-a89925c2eaa5
+DESCRIPTION:\nEMAIL: z1220265313@163.com\n专业: 光信息科学与工程
+ \n匹配: OK\n姓名: 钟一成\n学历: 本科\n学校: 杭州电子科
+ 技大学\n应聘职位: Java网络开发工程师\n应聘部门: 智能
+ 引擎开发部\n性别: 男\n手机: 15988404510\n简历来源: BOSS直
+ 聘\n预约面试地点: 杭州\n预约面试时间: 8.27 10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:许嘉怡 湖南师范大学
+DTSTART:20190826T020000Z
+DTEND:20190826T040000Z
+UID:1566784800.0:15111169366:9390a4f6-909b-40ae-8981-16c0b09dbfe5
+DESCRIPTION:\nEMAIL: kyzy1010@outlook.com\n专业: 理论物理\n匹配: O
+ K\n姓名: 许嘉怡\n学历: 硕士\n学校: 湖南师范大学\n应聘
+ 职位: null\n应聘部门: 智能引擎开发部\n性别: 男\n手机: 15
+ 111169366\n简历来源: BOSS直聘\n预约面试地点: 杭州\n预约面
+ 试时间: 8.26 10:00\n
+LOCATION:杭州
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:姚鑫威 电子科技大学
+DTSTART:20190829T060000Z
+DTEND:20190829T080000Z
+UID:1567058400.0:15928036528:41f28f3f-2974-452c-a98e-7e8f330de3c9
+DESCRIPTION:\nEMAIL: 15928036528@163. com\n专业: 信息安全\n匹配: O
+ K\n姓名: 姚鑫威\n学历: 本科\n学校: 电子科技大学\n应聘
+ 职位: 大数据开发工程师\n应聘部门: 智能引擎开发部\n性
+ 别: 男\n手机: 15928036528\n简历来源: BOSS直聘\n预约面试地
+ 点: 杭州\n预约面试时间: 8.29 14:00\n
 LOCATION:杭州
 END:VEVENT
 END:VCALENDAR
