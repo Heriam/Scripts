@@ -97,7 +97,7 @@ class InterviewICSGenerator:
                                                                         microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
                 err = eval(timestamp).get("error")
                 if err:
-                    logger.error(err + interview)
+                    logger.error(err + " " + str(interview))
                     continue
                 parsedTime = eval(timestamp).get("timestamp") or eval(timestamp).get("timespan")[0]
                 dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
