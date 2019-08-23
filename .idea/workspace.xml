@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4816a14d-28d9-4149-b427-ae02848aa9b9" name="Default" comment="" />
+    <list default="true" id="4816a14d-28d9-4149-b427-ae02848aa9b9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/doc/ics/InterviewICSGenerator.py" beforeDir="false" afterPath="$PROJECT_DIR$/doc/ics/InterviewICSGenerator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/ics/ics.log" beforeDir="false" afterPath="$PROJECT_DIR$/doc/ics/ics.log" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.updateScript">
+  <component name="RunManager" selected="Python.MakeInterview">
     <configuration name="DELETE" type="PythonConfigurationType" factoryName="Python">
       <module name="Scripts" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,6 +261,7 @@
       <workItem from="1566301219103" duration="693000" />
       <workItem from="1566301938281" duration="2228000" />
       <workItem from="1566348567294" duration="583000" />
+      <workItem from="1566552944184" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1565865204105</created>
@@ -346,7 +350,7 @@
     <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Scripts$MakeInterview.coverage" NAME="MakeInterview Coverage Results" MODIFIED="1566348509273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc/ics" />
+    <SUITE FILE_PATH="coverage/Scripts$MakeInterview.coverage" NAME="MakeInterview Coverage Results" MODIFIED="1566553601214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/doc/ics" />
     <SUITE FILE_PATH="coverage/Scripts$updateScript.coverage" NAME="updateScript Coverage Results" MODIFIED="1566349126494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="E:/Scripts" />
   </component>
 </project>

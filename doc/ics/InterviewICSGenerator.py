@@ -81,48 +81,54 @@ class InterviewICSGenerator:
         return text
 
     def generate_ics(self):
-        for interview in self.interviews:
-            slotOriginal = interview.get(RESERVED_SLOT)
-            slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", slotOriginal)
-            slotFormated = re.sub("((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
-                                  self._format_date, slotStripped)
-            slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>/?！￥…（）《》【】‘；”“’。，、？]", "", slotFormated)
-            timestamp = TimeNormalizer().parse(target=slotReserved,
-                                               timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
-                                                                    microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
-            parsedTime = eval(timestamp).get("timestamp")
+        interview = "not initialized"
+        timestamp = "not initialized"
+        try:
+            for interview in self.interviews:
+                slotOriginal = interview.get(RESERVED_SLOT)
+                slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", slotOriginal)
+                slotFormated = re.sub("((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
+                                      self._format_date, slotStripped)
+                slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>/?！￥…（）《》【】‘；”“’。，、？]", "", slotFormated)
+                timestamp = TimeNormalizer().parse(target=slotReserved,
+                                                   timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
+                                                                        microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
+                parsedTime = eval(timestamp).get("timestamp")
 
-            dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
-            dtend = dtstart + timedelta(hours=2)
-            summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
-            location = interview.pop(LOCATION)
-            location = location if location else "杭州"
-            interview[LOCATION.split("\n")[0]] = location
-            interview[MOBILE] = int(interview[MOBILE])
-            description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
-            description = re.sub("[\"{},]", "", description)
+                dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
+                dtend = dtstart + timedelta(hours=2)
+                summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
+                location = interview.pop(LOCATION)
+                location = location if location else "杭州"
+                interview[LOCATION.split("\n")[0]] = location
+                interview[MOBILE] = int(interview[MOBILE])
+                description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
+                description = re.sub("[\"{},]", "", description)
 
-            event = Event()
-            event.add("uid", "%s:%s:%s" % (dtstart.timestamp(), interview.get(MOBILE), uuid.uuid4()))
-            event.add("summary", summary)
-            event["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%SZ")
-            event["dtend"] = dtend.strftime("%Y%m%dT%H%M%SZ")
-            event.add("description", description)
-            event.add("location", location)
-            self.calendar.add_component(event)
-            logger.info("%s %s %s -> %s -> %s" % (
-            interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, slotReserved, dtstart))
-        with open(ROOT_DIR + '\\doc\\ics\\interview.ics', 'wb') as f:
-            f.write(self.calendar.to_ical())
-            f.close()
-
+                event = Event()
+                event.add("uid", "%s:%s:%s" % (dtstart.timestamp(), interview.get(MOBILE), uuid.uuid4()))
+                event.add("summary", summary)
+                event["dtstart"] = dtstart.strftime("%Y%m%dT%H%M%SZ")
+                event["dtend"] = dtend.strftime("%Y%m%dT%H%M%SZ")
+                event.add("description", description)
+                event.add("location", location)
+                self.calendar.add_component(event)
+                logger.info("%s %s %s -> %s -> %s" % (
+                interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, slotReserved, dtstart))
+            with open(ROOT_DIR + '\\doc\\ics\\interview.ics', 'wb') as f:
+                f.write(self.calendar.to_ical())
+                f.close()
+        except Exception as err:
+            import traceback
+            logger.error(traceback.print_exc(), "interview: ", interview, "timestamp: ", timestamp)
+        finally:
+            xw.apps.active.quit()
 
 if __name__ == "__main__":
     try:
         InterviewICSGenerator().generate_ics()
     except Exception as err:
         import traceback
-
         logger.error(traceback.print_exc())
     finally:
         xw.apps.active.quit()
