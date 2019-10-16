@@ -76,7 +76,13 @@ class InterviewICSGenerator:
             row += 1
 
     def _format_date(self, match):
-        text = re.sub("[./\-]", "月", match.group())
+        lent = len([word for word in re.split(r"[./\-年月]", match.group()) if word])
+        text = match.group()
+        if lent == 3:
+            text = re.sub("[./\-年]", "年", text, count=1)
+            text = re.sub("[./\-月]", "月", text, count=1)
+        elif lent == 2:
+            text = re.sub("[./\-月]", "月",text, count=1)
         if not re.search("[日号]$", text):
             text = text + "日"
         return text
@@ -89,9 +95,9 @@ class InterviewICSGenerator:
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
                 slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", slotOriginal)
-                slotFormated = re.sub("((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
+                slotFormated = re.sub("((20)?[1-2][0-9][./\-年])?((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
                                       self._format_date, slotStripped)
-                slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>/?！￥…（）《》【】‘；”“’。，、？]", " ", slotFormated)
+                slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>?！￥…（）/《》【】‘；”“’。，、？]", " ", slotFormated)
                 timestamp = TimeNormalizer().parse(target=slotReserved,
                                                    timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
                                                                         microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
