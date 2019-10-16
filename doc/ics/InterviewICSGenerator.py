@@ -121,7 +121,11 @@ class InterviewICSGenerator:
                 location = location if location else "杭州"
                 interview[LOCATION.split("\n")[0]] = location
                 interview[MOBILE] = int(interview[MOBILE])
-                interview[ADDEDDATE] = self._parse_time(interview.get(ADDEDDATE),interview)
+                if interview.get(ADDEDDATE):
+                    try:
+                        interview[ADDEDDATE] = self._parse_time(interview.get(ADDEDDATE),interview)
+                    except Exception as err:
+                        logger.error(str(err) + str(interview))
                 description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
                 description = re.sub("[\"{},]", "", description)
                 summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
