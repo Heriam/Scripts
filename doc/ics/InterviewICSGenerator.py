@@ -90,6 +90,20 @@ class InterviewICSGenerator:
             text = text + "日"
         return text
 
+    def _parse_time(self, timeSlot, interview):
+        slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", timeSlot)
+        slotFormated = re.sub(
+            "((20)?[1-2][0-9][./\-年])?((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
+            self._format_date, slotStripped)
+        slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>?！￥…（）/《》【】‘；”“’。，、？]", " ", slotFormated)
+        timestamp = TimeNormalizer().parse(target=slotReserved,
+                                           timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
+                                                                microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
+        err = eval(timestamp).get("error")
+        if err:
+            logger.error(err + " " + str(interview))
+            return None
+        return eval(timestamp).get("timestamp") or eval(timestamp).get("timespan")[0]
     def generate_ics(self):
         interview = "not initialized"
         timestamp = "not initialized"
@@ -97,18 +111,9 @@ class InterviewICSGenerator:
             for interview in self.interviews:
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
-                slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", slotOriginal)
-                slotFormated = re.sub("((20)?[1-2][0-9][./\-年])?((10|11|12)|(0?[1-9]))[./\-月](([12][0-9])|(30|31)|(0?[1-9]))[日号]?",
-                                      self._format_date, slotStripped)
-                slotReserved = re.sub("[`~!@#$%^&*()_+=|{}';,\[\].<>?！￥…（）/《》【】‘；”“’。，、？]", " ", slotFormated)
-                timestamp = TimeNormalizer().parse(target=slotReserved,
-                                                   timeBase=NOW.replace(month=1, day=1, hour=0, second=0,
-                                                                        microsecond=0).strftime("%Y-%m-%d %H:%M:%S"))
-                err = eval(timestamp).get("error")
-                if err:
-                    logger.error(err + " " + str(interview))
+                parsedTime = self._parse_time(slotOriginal, interview)
+                if not parsedTime:
                     continue
-                parsedTime = eval(timestamp).get("timestamp") or eval(timestamp).get("timespan")[0]
                 dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
                 dtend = dtstart + timedelta(hours=2)
                 #编辑基本信息
@@ -116,6 +121,7 @@ class InterviewICSGenerator:
                 location = location if location else "杭州"
                 interview[LOCATION.split("\n")[0]] = location
                 interview[MOBILE] = int(interview[MOBILE])
+                interview[ADDEDDATE] = self._parse_time(interview.get(ADDEDDATE),interview)
                 description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
                 description = re.sub("[\"{},]", "", description)
                 summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
@@ -128,8 +134,8 @@ class InterviewICSGenerator:
                 event.add("description", description)
                 event.add("location", location)
                 self.calendar.add_component(event)
-                logger.info("%s %s %s -> %s -> %s" % (
-                interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, slotReserved, dtstart))
+                logger.info("%s %s %s -> %s" % (
+                interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, dtstart))
             with open(ROOT_DIR + '\\doc\\ics\\interview.ics', 'wb') as f:
                 f.write(self.calendar.to_ical())
                 f.close()
