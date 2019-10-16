@@ -1,10 +1,13 @@
+import traceback
 from concurrent import futures
 import grpc
+import grpc_dialout_pb2
 import grpc_dialout_pb2_grpc as dialout
 import time
 import configparser
 import logging
 import json
+import datetime
 
 logging.basicConfig(
     level=logging.INFO,
@@ -40,36 +43,40 @@ class GRPCServer(dialout.GRPCDialoutServicer):
 
     def Dialout(self, request_iterator, context):
         for request in request_iterator:
-            jsonData = json.loads("{%s} " % request.jsonData)
-            sensorPath = request.sensorPath
-            deviceMsg = request.deviceMsg
-            producerName = deviceMsg.producerName
-            deviceName = deviceMsg.deviceName
-            deviceModel = deviceMsg.deviceModel
-            host_ip = context.peer().split(":")[1]
-            topic = TOPIC_PREFIX + sensorPath.split("/")[-1].lower()
-            timestamp = int(jsonData["Notification"]["Timestamp"])
-            metadata = {
-                TIMESTAMP: timestamp,
-                SOURCE: GRPC,
-                IP: host_ip,
-                DATA: (
-                    '{ "' + JSON_DATA
-                    + '": {%s}, "' % request.jsonData
-                    + SENSOR_PATH
-                    + '": "%s", "' % sensorPath
-                    + DEVICE_NAME
-                    + '": "%s", "' % deviceName
-                    + DEVICE_MODEL
-                    + '": "%s", "' % deviceModel
-                    + PRODUCER_NAME
-                    + '": "%s"}' % producerName
-                ).encode()
-            }
-            # if self.config[KAFKA].get(ENABLE):
-            #     self.kafka.publish(metadata, topic)
-            print(request)
-
+            try:
+                print("[%s] %s" % (datetime.datetime.now(), request))
+                # jsonData = json.loads(request.jsonData)
+                # sensorPath = request.sensorPath
+                # deviceMsg = request.deviceMsg
+                # producerName = deviceMsg.producerName
+                # deviceName = deviceMsg.deviceName
+                # deviceModel = deviceMsg.deviceModel
+                # host_ip = context.peer().split(":")[1]
+                # topic = TOPIC_PREFIX + sensorPath.split("/")[-1].lower()
+                # timestamp = int(jsonData["Notification"]["Timestamp"])
+                # metadata = {
+                #     TIMESTAMP: timestamp,
+                #     SOURCE: GRPC,
+                #     IP: host_ip,
+                #     DATA: (
+                #         '{ "' + JSON_DATA
+                #         + '": {%s}, "' % request.jsonData
+                #         + SENSOR_PATH
+                #         + '": "%s", "' % sensorPath
+                #         + DEVICE_NAME
+                #         + '": "%s", "' % deviceName
+                #         + DEVICE_MODEL
+                #         + '": "%s", "' % deviceModel
+                #         + PRODUCER_NAME
+                #         + '": "%s"}' % producerName
+                #     ).encode()
+                # }
+                # if self.config[KAFKA].get(ENABLE):
+                #     self.kafka.publish(metadata, topic)
+            except Exception as err:
+                print(request)
+                traceback.print_exc()
+        return grpc_dialout_pb2.DialoutResponse(response="")
 
 def serve(config_path):
     config = configparser.ConfigParser()
