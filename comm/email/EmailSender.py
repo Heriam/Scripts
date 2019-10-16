@@ -1,26 +1,23 @@
-from exchangelib import Account, Credentials
-from exchangelib.folders import Message, Mailbox
+from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM
+from exchangelib.protocol import BaseProtocol, NoVerifyHTTPAdapter
 
-email = 'john@example.com'
-password = 'topsecret'
-
-a = Account(email, credentials=Credentials(email, password), autodiscover=True)
-
-# If you don't want a local copy
-m = Message(
-    account=a,
-    subject='Daily motivation',
-    body='All bodies are beautiful',
-    to_recipients=[Mailbox(email_address='erik@cederstrand.dk')]
-)
-m.send()
-
-# Or, if you want a copy in the 'Sent' folder
-m = Message(
-    account=a,
-    folder=a.sent,
-    subject='Daily motivation',
-    body='All bodies are beautiful',
-    to_recipients=[Mailbox(email_address='erik@cederstrand.dk')]
-)
-m.send_and_save()
+def sendEmail(to, subject, body):
+    BaseProtocol.HTTP_ADAPTER_CLS = NoVerifyHTTPAdapter
+    creds = Credentials(
+        username='j16492',
+        password='Jh123456'
+    )
+    config = Configuration(server='rndcas.h3c.com', credentials=creds, auth_type=NTLM)
+    account = Account(
+        primary_smtp_address='jiang.haoa@h3c.com',
+        config=config,
+        autodiscover=False,
+        access_type=DELEGATE
+    )
+    m = Message(
+        account=account,
+        subject=subject,
+        body=HTMLBody(body),
+        to_recipients = [Mailbox(email_address=to)]
+    )
+    m.send_and_save()

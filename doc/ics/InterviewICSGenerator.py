@@ -33,6 +33,9 @@ EMAIL = "EMAIL"
 RESUME = "简历来源"
 RESERVED_SLOT = "预约面试时间"
 LOCATION = "预约面试地点\n北京/杭州/合肥"
+ADDEDDATE = "记录时间"
+ADDEDBY = "记录人"
+INVITEMAIL = "邀请邮件"
 
 logger = logging.getLogger('ICS')
 logger.setLevel(logging.DEBUG)
