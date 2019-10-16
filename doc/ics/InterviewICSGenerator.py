@@ -14,7 +14,7 @@ COLON = ":"
 TIMEZONE = pytz.timezone("Asia/Shanghai")
 NOW = datetime.now(tz=TIMEZONE)
 COLUMN_START = "A"
-COLUMN_END = "M"
+COLUMN_END = "P"
 COLUMN_NAME_ROW = 1
 KEY_COLUMN = "C"
 FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
