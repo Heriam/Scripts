@@ -14,7 +14,7 @@ fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\ics.log', encoding='ut
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
-
+logging.info("~~~")
 import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
