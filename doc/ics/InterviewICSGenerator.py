@@ -100,7 +100,7 @@ class InterviewICSGenerator:
         try:
             emailThreads = []
             for interview in self.interviews:
-                t = threading.Thread(target=sendInvitation, args=(interview))
+                t = threading.Thread(target=sendInvitation, args=(interview,))
                 t.setDaemon(True)
                 t.start()
                 emailThreads.append(t)
