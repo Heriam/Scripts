@@ -3,6 +3,7 @@ ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 os.chdir(ROOT_DIR+'\\doc\\ics')
 sys.path.append(ROOT_DIR)
 import logging
+logging.basicConfig(filename='email.log', level=logging.DEBUG)
 logging.info("~~~")
 from emails.EmailSender import *
 logging.info("~~~")
