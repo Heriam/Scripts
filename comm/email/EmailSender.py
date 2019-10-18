@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM, FileAttachment
 from exchangelib.protocol import BaseProtocol, NoVerifyHTTPAdapter
 

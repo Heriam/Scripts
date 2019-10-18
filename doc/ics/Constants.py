@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 DUPLICATION_CHECK = "匹配"
 DEPARTMENT = "应聘部门"
 MOBILE = "手机"

@@ -20,9 +20,7 @@ from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import re, json, uuid, pytz
 from npl.TimeNormalizer import TimeNormalizer
-logger.info("~~~")
 from doc.ics.InviteEmail import *
-logger.info("~~~")
 
 EXCEL_DIR = "E:\\OutlookAttachments\\"
 COLON = ":"
