@@ -1,5 +1,5 @@
 import logging, os
-logging.basicConfig(filename='email.log', level=logging.DEBUG)
+logging.basicConfig(filename='email.log', level=logging.INFO)
 from emails.EmailSender import *
 from jinja2 import Environment, PackageLoader
 from .Constants import *
@@ -13,7 +13,7 @@ def sendInvitation(interview):
         mailedList = f.read()
         to = interview.get(EMAIL)
         bcc = "zhou.huan@h3c.com"
-        if "待发" == interview.get(INVITEMAIL) and to not in mailedList:
+        if "脚本" == interview.get(INVITEMAIL) and to not in mailedList:
             subject = "新华三技术有限公司社招面试邀请函"
             env = Environment(loader=PackageLoader("doc.ics"))
             template = env.get_template("index.htm")
