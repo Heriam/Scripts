@@ -1,6 +1,6 @@
 import sys
 import traceback
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
+ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts\\doc\\ics'
 sys.path.append(ROOT_DIR)
 import logging
 logger = logging.getLogger('ICS')
