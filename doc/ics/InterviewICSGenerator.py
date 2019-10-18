@@ -19,7 +19,9 @@ import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import re, json, uuid, pytz
+logging.info("~~~")
 from npl.TimeNormalizer import TimeNormalizer
+logging.info("~~~")
 from doc.ics.InviteEmail import *
 
 EXCEL_DIR = "E:\\OutlookAttachments\\"
