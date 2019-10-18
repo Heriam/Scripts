@@ -34,7 +34,8 @@ try:
     DEPARTMENT_SEERANALYZER = "智能引擎"
 except Exception as err:
     logger.error(str(err) + str(traceback.print_exc() or " "))
-    
+    sys.exit(0)
+
 
 class InterviewICSGenerator:
     sheet = None
