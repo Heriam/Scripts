@@ -1,6 +1,6 @@
 import sys
 import traceback
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts\\doc\\ics'
+ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 sys.path.append(ROOT_DIR)
 import logging
 logger = logging.getLogger('ICS')
@@ -13,28 +13,24 @@ fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\ics.log', encoding='ut
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
-try:
-    import xlwings as xw
-    from icalendar import Calendar, Event
-    from datetime import datetime, timedelta
-    import os, re, json, uuid, pytz
-    from npl.TimeNormalizer import TimeNormalizer
-    from doc.ics.Constants import *
-    from doc.ics.InviteEmail import *
 
-    EXCEL_DIR = "E:\\OutlookAttachments\\"
-    COLON = ":"
-    TIMEZONE = pytz.timezone("Asia/Shanghai")
-    NOW = datetime.datetime.now(tz=TIMEZONE)
-    COLUMN_START = "A"
-    COLUMN_END = "P"
-    COLUMN_NAME_ROW = 1
-    KEY_COLUMN = "C"
-    FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
-    DEPARTMENT_SEERANALYZER = "智能引擎"
-except Exception as err:
-    logger.error(str(err) + str(traceback.print_exc() or " "))
-    sys.exit(0)
+import xlwings as xw
+from icalendar import Calendar, Event
+from datetime import datetime, timedelta
+import os, re, json, uuid, pytz
+from npl.TimeNormalizer import TimeNormalizer
+from doc.ics.InviteEmail import *
+
+EXCEL_DIR = "E:\\OutlookAttachments\\"
+COLON = ":"
+TIMEZONE = pytz.timezone("Asia/Shanghai")
+NOW = datetime.datetime.now(tz=TIMEZONE)
+COLUMN_START = "A"
+COLUMN_END = "P"
+COLUMN_NAME_ROW = 1
+KEY_COLUMN = "C"
+FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
+DEPARTMENT_SEERANALYZER = "智能引擎"
 
 
 class InterviewICSGenerator:
@@ -81,7 +77,7 @@ class InterviewICSGenerator:
         return text
 
     def _parse_time(self, timeSlot, interview):
-        if isinstance(timeSlot, datetime):
+        if isinstance(timeSlot, datetime.datetime):
             return timeSlot.strftime("%Y-%m-%d %H:%M:%S")
         slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", timeSlot)
         slotFormated = re.sub(
@@ -107,7 +103,7 @@ class InterviewICSGenerator:
                 parsedTime = self._parse_time(slotOriginal, interview)
                 if not parsedTime:
                     continue
-                dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
+                dtstart = TIMEZONE.localize(datetime.datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
                 dtend = dtstart + timedelta(hours=2)
                 #编辑基本信息
                 location = interview.pop(LOCATION)

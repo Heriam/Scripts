@@ -1,8 +1,5 @@
 import sys
 
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts\\doc\\ics'
-sys.path.append(ROOT_DIR)
-from comm.email.EmailSender import sendEmail, SENDER
 from jinja2 import Environment, PackageLoader
 from doc.ics.Constants import *
 import datetime
