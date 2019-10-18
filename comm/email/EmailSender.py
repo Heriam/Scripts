@@ -3,6 +3,7 @@ from exchangelib.protocol import BaseProtocol, NoVerifyHTTPAdapter
 
 SENDER = 'jiang.haoa@h3c.com'
 
+
 def sendEmail(to, bcc, subject, body):
     BaseProtocol.HTTP_ADAPTER_CLS = NoVerifyHTTPAdapter
     creds = Credentials(

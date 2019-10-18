@@ -101,7 +101,7 @@ class InterviewICSGenerator:
         timestamp = "not initialized"
         try:
             for interview in self.interviews:
-                Invitor().sendInvitation(interview)
+                sendInvitation(interview)
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
                 parsedTime = self._parse_time(slotOriginal, interview)
