@@ -1,10 +1,8 @@
-import sys
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-sys.path.append(ROOT_DIR)
 from comm.email.EmailSender import *
 from jinja2 import Environment, PackageLoader
 from doc.ics.Constants import *
 import datetime
+
 
 def sendInvitation(interview):
     with open("mailedlist", "r+") as f:
