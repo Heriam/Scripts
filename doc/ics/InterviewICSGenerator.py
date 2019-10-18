@@ -18,11 +18,11 @@ try:
     from icalendar import Calendar, Event
     from datetime import datetime, timedelta
     import os, re, json, uuid, pytz
-    print("~~~~~1")
+    logger.info("~~~~~1")
     from npl.TimeNormalizer import TimeNormalizer
-    print("~~~~~2")
+    logger.info("~~~~~2")
     from doc.ics.Constants import *
-    print("~~~~~3")
+    logger.info("~~~~~3")
     from doc.ics.InviteEmail import sendInvitation
 
     EXCEL_DIR = "E:\\OutlookAttachments\\"
