@@ -25,6 +25,7 @@ def sendInvitation(interview):
         with open("mailedlist", "r+") as f:
             mailedList = f.read()
             to = interview.get(EMAIL)
+            candidate_name = interview.get(NAME)
             bcc = "zhou.huan@h3c.com"
             if "脚本" == interview.get(INVITEMAIL) and to not in mailedList:
                 subject = "新华三技术有限公司社招面试邀请函"
@@ -48,7 +49,7 @@ def sendInvitation(interview):
                 body = template.render(
                     position_name=interview.get(TARGETED_POSITION),
                     department_name=interview.get(DEPARTMENT),
-                    candidate_name=interview.get(NAME),
+                    candidate_name=candidate_name,
                     candiddate_title=candiddate_title,
                     interview_time=interview.get(RESERVED_SLOT),
                     sender_email=SENDER,
@@ -57,5 +58,7 @@ def sendInvitation(interview):
                     letter_date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 )
                 sendEmail(to, bcc, subject, body)
-                f.write(interview.get(NAME) + ' ' + to + '\n')
-                logger.info("邀请邮件发送成功：" + to)
+                f.write(candidate_name + ' ' + to + '\n')
+                logger.info(" √ 发送%s:%s" % (candidate_name,to))
+            else:
+                logger.info(" o 跳过%s:%s" % (candidate_name,to))
