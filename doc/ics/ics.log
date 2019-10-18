@@ -1,3 +1,1 @@
-[2019-10-18 19:36:41,938][INFO] ~~~~~1
-[2019-10-18 19:36:41,967][INFO] ~~~~~2
-[2019-10-18 19:36:41,969][ERROR] No module named '__main__.Constants'; '__main__' is not a package 
+[2019-10-18 19:37:36,914][ERROR] No module named '__main__.InviteEmail'; '__main__' is not a package 
