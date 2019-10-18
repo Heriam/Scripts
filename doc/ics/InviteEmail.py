@@ -59,6 +59,6 @@ def sendInvitation(interview):
                 )
                 sendEmail(to, bcc, subject, body)
                 f.write(candidate_name + ' ' + to + '\n')
-                logger.info(" √ 发送%s:%s" % (candidate_name,to))
+                logger.info(" √ 发送 %s:%s" % (candidate_name,to))
             else:
-                logger.info(" o 跳过%s:%s" % (candidate_name,to))
+                logger.info(" o 跳过 %s:%s" % (candidate_name,to))
