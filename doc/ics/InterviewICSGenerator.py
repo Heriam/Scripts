@@ -1,7 +1,7 @@
-import sys
+import sys,os
 import traceback
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-sys.path.append(ROOT_DIR)
+ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts\\doc\\ics'
+os.chdir(ROOT_DIR)
 import logging
 logger = logging.getLogger('ICS')
 logger.setLevel(logging.DEBUG)
@@ -17,7 +17,7 @@ logger.addHandler(fh)
 import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
-import os, re, json, uuid, pytz
+import re, json, uuid, pytz
 from npl.TimeNormalizer import TimeNormalizer
 from doc.ics.InviteEmail import *
 
