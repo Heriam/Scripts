@@ -1,4 +1,5 @@
 import sys
+import traceback
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 sys.path.append(ROOT_DIR)
 import logging
@@ -12,28 +13,28 @@ fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\ics.log', encoding='ut
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
-import xlwings as xw
-from icalendar import Calendar, Event
-from datetime import datetime, timedelta
-import os, re, json, uuid, pytz
-import traceback
-from npl.TimeNormalizer import TimeNormalizer
-from doc.ics.Constants import *
-from doc.ics.InviteEmail import sendInvitation
+try:
+    import xlwings as xw
+    from icalendar import Calendar, Event
+    from datetime import datetime, timedelta
+    import os, re, json, uuid, pytz
+    from npl.TimeNormalizer import TimeNormalizer
+    from doc.ics.Constants import *
+    from doc.ics.InviteEmail import sendInvitation
 
-EXCEL_DIR = "E:\\OutlookAttachments\\"
-COLON = ":"
-TIMEZONE = pytz.timezone("Asia/Shanghai")
-NOW = datetime.now(tz=TIMEZONE)
-COLUMN_START = "A"
-COLUMN_END = "P"
-COLUMN_NAME_ROW = 1
-KEY_COLUMN = "C"
-FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
-DEPARTMENT_SEERANALYZER = "智能引擎"
-
-
-
+    EXCEL_DIR = "E:\\OutlookAttachments\\"
+    COLON = ":"
+    TIMEZONE = pytz.timezone("Asia/Shanghai")
+    NOW = datetime.now(tz=TIMEZONE)
+    COLUMN_START = "A"
+    COLUMN_END = "P"
+    COLUMN_NAME_ROW = 1
+    KEY_COLUMN = "C"
+    FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
+    DEPARTMENT_SEERANALYZER = "智能引擎"
+except Exception as err:
+    logger.error(str(err) + str(traceback.print_exc() or " "))
+    
 
 class InterviewICSGenerator:
     sheet = None
@@ -148,7 +149,6 @@ if __name__ == "__main__":
     try:
         InterviewICSGenerator().generate_ics()
     except Exception as err:
-        import traceback
         logger.error(str(err) + str(traceback.print_exc() or " "))
     finally:
         if xw.apps.active:
