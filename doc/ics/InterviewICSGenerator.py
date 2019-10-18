@@ -1,13 +1,23 @@
+import sys
+ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
+sys.path.append(ROOT_DIR)
+import logging
+logger = logging.getLogger('ICS')
+logger.setLevel(logging.DEBUG)
+while logger.hasHandlers():
+    for i in logger.handlers:
+        logger.removeHandler(i)
+formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
+fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
+fh.setLevel(logging.DEBUG)
+fh.setFormatter(formatter)
+logger.addHandler(fh)
 import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
-import os, sys, re, json, uuid, pytz
+import os, re, json, uuid, pytz
 import traceback
-
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
-import logging
 from doc.ics.Constants import *
 from doc.ics.InviteEmail import sendInvitation
 
@@ -22,16 +32,7 @@ KEY_COLUMN = "C"
 FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
 DEPARTMENT_SEERANALYZER = "智能引擎"
 
-logger = logging.getLogger('ICS')
-logger.setLevel(logging.DEBUG)
-while logger.hasHandlers():
-    for i in logger.handlers:
-        logger.removeHandler(i)
-formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
-fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\ics.log', encoding='utf-8', mode='w')
-fh.setLevel(logging.DEBUG)
-fh.setFormatter(formatter)
-logger.addHandler(fh)
+
 
 
 class InterviewICSGenerator:
