@@ -1,16 +1,8 @@
-import os,sys
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-os.chdir(ROOT_DIR+'\\doc\\ics')
-sys.path.append(ROOT_DIR)
 import logging
 logging.basicConfig(filename='email.log', level=logging.DEBUG)
-logging.info("~~~")
 from emails.EmailSender import *
-logging.info("~~~")
 from jinja2 import Environment, PackageLoader
-logging.info("~~~")
 from .Constants import *
-logging.info("~~~")
 import datetime
 
 
@@ -51,3 +43,4 @@ def sendInvitation(interview):
             )
             sendEmail(to, bcc, subject, body)
             f.write(interview.get(NAME) + ' ' + to + '\n')
+            logging.info("sending invitation email to " + to)
