@@ -1,7 +1,6 @@
 import sys
 import traceback
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-sys.path.append(ROOT_DIR)
 import logging
 logger = logging.getLogger('ICS')
 logger.setLevel(logging.DEBUG)
@@ -14,19 +13,11 @@ fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 try:
-    logger.info("1")
+    sys.path.append(ROOT_DIR)
     from comm.email.EmailSender import *
-
-    logger.info("2")
     from jinja2 import Environment, PackageLoader
-
-    logger.info("3")
     from doc.ics.Constants import *
-
-    logger.info("4")
     import datetime
-
-    logger.info("5")
 except Exception as err:
     logger.error(str(err) + str(traceback.print_exc() or " "))
     sys.exit(0)
