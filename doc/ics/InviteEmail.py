@@ -2,9 +2,14 @@ import os,sys
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 os.chdir(ROOT_DIR+'\\doc\\ics')
 sys.path.append(ROOT_DIR)
+import logging
+logging.info("~~~")
 from emails.EmailSender import *
+logging.info("~~~")
 from jinja2 import Environment, PackageLoader
+logging.info("~~~")
 from .Constants import *
+logging.info("~~~")
 import datetime
 
 
