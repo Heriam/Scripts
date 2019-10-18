@@ -12,7 +12,6 @@ def sendInvitation(interview):
         to = interview.get(EMAIL)
         bcc = "zhou.huan@h3c.com"
         if "待发" == interview.get(INVITEMAIL) and to not in mailedList:
-            print(to, mailedList)
             subject = "新华三技术有限公司社招面试邀请函"
             env = Environment(loader=PackageLoader("doc.ics"))
             template = env.get_template("index.htm")

@@ -3,13 +3,13 @@ from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import os, sys, re, json, uuid, pytz
 import traceback
-from Constants import *
-from InviteEmail import sendInvitation
 
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
 import logging
+from doc.ics.Constants import *
+from doc.ics.InviteEmail import sendInvitation
 
 EXCEL_DIR = "E:\\OutlookAttachments\\"
 COLON = ":"
