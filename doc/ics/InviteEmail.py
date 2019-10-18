@@ -1,11 +1,32 @@
-import os, sys
-ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
-os.chdir(ROOT_DIR+'\\doc\\ics')
-sys.path.append(ROOT_DIR)
-from comm.email.EmailSender import sendEmail, SENDER
 from jinja2 import Environment, PackageLoader
 from doc.ics.Constants import *
 import datetime
+from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM, FileAttachment
+from exchangelib.protocol import BaseProtocol, NoVerifyHTTPAdapter
+
+SENDER = 'jiang.haoa@h3c.com'
+
+def sendEmail(to, bcc, subject, body):
+    BaseProtocol.HTTP_ADAPTER_CLS = NoVerifyHTTPAdapter
+    creds = Credentials(
+        username='j16492',
+        password='Jh123456'
+    )
+    config = Configuration(server='rndcas.h3c.com', credentials=creds, auth_type=NTLM)
+    account = Account(
+        primary_smtp_address=SENDER,
+        config=config,
+        autodiscover=False,
+        access_type=DELEGATE
+    )
+    m = Message(
+        account=account,
+        subject=subject,
+        body=HTMLBody(body),
+        to_recipients = [Mailbox(email_address=to)],
+        bcc_recipients = [Mailbox(email_address=bcc)]
+    )
+    m.send_and_save()
 
 
 def sendInvitation(interview):
