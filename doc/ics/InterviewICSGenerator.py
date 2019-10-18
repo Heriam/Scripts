@@ -13,6 +13,7 @@ fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
+import threading
 import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
@@ -97,8 +98,12 @@ class InterviewICSGenerator:
         interview = "not initialized"
         timestamp = "not initialized"
         try:
+            emailThreads = []
             for interview in self.interviews:
-                sendInvitation(interview)
+                t = threading.Thread(target=sendInvitation, args=(interview))
+                t.setDaemon(True)
+                t.start()
+                emailThreads.append(t)
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
                 parsedTime = self._parse_time(slotOriginal, interview)
@@ -130,6 +135,8 @@ class InterviewICSGenerator:
                 self.calendar.add_component(event)
                 logger.info("%s %s %s -> %s" % (
                 interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, dtstart))
+            for t in emailThreads:
+                t.join()
             with open(ROOT_DIR + '\\doc\\ics\\interview.ics', 'wb') as f:
                 f.write(self.calendar.to_ical())
                 f.close()
