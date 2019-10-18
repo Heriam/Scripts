@@ -3,6 +3,8 @@ from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import os, sys, re, json, uuid, pytz
 import traceback
+from Constants import *
+from InviteEmail import sendInvitation
 
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 sys.path.append(ROOT_DIR)
@@ -19,23 +21,6 @@ COLUMN_NAME_ROW = 1
 KEY_COLUMN = "C"
 FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
 DEPARTMENT_SEERANALYZER = "智能引擎"
-
-DUPLICATION_CHECK = "匹配"
-DEPARTMENT = "应聘部门"
-MOBILE = "手机"
-NAME = "姓名"
-SEX = "性别"
-DEGREE = "学历"
-MAJOR = "专业"
-UNIVERSITY = "学校"
-TARGETED_POSITION = "应聘职位"
-EMAIL = "EMAIL"
-RESUME = "简历来源"
-RESERVED_SLOT = "预约面试时间"
-LOCATION = "预约面试地点\n北京/杭州/合肥"
-ADDEDDATE = "记录时间"
-ADDEDBY = "记录人"
-INVITEMAIL = "邀请邮件"
 
 logger = logging.getLogger('ICS')
 logger.setLevel(logging.DEBUG)
@@ -111,6 +96,7 @@ class InterviewICSGenerator:
         timestamp = "not initialized"
         try:
             for interview in self.interviews:
+                sendInvitation(interview)
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
                 parsedTime = self._parse_time(slotOriginal, interview)

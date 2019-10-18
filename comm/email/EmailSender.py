@@ -1,7 +1,9 @@
-from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM
+from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM, FileAttachment
 from exchangelib.protocol import BaseProtocol, NoVerifyHTTPAdapter
 
-def sendEmail(to, subject, body):
+SENDER = 'jiang.haoa@h3c.com'
+
+def sendEmail(to, bcc, subject, body):
     BaseProtocol.HTTP_ADAPTER_CLS = NoVerifyHTTPAdapter
     creds = Credentials(
         username='j16492',
@@ -9,7 +11,7 @@ def sendEmail(to, subject, body):
     )
     config = Configuration(server='rndcas.h3c.com', credentials=creds, auth_type=NTLM)
     account = Account(
-        primary_smtp_address='jiang.haoa@h3c.com',
+        primary_smtp_address=SENDER,
         config=config,
         autodiscover=False,
         access_type=DELEGATE
@@ -18,6 +20,7 @@ def sendEmail(to, subject, body):
         account=account,
         subject=subject,
         body=HTMLBody(body),
-        to_recipients = [Mailbox(email_address=to)]
+        to_recipients = [Mailbox(email_address=to)],
+        bcc_recipients = [Mailbox(email_address=bcc)]
     )
     m.send_and_save()
