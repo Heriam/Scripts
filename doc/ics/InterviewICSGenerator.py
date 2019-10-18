@@ -20,12 +20,12 @@ try:
     import os, re, json, uuid, pytz
     from npl.TimeNormalizer import TimeNormalizer
     from doc.ics.Constants import *
-    from .InviteEmail import sendInvitation
+    from doc.ics.InviteEmail import *
 
     EXCEL_DIR = "E:\\OutlookAttachments\\"
     COLON = ":"
     TIMEZONE = pytz.timezone("Asia/Shanghai")
-    NOW = datetime.now(tz=TIMEZONE)
+    NOW = datetime.datetime.now(tz=TIMEZONE)
     COLUMN_START = "A"
     COLUMN_END = "P"
     COLUMN_NAME_ROW = 1
@@ -101,7 +101,7 @@ class InterviewICSGenerator:
         timestamp = "not initialized"
         try:
             for interview in self.interviews:
-                sendInvitation(interview)
+                Invitor().sendInvitation(interview)
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
                 parsedTime = self._parse_time(slotOriginal, interview)
