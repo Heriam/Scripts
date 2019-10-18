@@ -2,7 +2,7 @@ import os,sys
 ROOT_DIR = 'C:\\Users\\j16492\\PycharmProjects\\Scripts'
 os.chdir(ROOT_DIR+'\\doc\\ics')
 sys.path.append(ROOT_DIR)
-from comm.email.EmailSender import sendEmail, SENDER
+from emails.EmailSender import *
 from jinja2 import Environment, PackageLoader
 from .Constants import *
 import datetime
