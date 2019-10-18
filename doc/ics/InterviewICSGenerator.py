@@ -17,13 +17,15 @@ import xlwings as xw
 from icalendar import Calendar, Event
 from datetime import datetime, timedelta
 import re, json, uuid, pytz
+sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
-from doc.ics.InviteEmail import *
+from doc.ics.InviteEmail import sendInvitation
+from doc.ics.Constants import *
 
 EXCEL_DIR = "E:\\OutlookAttachments\\"
 COLON = ":"
 TIMEZONE = pytz.timezone("Asia/Shanghai")
-NOW = datetime.datetime.now(tz=TIMEZONE)
+NOW = datetime.now(tz=TIMEZONE)
 COLUMN_START = "A"
 COLUMN_END = "P"
 COLUMN_NAME_ROW = 1
@@ -76,7 +78,7 @@ class InterviewICSGenerator:
         return text
 
     def _parse_time(self, timeSlot, interview):
-        if isinstance(timeSlot, datetime.datetime):
+        if isinstance(timeSlot, datetime):
             return timeSlot.strftime("%Y-%m-%d %H:%M:%S")
         slotStripped = re.sub("[这本]?下*个?(星期|周|礼拜)[一二三四五六日]", "", timeSlot)
         slotFormated = re.sub(
@@ -102,7 +104,7 @@ class InterviewICSGenerator:
                 parsedTime = self._parse_time(slotOriginal, interview)
                 if not parsedTime:
                     continue
-                dtstart = TIMEZONE.localize(datetime.datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
+                dtstart = TIMEZONE.localize(datetime.strptime(parsedTime, "%Y-%m-%d %H:%M:%S")).astimezone(tz=pytz.utc)
                 dtend = dtstart + timedelta(hours=2)
                 #编辑基本信息
                 location = interview.pop(LOCATION)
