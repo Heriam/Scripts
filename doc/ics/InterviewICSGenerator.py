@@ -21,18 +21,13 @@ try:
     logger.info("~~~~~1")
     from npl.TimeNormalizer import TimeNormalizer
     logger.info("~~~~~2")
-    from doc.ics.Constants import *
-    logger.info("~~~~~3")
-    from doc.ics.InviteEmail import sendInvitation
-    logger.info("~~~~~4")
+    from .Constants import *
+    from .InviteEmail import sendInvitation
 
     EXCEL_DIR = "E:\\OutlookAttachments\\"
     COLON = ":"
-    logger.info("~~~~~5")
     TIMEZONE = pytz.timezone("Asia/Shanghai")
-    logger.info("~~~~~6")
     NOW = datetime.now(tz=TIMEZONE)
-    logger.info("~~~~~7")
     COLUMN_START = "A"
     COLUMN_END = "P"
     COLUMN_NAME_ROW = 1
