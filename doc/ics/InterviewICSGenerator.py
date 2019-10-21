@@ -101,10 +101,6 @@ class InterviewICSGenerator:
         try:
             emailThreads = []
             for interview in self.interviews:
-                t = threading.Thread(target=self.invitor.sendInvitation, args=(interview,))
-                t.setDaemon(True)
-                t.start()
-                emailThreads.append(t)
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
                 parsedTime = self._parse_time(slotOriginal, interview)
@@ -125,6 +121,10 @@ class InterviewICSGenerator:
                 description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
                 description = re.sub("[\"{},]", "", description)
                 summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
+                t = threading.Thread(target=self.invitor.sendInvitation, args=(interview, description))
+                t.setDaemon(True)
+                t.start()
+                emailThreads.append(t)
                 #新建事件
                 event = Event()
                 event.add("uid", "%s:%s:%s" % (dtstart.timestamp(), interview.get(MOBILE), uuid.uuid4()))

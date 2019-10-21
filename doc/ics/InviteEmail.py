@@ -13,7 +13,7 @@ logger.addHandler(fh)
 from emails.EmailSender import *
 from jinja2 import Environment, PackageLoader
 from .Constants import *
-import datetime
+import datetime, re
 import threading
 
 os.chdir(ROOT_DIR+'\\doc\\ics')
@@ -24,7 +24,7 @@ class Invitor:
     sent = []
     failed = []
 
-    def sendInvitation(self, interview):
+    def sendInvitation(self, interview, description):
         with self.lock:
             with open("mailedlist", "r+") as f:
                 mailedList = f.read()
@@ -47,6 +47,9 @@ class Invitor:
                         CONTACT)
                     campus_in = INDIVIDUAL_CAMPUS_IN
                     after_campus_in = INDIVIDUAL_AFTER_CAMPUS_IN
+                    interview_time = interview.get(RESERVED_SLOT)
+                    description = re.sub("\n", "%0A", description)
+                    confirm_attr = 'href="https://sc.ftqq.com/SCU60375T9e089b4bc2cbe074868305400c9bc6115d78d7ab81ce2.send?text=%s确认%s面试&desp=%s"' % (candidate_name,interview_time,description)
                     if "专场" in interview.get(RESERVED_SLOT):
                         campus_in = SESSION_CAMPUS_IN
                         after_campus_in = SESSION_AFTER_CAMPUS_IN
@@ -55,8 +58,8 @@ class Invitor:
                         department_name=interview.get(DEPARTMENT),
                         candidate_name=candidate_name,
                         candiddate_title=candiddate_title,
-                        interview_time=interview.get(RESERVED_SLOT),
-                        sender_email=SENDER,
+                        interview_time=interview_time,
+                        confirm_attr=confirm_attr,
                         campus_in=campus_in,
                         after_campus_in=after_campus_in,
                         letter_date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
