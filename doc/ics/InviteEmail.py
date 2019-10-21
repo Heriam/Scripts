@@ -31,7 +31,7 @@ class Invitor:
                 to = interview.get(EMAIL)
                 candidate_name = interview.get(NAME)
                 bcc = "zhou.huan@h3c.com"
-                if "脚本" == interview.get(INVITEMAIL) and to not in mailedList:
+                if "Y" == interview.get(INVITEMAIL) and to not in mailedList:
                     subject = "新华三技术有限公司社招面试邀请函"
                     env = Environment(loader=PackageLoader("doc.ics"))
                     template = env.get_template("index.htm")
