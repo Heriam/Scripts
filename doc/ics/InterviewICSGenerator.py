@@ -160,7 +160,7 @@ class InterviewICSGenerator:
                     if "脚本" == interview.get(INVITEMAIL) and to not in mailedList:
                         self.invitor.getFailed().append(candidate_name + ' ' + to)
         logger.info("Mail succeed: %s, failed: %s" % (len(self.invitor.getSent()), len(self.invitor.getFailed())))
-        if not self.invitor.getFailed():
+        if self.invitor.getFailed():
             logger.info("Failed mails:")
             for i in self.invitor.getFailed():
                 logger.info(i)
