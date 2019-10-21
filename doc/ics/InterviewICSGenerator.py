@@ -20,7 +20,7 @@ from datetime import datetime, timedelta
 import re, json, uuid, pytz
 sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
-from doc.ics.InviteEmail import sendInvitation
+from doc.ics.InviteEmail import Invitor
 from doc.ics.Constants import *
 
 EXCEL_DIR = "E:\\OutlookAttachments\\"
@@ -40,6 +40,7 @@ class InterviewICSGenerator:
     columnNames = []
     interviews = []
     calendar = Calendar()
+    invitor = Invitor()
 
     def __init__(self):
         logger.info("new instance")
@@ -100,7 +101,7 @@ class InterviewICSGenerator:
         try:
             emailThreads = []
             for interview in self.interviews:
-                t = threading.Thread(target=sendInvitation, args=(interview,))
+                t = threading.Thread(target=self.invitor.sendInvitation, args=(interview,))
                 t.setDaemon(True)
                 t.start()
                 emailThreads.append(t)
@@ -149,10 +150,27 @@ class InterviewICSGenerator:
             if xw.apps.active:
                 xw.apps.active.quit()
 
+    def report_result(self):
+        for interview in self.interviews:
+            to = interview.get(EMAIL)
+            candidate_name = interview.get(NAME)
+            with self.invitor.getLock():
+                with open("mailedlist", "r") as f:
+                    mailedList = f.read()
+                    if "脚本" == interview.get(INVITEMAIL) and to not in mailedList:
+                        self.invitor.getFailed().append(candidate_name + ' ' + to)
+        logger.info("Mail succeed: %s, failed: %s" % (len(self.invitor.getSent()), len(self.invitor.getFailed())))
+        if not self.invitor.getFailed():
+            logger.info("Failed mails:")
+            for i in self.invitor.getFailed():
+                logger.info(i)
+
 
 if __name__ == "__main__":
     try:
-        InterviewICSGenerator().generate_ics()
+        x = InterviewICSGenerator()
+        x.generate_ics()
+        x.report_result()
     except Exception as err:
         logger.error(str(err) + str(traceback.print_exc() or " "))
     finally:
