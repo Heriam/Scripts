@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM, FileAttachment
+from exchangelib import DELEGATE, Account, Credentials, Message, Mailbox, HTMLBody, Configuration, NTLM
 from exchangelib.protocol import BaseProtocol, NoVerifyHTTPAdapter
+import urllib3
+urllib3.disable_warnings()
 
 SENDER = 'jiang.haoa@h3c.com'
 
