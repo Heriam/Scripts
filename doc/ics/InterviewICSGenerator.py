@@ -121,7 +121,7 @@ class InterviewICSGenerator:
                 description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
                 description = re.sub("[\"{},]", "", description)
                 summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
-                t = threading.Thread(target=self.invitor.sendInvitation, args=(interview, description))
+                t = threading.Thread(target=self.invitor.sendInvitation, args=(interview,))
                 t.setDaemon(True)
                 t.start()
                 emailThreads.append(t)

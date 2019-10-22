@@ -24,7 +24,7 @@ class Invitor:
     sent = []
     failed = []
 
-    def sendInvitation(self, interview, description):
+    def sendInvitation(self, interview):
         with self.lock:
             with open("mailedlist", "r+") as f:
                 mailedList = f.read()
@@ -48,8 +48,7 @@ class Invitor:
                     campus_in = INDIVIDUAL_CAMPUS_IN
                     after_campus_in = INDIVIDUAL_AFTER_CAMPUS_IN
                     interview_time = interview.get(RESERVED_SLOT)
-                    description = re.sub("\n", "%0A", description)
-                    confirm_attr = 'href="https://sc.ftqq.com/SCU60375T9e089b4bc2cbe074868305400c9bc6115d78d7ab81ce2.send?text=%s确认%s面试&desp=%s"' % (candidate_name,interview_time,description)
+                    confirm_attr = 'href="mailto:%s"' % SENDER
                     if "专场" in interview.get(RESERVED_SLOT):
                         campus_in = SESSION_CAMPUS_IN
                         after_campus_in = SESSION_AFTER_CAMPUS_IN
