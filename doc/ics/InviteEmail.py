@@ -48,12 +48,14 @@ class Invitor:
                     campus_in = INDIVIDUAL_CAMPUS_IN
                     after_campus_in = INDIVIDUAL_AFTER_CAMPUS_IN
                     interview_time = interview.get(RESERVED_SLOT)
-                    confirm_attr = 'href="mailto:%s"' % SENDER
+                    position_name = interview.get(TARGETED_POSITION)
+                    email_content = "%s确认%s面试%s岗位" % (candidate_name,interview_time,position_name)
+                    confirm_attr = 'href="mailto:%s?subject=%s&body=%s" target="_top"' % (SENDER, email_content, email_content)
                     if "专场" in interview.get(RESERVED_SLOT):
                         campus_in = SESSION_CAMPUS_IN
                         after_campus_in = SESSION_AFTER_CAMPUS_IN
                     body = template.render(
-                        position_name=interview.get(TARGETED_POSITION),
+                        position_name=position_name,
                         department_name=interview.get(DEPARTMENT),
                         candidate_name=candidate_name,
                         candiddate_title=candiddate_title,
