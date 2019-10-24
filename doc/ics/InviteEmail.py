@@ -27,7 +27,6 @@ SPECIAL_NOTES_FORMAT = '''
             <strong>特别提醒</strong></h2>
         <p style="Margin-top: 16px;Margin-bottom:
 0;">%s</p>
-        <p style="Margin-top: 20px;Margin-bottom: 20px;">&nbsp;</p>
     </div>
 </div>
 '''
