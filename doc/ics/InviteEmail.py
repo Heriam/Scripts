@@ -6,7 +6,7 @@ while logger.hasHandlers():
     for i in logger.handlers:
         logger.removeHandler(i)
 formatter = logging.Formatter('[%(asctime)s][%(levelname)s] %(message)s')
-fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\email.log', encoding='utf-8', mode='w')
+fh = logging.FileHandler(filename=ROOT_DIR + '\\doc\\ics\\invite.log', encoding='utf-8', mode='w')
 fh.setLevel(logging.DEBUG)
 fh.setFormatter(formatter)
 logger.addHandler(fh)
