@@ -47,7 +47,7 @@ class Invitor:
                 candidate_name = interview.get(NAME)
                 if MARKED == interview.get(INVITEMAIL) and to not in invitedlist:
                     env = Environment(loader=PackageLoader("doc.ics"))
-                    template = env.get_template("invitemail.htm")
+                    template = env.get_template("invitemail.html")
                     candiddate_title = "先生/女士"
                     if "男" == interview.get(SEX):
                         candiddate_title = "先生"
