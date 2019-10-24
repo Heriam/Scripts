@@ -18,11 +18,27 @@ import threading
 
 os.chdir(ROOT_DIR+'\\doc\\ics')
 
+SPECIAL_NOTES_FORMAT = '''
+<div style="Margin-left: 20px;Margin-right: 20px;">
+    <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+        <h2 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #3e4751;font-size: 16px;line-height: 24px;font-family: Ubuntu,sans-serif;">
+            &nbsp;</h2>
+        <h2 style="Margin-top: 16px;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #3e4751;font-size: 16px;line-height: 24px;font-family: Ubuntu,sans-serif;">
+            <strong>特别提醒</strong></h2>
+        <p style="Margin-top: 16px;Margin-bottom:
+0;">%s</p>
+        <p style="Margin-top: 20px;Margin-bottom: 20px;">&nbsp;</p>
+    </div>
+</div>
+'''
 
 class Invitor:
     lock = threading.Lock()
     sent = []
     failed = []
+
+    def createSpecialNotes(self, notes):
+        return SPECIAL_NOTES_FORMAT % notes
 
     def sendInvitation(self, interview):
         with self.lock:
@@ -30,7 +46,6 @@ class Invitor:
                 invitedlist = f.read()
                 to = interview.get(EMAIL)
                 candidate_name = interview.get(NAME)
-                bcc = BCC
                 if MARKED == interview.get(INVITEMAIL) and to not in invitedlist:
                     env = Environment(loader=PackageLoader("doc.ics"))
                     template = env.get_template("invitemail.htm")
@@ -52,6 +67,7 @@ class Invitor:
                     if "专场" in interview.get(RESERVED_SLOT):
                         campus_in = SESSION_CAMPUS_IN
                         after_campus_in = SESSION_AFTER_CAMPUS_IN
+                    special_notes = self.createSpecialNotes(interview.get(SPECIAL_NOTES)) if interview.get(SPECIAL_NOTES) else ''
                     body = template.render(
                         position_name=position_name,
                         department_name=interview.get(DEPARTMENT),
@@ -62,9 +78,10 @@ class Invitor:
                         after_campus_in=after_campus_in,
                         letter_date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                         last_wishes="祝您生活愉快，",
-                        sender_name=SENDER_NAME
+                        sender_name=SENDER_NAME,
+                        special_notes = special_notes
                     )
-                    sendEmail(to, bcc, subject, body)
+                    sendEmail(to, subject, body)
                     f.write(candidate_name + ' ' + to + '\n')
                     logger.info(" √ 发送 %s:%s" % (candidate_name,to))
                     self.sent.append(candidate_name + ' ' + to)

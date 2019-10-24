@@ -38,7 +38,6 @@ class Rejecter:
                 refusedList = f.read()
                 to = interview.get(EMAIL)
                 candidate_name = interview.get(NAME)
-                bcc = BCC
                 if MARKED == interview.get(REFUSEMAIL) and to not in refusedList:
                     env = Environment(loader=PackageLoader("doc.ics"))
                     template = env.get_template("refusemail.htm")
@@ -64,10 +63,10 @@ class Rejecter:
                         interview_time=interview_time,
                         letter_date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                         letter_content=content,
-                        last_wishes="祝您在未来工作和生活中一切顺利！",
+                        last_wishes="祝您一切顺利，",
                         sender_name=SENDER_NAME
                     )
-                    sendEmail(to, bcc, subject, body)
+                    sendEmail(to, subject, body)
                     f.write(candidate_name + ' ' + to + '\n')
                     logger.info(" √ 发送 %s:%s" % (candidate_name,to))
                     self.sent.append(candidate_name + ' ' + to)

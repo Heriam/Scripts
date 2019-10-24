@@ -6,10 +6,9 @@ urllib3.disable_warnings()
 
 SENDER = 'jiang.haoa@h3c.com'
 SENDER_NAME = '江浩'
-BCC = 'jiang.hao@outook.com'
 
 
-def sendEmail(to, bcc, subject, body):
+def sendEmail(to, subject, body):
     BaseProtocol.HTTP_ADAPTER_CLS = NoVerifyHTTPAdapter
     creds = Credentials(
         username='j16492',
@@ -26,7 +25,6 @@ def sendEmail(to, bcc, subject, body):
         account=account,
         subject=subject,
         body=HTMLBody(body),
-        to_recipients = [Mailbox(email_address=to)],
-        bcc_recipients = [Mailbox(email_address=bcc)]
+        to_recipients = [Mailbox(email_address=to)]
     )
     m.send_and_save()
