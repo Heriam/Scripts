@@ -21,6 +21,7 @@ import re, json, uuid, pytz
 sys.path.append(ROOT_DIR)
 from npl.TimeNormalizer import TimeNormalizer
 from doc.ics.InviteEmail import Invitor
+from doc.ics.RefuseEmail import Rejecter
 from doc.ics.Constants import *
 
 EXCEL_DIR = "E:\\OutlookAttachments\\"
@@ -28,7 +29,7 @@ COLON = ":"
 TIMEZONE = pytz.timezone("Asia/Shanghai")
 NOW = datetime.now(tz=TIMEZONE)
 COLUMN_START = "A"
-COLUMN_END = "P"
+COLUMN_END = "Q"
 COLUMN_NAME_ROW = 1
 KEY_COLUMN = "C"
 FILENAME_PATTERN = ".*招聘汇总\-杭州.*\.xlsx"
@@ -41,6 +42,7 @@ class InterviewICSGenerator:
     interviews = []
     calendar = Calendar()
     invitor = Invitor()
+    rejector = Rejecter()
 
     def __init__(self):
         logger.info("new instance")
@@ -99,7 +101,8 @@ class InterviewICSGenerator:
         interview = "not initialized"
         timestamp = "not initialized"
         try:
-            emailThreads = []
+            inviteThreads = []
+            refuseThreads = []
             for interview in self.interviews:
                 #编辑时间
                 slotOriginal = interview.get(RESERVED_SLOT)
@@ -121,10 +124,14 @@ class InterviewICSGenerator:
                 description = json.dumps(interview, indent=0, sort_keys=True, ensure_ascii=False)
                 description = re.sub("[\"{},]", "", description)
                 summary = interview.get(NAME) + " " + interview.get(UNIVERSITY)
-                t = threading.Thread(target=self.invitor.sendInvitation, args=(interview,))
-                t.setDaemon(True)
-                t.start()
-                emailThreads.append(t)
+                inviteThread = threading.Thread(target=self.invitor.sendInvitation, args=(interview,))
+                inviteThread.setDaemon(True)
+                inviteThread.start()
+                inviteThreads.append(inviteThread)
+                refuseThread = threading.Thread(target=self.rejector.sendRejection, args=(interview,))
+                refuseThread.setDaemon(True)
+                refuseThread.start()
+                refuseThreads.append(refuseThread)
                 #新建事件
                 event = Event()
                 event.add("uid", "%s:%s:%s" % (dtstart.timestamp(), interview.get(MOBILE), uuid.uuid4()))
@@ -136,8 +143,10 @@ class InterviewICSGenerator:
                 self.calendar.add_component(event)
                 logger.info("%s %s %s -> %s" % (
                 interview.get(DEPARTMENT), interview.get(NAME), slotOriginal, dtstart))
-            for t in emailThreads:
-                t.join()
+            for inviteThread in inviteThreads:
+                inviteThread.join()
+            for refuseThread in refuseThreads:
+                refuseThread.join()
             with open(ROOT_DIR + '\\doc\\ics\\interview.ics', 'wb') as f:
                 f.write(self.calendar.to_ical())
                 f.close()
@@ -155,14 +164,24 @@ class InterviewICSGenerator:
             to = interview.get(EMAIL)
             candidate_name = interview.get(NAME)
             with self.invitor.getLock():
-                with open("mailedlist", "r") as f:
-                    mailedList = f.read()
-                    if "脚本" == interview.get(INVITEMAIL) and to not in mailedList:
-                        self.invitor.getFailed().append(candidate_name + ' ' + to)
-        logger.info("Mail succeed: %s, failed: %s" % (len(self.invitor.getSent()), len(self.invitor.getFailed())))
+                with open("invitedlist", "r") as f:
+                    invitedlist = f.read()
+                    if MARKED == interview.get(INVITEMAIL) and to not in invitedlist:
+                        self.invitor.addFailed(candidate_name + ' ' + to)
+            with self.rejector.getLock():
+                with open("refusedlist", "r") as f:
+                    refusedlist = f.read()
+                    if MARKED == interview.get(REFUSEMAIL) and to not in refusedlist:
+                        self.rejector.addFailed(candidate_name + ' ' + to)
+        logger.info("Invite succeed: %s, failed: %s" % (len(self.invitor.getSent()), len(self.invitor.getFailed())))
+        logger.info("Refuse succeed: %s, failed: %s" % (len(self.rejector.getSent()), len(self.rejector.getFailed())))
         if self.invitor.getFailed():
-            logger.info("Failed mails:")
+            logger.info("Failed invitations:")
             for i in self.invitor.getFailed():
+                logger.info(i)
+        if self.rejector.getFailed():
+            logger.info("Failed rejections:")
+            for i in self.rejector.getFailed():
                 logger.info(i)
 
 

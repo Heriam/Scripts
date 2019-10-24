@@ -26,12 +26,12 @@ class Invitor:
 
     def sendInvitation(self, interview):
         with self.lock:
-            with open("mailedlist", "r+") as f:
-                mailedList = f.read()
+            with open("invitedlist", "r+") as f:
+                invitedlist = f.read()
                 to = interview.get(EMAIL)
                 candidate_name = interview.get(NAME)
-                bcc = "zhou.huan@h3c.com"
-                if "Y" == interview.get(INVITEMAIL) and to not in mailedList:
+                bcc = BCC
+                if MARKED == interview.get(INVITEMAIL) and to not in invitedlist:
                     env = Environment(loader=PackageLoader("doc.ics"))
                     template = env.get_template("invitemail.htm")
                     candiddate_title = "先生/女士"
@@ -79,3 +79,6 @@ class Invitor:
 
     def getFailed(self):
         return self.failed
+
+    def addFailed(self, failedEntry):
+        self.failed.append(failedEntry)

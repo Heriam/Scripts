@@ -38,8 +38,8 @@ class Rejecter:
                 refusedList = f.read()
                 to = interview.get(EMAIL)
                 candidate_name = interview.get(NAME)
-                bcc = "zhou.huan@h3c.com"
-                if "Y" == interview.get(REFUSEMAIL) and to not in refusedList:
+                bcc = BCC
+                if MARKED == interview.get(REFUSEMAIL) and to not in refusedList:
                     env = Environment(loader=PackageLoader("doc.ics"))
                     template = env.get_template("refusemail.htm")
                     candiddate_title = "先生/女士"
@@ -82,3 +82,6 @@ class Rejecter:
 
     def getFailed(self):
         return self.failed
+
+    def addFailed(self, failedEntry):
+        self.failed.append(failedEntry)

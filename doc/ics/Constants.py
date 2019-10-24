@@ -17,3 +17,5 @@ ADDEDDATE = "记录时间"
 CONTACT = "联系人"
 INVITEMAIL = "邀请邮件"
 REFUSEMAIL = "拒绝邮件"
+
+MARKED = "Y"

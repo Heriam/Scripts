@@ -6,6 +6,7 @@ urllib3.disable_warnings()
 
 SENDER = 'jiang.haoa@h3c.com'
 SENDER_NAME = '江浩'
+BCC = 'jiang.hao@outook.com'
 
 
 def sendEmail(to, bcc, subject, body):
