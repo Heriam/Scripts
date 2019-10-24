@@ -13,7 +13,7 @@ logger.addHandler(fh)
 from emails.EmailSender import *
 from jinja2 import Environment, PackageLoader
 from .Constants import *
-import datetime, re
+import datetime
 import threading
 
 os.chdir(ROOT_DIR+'\\doc\\ics')
@@ -32,14 +32,14 @@ class Invitor:
                 candidate_name = interview.get(NAME)
                 bcc = "zhou.huan@h3c.com"
                 if "Y" == interview.get(INVITEMAIL) and to not in mailedList:
-                    subject = "新华三技术有限公司社招面试邀请函"
                     env = Environment(loader=PackageLoader("doc.ics"))
-                    template = env.get_template("index.htm")
+                    template = env.get_template("invitemail.htm")
                     candiddate_title = "先生/女士"
                     if "男" == interview.get(SEX):
                         candiddate_title = "先生"
                     elif "女" == interview.get(SEX):
                         candiddate_title = "女士"
+                    subject = "新华三技术有限公司致%s%s面试邀请函" % (candidate_name, candiddate_title)
                     INDIVIDUAL_CAMPUS_IN = "在面试当天或之前您将会通过短信收到一个访客二维码，届时请您凭此二维码从江二路的园区南门接待室处领取来宾卡进入园区。"
                     INDIVIDUAL_AFTER_CAMPUS_IN = "进入园区后，请您联系通知我们的面试接口人%s，然后在1号楼的一楼大厅北侧沙发区就坐稍作休息并耐心等候。" % interview.get(CONTACT)
                     SESSION_CAMPUS_IN = "在面试当天，请您凭此邮件（您可以打印出纸质版的邮件，手机出示电子版的亦可）在江二路的园区南门接待室处进行来访登记后进入园区。"
@@ -49,8 +49,6 @@ class Invitor:
                     after_campus_in = INDIVIDUAL_AFTER_CAMPUS_IN
                     interview_time = interview.get(RESERVED_SLOT)
                     position_name = interview.get(TARGETED_POSITION)
-                    email_content = "%s确认%s面试%s岗位" % (candidate_name,interview_time,position_name)
-                    confirm_attr = 'href="mailto:%s?subject=%s&body=%s" target="_top"' % (SENDER, email_content, email_content)
                     if "专场" in interview.get(RESERVED_SLOT):
                         campus_in = SESSION_CAMPUS_IN
                         after_campus_in = SESSION_AFTER_CAMPUS_IN
@@ -60,10 +58,11 @@ class Invitor:
                         candidate_name=candidate_name,
                         candiddate_title=candiddate_title,
                         interview_time=interview_time,
-                        confirm_attr=confirm_attr,
                         campus_in=campus_in,
                         after_campus_in=after_campus_in,
-                        letter_date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        letter_date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                        last_wishes="祝您生活愉快，",
+                        sender_name=SENDER_NAME
                     )
                     sendEmail(to, bcc, subject, body)
                     f.write(candidate_name + ' ' + to + '\n')
