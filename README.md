@@ -1,2 +1,1 @@
-# Scripts
-Coding eases life
+
