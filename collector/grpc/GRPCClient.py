@@ -23,7 +23,6 @@ class UDPReceiver:
 
     def __iter__(self):
         return self
-
     def __next__(self):
         try:
             data, addr = self.sock.recvfrom(self.MSG_LEN)

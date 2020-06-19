@@ -13,6 +13,7 @@ args = sys.argv
 def console_info(info):
     print("[INFO]%s" % info)
 
+
 console_info("testing nexus server connectivity")
 if 0 != subprocess.call("ping -c 1 10.153.3.130", shell=True):
     console_info("yum repo server(10.153.3.130) is unreachable")
