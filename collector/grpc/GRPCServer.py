@@ -44,9 +44,9 @@ class GRPCServer(dialout.GRPCDialoutServicer):
     def Dialout(self, request_iterator, context):
         for request in request_iterator:
             try:
+                sensorPath = request.sensorPath
                 print("[%s] %s" % (datetime.datetime.now(), request))
                 # jsonData = json.loads(request.jsonData)
-                # sensorPath = request.sensorPath
                 # deviceMsg = request.deviceMsg
                 # producerName = deviceMsg.producerName
                 # deviceName = deviceMsg.deviceName
