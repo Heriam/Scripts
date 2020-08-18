@@ -52,9 +52,6 @@ class GRPCServer(dialout.GRPCDialoutServicer):
                 sensorPath = request.sensorPath
                 if "Route" in sensorPath:
                     jsonData = request.jsonData
-                    chunkMsg = request.chunkMsg
-                    nodeId = chunkMsg.nodeId
-                    totalFrag = chunkMsg.totalFragments
                     deviceMsg = request.deviceMsg
                     producerName = deviceMsg.producerName
                     deviceName = deviceMsg.deviceName
@@ -65,12 +62,16 @@ class GRPCServer(dialout.GRPCDialoutServicer):
                     if 'v6' in sensorPath:
                         v6Time = datetime.datetime.now()
                         print(request, v6Time)
-                    elif 'v4' in sensorPath and nodeId == 1:
-                        v4StartTime = datetime.datetime.now()
-                        print(request, v4StartTime)
-                    elif 'v4' in sensorPath and nodeId == totalFrag:
-                        v4EndTime = datetime.datetime.now()
-                        print(request, v4EndTime)
+                    if 'v4' in sensorPath:
+                        chunkMsg = request.chunkMsg
+                        nodeId = chunkMsg.nodeId
+                        totalFrag = chunkMsg.totalFragments
+                        if nodeId == 1:
+                            v4StartTime = datetime.datetime.now()
+                            print(request, v4StartTime)
+                        elif nodeId == totalFrag:
+                            v4EndTime = datetime.datetime.now()
+                            print(request, v4EndTime)
                     if v4StartTime and v4EndTime and v6Time and v4EndTime > v4StartTime > v6Time:
                         round = round + 1
                         logging.info('轮次%s，IPv6时间%s，IPv4发送延迟%s，IPv4传输延迟%s' % (round, v6Time, v4StartTime - v6Time, v4EndTime - v4StartTime))
