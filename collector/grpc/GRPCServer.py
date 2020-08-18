@@ -67,9 +67,9 @@ class GRPCServer(dialout.GRPCDialoutServicer):
                     if v4StartTime and v4EndTime and v6StartTime and v6EndTime and deviceBaseTime and v4EndTime >= v4StartTime > deviceBaseTime and v6EndTime >= v6StartTime > deviceBaseTime:
                         round = round + 1
                         logging.info('轮次%s，时间%s，IPv6发送延迟%s，IPv6传输耗时%s，IPv4发送延迟%s，IPv4传输耗时%s' % (
-                        round, deviceBaseTime, v6StartTime-deviceBaseTime, v6EndTime-v6StartTime, v4StartTime-deviceBaseTime, v4EndTime-v4StartTime))
+                        round, deviceBaseTime, (v6StartTime-deviceBaseTime).total_seconds(), (v6EndTime-v6StartTime).total_seconds(), (v4StartTime-deviceBaseTime).total_seconds(), (v4EndTime-v4StartTime).total_seconds()))
                         print('轮次%s，时间%s，IPv6发送延迟%s，IPv6传输耗时%s，IPv4发送延迟%s，IPv4传输耗时%s' % (
-                        round, deviceBaseTime, v6StartTime-deviceBaseTime, v6EndTime-v6StartTime, v4StartTime-deviceBaseTime, v4EndTime-v4StartTime))
+                        round, deviceBaseTime, (v6StartTime-deviceBaseTime).total_seconds(), (v6EndTime-v6StartTime).total_seconds(), (v4StartTime-deviceBaseTime).total_seconds(), (v4EndTime-v4StartTime).total_seconds()))
                     deviceBaseTime = datetime.datetime.now()
                     print('收到Device/Base')
                 elif sensorPath == 'Route/Ipv4Routes':
