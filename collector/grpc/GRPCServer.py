@@ -73,23 +73,27 @@ class GRPCServer(dialout.GRPCDialoutServicer):
                     deviceBaseTime = datetime.datetime.now()
                     print('收到Device/Base')
                 elif sensorPath == 'Route/Ipv4Routes':
-                    if nodeId == 1:
+                    if totalFrag == 0:
+                        v4EndTime = datetime.datetime.now()
+                        v4StartTime = v4EndTime
+                        print('%s消息未分片' % sensorPath)
+                    elif nodeId == 1:
                         v4StartTime = datetime.datetime.now()
                         print('收到首个IPv4Routes Chunk')
                     elif nodeId == totalFrag:
                         v4EndTime = datetime.datetime.now()
                         print('收到最后一个IPv4Routes Chunk')
-                        if nodeId == 0:
-                            v4StartTime = v4EndTime
                 elif sensorPath == 'Route/Ipv6Routes':
-                    if nodeId == 1:
+                    if totalFrag == 0:
+                        v6EndTime = datetime.datetime.now()
+                        v6StartTime = v6EndTime
+                        print('%s消息未分片' % sensorPath)
+                    elif nodeId == 1:
                         v6StartTime = datetime.datetime.now()
                         print('收到首个IPv6Routes Chunk')
                     elif nodeId == totalFrag:
                         v6EndTime = datetime.datetime.now()
                         print('收到最后一个IPv6Routes Chunk')
-                        if nodeId == 0:
-                            v6StartTime = v6EndTime
             except Exception as err:
                 print(request)
                 traceback.print_exc()
