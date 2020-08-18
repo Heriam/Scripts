@@ -1,0 +1,31 @@
+syntax = "proto2";
+package grpc_dialout;
+
+message DeviceInfo{
+    required string producerName = 1;
+    required string deviceName = 2;
+    required string deviceModel = 3;
+    optional string deviceIpAddr = 4;
+    optional string eventType = 5;
+}
+
+message ChunkInfo{
+    required int64 totalSize = 1;
+    required uint64 totalFragments = 2;
+    required uint64 nodeId = 3;
+}
+
+message DialoutMsg{
+    required DeviceInfo deviceMsg = 1;
+    required string sensorPath = 2;
+    required string jsonData = 3;
+    optional ChunkInfo chunkMsg = 4;
+}
+
+message DialoutResponse{
+    required string response = 1;
+}
+
+service GRPCDialout {
+    rpc Dialout(stream DialoutMsg) returns (DialoutResponse);
+}
