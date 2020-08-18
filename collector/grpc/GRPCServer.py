@@ -34,9 +34,11 @@ DEVICE_MODEL = "deviceModel"
 PRODUCER_NAME = "producerName"
 
 round = 0
-v6Time = None
+deviceBaseTime = None
 v4StartTime = None
 v4EndTime = None
+v6StartTime = None
+v6EndTime = None
 
 class GRPCServer(dialout.GRPCDialoutServicer):
     def __init__(self, config):
@@ -46,36 +48,48 @@ class GRPCServer(dialout.GRPCDialoutServicer):
         logging.info("GRPCServer initiated")
 
     def Dialout(self, request_iterator, context):
-        global round, v6Time, v4StartTime, v4EndTime
+        global round, v4StartTime, v4EndTime, v6StartTime, v6EndTime, deviceBaseTime
         for request in request_iterator:
             try:
                 sensorPath = request.sensorPath
-                if "Route" in sensorPath:
-                    jsonData = request.jsonData
-                    deviceMsg = request.deviceMsg
-                    producerName = deviceMsg.producerName
-                    deviceName = deviceMsg.deviceName
-                    deviceModel = deviceMsg.deviceModel
-                    deviceIpAddr = deviceMsg.deviceIpAddr
-                    eventType = deviceMsg.eventType
-                    host_ip = context.peer().split(":")[1]
-                    if 'v6' in sensorPath:
-                        v6Time = datetime.datetime.now()
-                        print(request, v6Time)
-                    if 'v4' in sensorPath:
-                        chunkMsg = request.chunkMsg
-                        nodeId = chunkMsg.nodeId
-                        totalFrag = chunkMsg.totalFragments
-                        if nodeId == 1:
-                            v4StartTime = datetime.datetime.now()
-                            print(request, v4StartTime)
-                        elif nodeId == totalFrag:
-                            v4EndTime = datetime.datetime.now()
-                            print(request, v4EndTime)
-                    if v4StartTime and v4EndTime and v6Time and v4EndTime > v4StartTime > v6Time:
+                jsonData = request.jsonData
+                chunkMsg = request.chunkMsg
+                nodeId = chunkMsg.nodeId
+                totalFrag = chunkMsg.totalFragments
+                deviceMsg = request.deviceMsg
+                producerName = deviceMsg.producerName
+                deviceName = deviceMsg.deviceName
+                deviceModel = deviceMsg.deviceModel
+                deviceIpAddr = deviceMsg.deviceIpAddr
+                eventType = deviceMsg.eventType
+                host_ip = context.peer().split(":")[1]
+                if sensorPath == 'Device/Base':
+                    if v4StartTime and v4EndTime and v6StartTime and v6EndTime and deviceBaseTime and v4EndTime >= v4StartTime > deviceBaseTime and v6EndTime >= v6StartTime > deviceBaseTime:
                         round = round + 1
-                        logging.info('轮次%s，IPv6时间%s，IPv4发送延迟%s，IPv4传输延迟%s' % (round, v6Time, v4StartTime - v6Time, v4EndTime - v4StartTime))
-                        print('轮次%s，IPv6时间%s，IPv4发送延迟%s，IPv4传输延迟%s' % (round, v6Time, v4StartTime - v6Time, v4EndTime - v4StartTime))
+                        logging.info('轮次%s，时间%s，IPv6发送延迟%s，IPv6传输耗时%s，IPv4发送延迟%s，IPv4传输耗时%s' % (
+                        round, deviceBaseTime, v6StartTime-deviceBaseTime, v6EndTime-v6StartTime, v4StartTime-deviceBaseTime, v4EndTime-v4StartTime))
+                        print('轮次%s，时间%s，IPv6发送延迟%s，IPv6传输耗时%s，IPv4发送延迟%s，IPv4传输耗时%s' % (
+                        round, deviceBaseTime, v6StartTime-deviceBaseTime, v6EndTime-v6StartTime, v4StartTime-deviceBaseTime, v4EndTime-v4StartTime))
+                    deviceBaseTime = datetime.datetime.now()
+                    print('收到Device/Base')
+                elif sensorPath == 'Route/Ipv4Routes':
+                    if nodeId == 1:
+                        v4StartTime = datetime.datetime.now()
+                        print('收到首个IPv4Routes Chunk')
+                    elif nodeId == totalFrag:
+                        v4EndTime = datetime.datetime.now()
+                        print('收到最后一个IPv4Routes Chunk')
+                        if nodeId == 0:
+                            v4StartTime = v4EndTime
+                elif sensorPath == 'Route/Ipv6Routes':
+                    if nodeId == 1:
+                        v6StartTime = datetime.datetime.now()
+                        print('收到首个IPv6Routes Chunk')
+                    elif nodeId == totalFrag:
+                        v6EndTime = datetime.datetime.now()
+                        print('收到最后一个IPv6Routes Chunk')
+                        if nodeId == 0:
+                            v6StartTime = v6EndTime
             except Exception as err:
                 print(request)
                 traceback.print_exc()

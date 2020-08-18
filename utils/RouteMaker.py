@@ -1,19 +1,25 @@
-import random, sys
-
-skip_net = [1,2,3,4,5,6,7,8,9,10,20,30,40,100,127,224,255]
+import random
 ip_list = []
 if __name__ == '__main__':
-    with open('route.txt','w+') as f:
+    with open('route.txt','w+') as file:
         while len(ip_list) < 100000:
-            while True:
-                byte1 = random.randint(1, 200)
-                if byte1 not in skip_net:
-                    break
-            assert byte1 not in skip_net
-            byte2 = random.randint(0,255)
-            byte3 = random.randint(0,255)
-            byte4 = random.randint(1,254)
-            ip = '%s.%s.%s.%s' % (byte1, byte2, byte3, byte4)
+            a = random.randint(1,9)
+            b = random.randint(1,9)
+            c = random.randint(1,9)
+            d = random.randint(1, 9)
+            e = random.randint(1, 9)
+            f = random.randint(1, 9)
+            g = random.randint(1, 9)
+            h = random.randint(1, 9)
+            i = random.randint(1, 9)
+            j = random.randint(1, 9)
+            k = random.randint(1, 9)
+            l = random.randint(1, 9)
+            m = random.randint(1, 9)
+            n = random.randint(1, 9)
+            o = random.randint(1, 9)
+            p = random.randint(1, 9)
+            ip = '2000::%s%s%s%s:%s%s%s%s:%s%s%s%s:%s%s%s%s' % (a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p)
             if ip not in ip_list:
                 ip_list.append(ip)
-                f.writelines('ip route-static %s 32 NULL 0\n' % ip)
+                file.writelines('ipv6 route-static %s 128 NULL 0\n' % ip)
