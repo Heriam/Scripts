@@ -8,11 +8,11 @@ SENDER = 'jiang.haoa@h3c.com'
 SENDER_NAME = ''
 
 
-def sendEmail(to, subject, body):
+def sendEmail(to, subject, body, cc = []):
     BaseProtocol.HTTP_ADAPTER_CLS = NoVerifyHTTPAdapter
     creds = Credentials(
         username='j16492',
-        password='Jh123456'
+        password='Jh203142'
     )
     config = Configuration(server='rndcas.h3c.com', credentials=creds, auth_type=NTLM)
     account = Account(
@@ -25,6 +25,7 @@ def sendEmail(to, subject, body):
         account=account,
         subject=subject,
         body=HTMLBody(body),
-        to_recipients = [Mailbox(email_address=to)]
+        to_recipients = [Mailbox(email_address=email) for email in to],
+        cc_recipients = [Mailbox(email_address=email) for email in cc]
     )
     m.send_and_save()

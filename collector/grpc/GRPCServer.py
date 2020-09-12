@@ -1,6 +1,6 @@
 import traceback
 from concurrent import futures
-import grpc
+import grpc, json
 import grpc_dialout_pb2 as pb2
 import grpc_dialout_pb2_grpc as dialout
 import time
@@ -46,6 +46,7 @@ class GRPCServer(dialout.GRPCDialoutServicer):
         #     import KafkaConnector
         #     self.kafka = KafkaConnector.KafkaConnector(config)
         logging.info("GRPCServer initiated")
+        self.map = {}
 
     def Dialout(self, request_iterator, context):
         global round, v4StartTime, v4EndTime, v6StartTime, v6EndTime, deviceBaseTime
@@ -63,37 +64,6 @@ class GRPCServer(dialout.GRPCDialoutServicer):
                 deviceIpAddr = deviceMsg.deviceIpAddr
                 eventType = deviceMsg.eventType
                 host_ip = context.peer().split(":")[1]
-                if sensorPath == 'Device/Base':
-                    if v4StartTime and v4EndTime and v6StartTime and v6EndTime and deviceBaseTime and v4EndTime >= v4StartTime > deviceBaseTime and v6EndTime >= v6StartTime > deviceBaseTime:
-                        round = round + 1
-                        logging.info('轮次%s，时间%s，IPv6发送延迟%s，IPv6传输耗时%s，IPv4发送延迟%s，IPv4传输耗时%s' % (
-                        round, deviceBaseTime, (v6StartTime-deviceBaseTime).total_seconds(), (v6EndTime-v6StartTime).total_seconds(), (v4StartTime-deviceBaseTime).total_seconds(), (v4EndTime-v4StartTime).total_seconds()))
-                        print('轮次%s，时间%s，IPv6发送延迟%s，IPv6传输耗时%s，IPv4发送延迟%s，IPv4传输耗时%s' % (
-                        round, deviceBaseTime, (v6StartTime-deviceBaseTime).total_seconds(), (v6EndTime-v6StartTime).total_seconds(), (v4StartTime-deviceBaseTime).total_seconds(), (v4EndTime-v4StartTime).total_seconds()))
-                    deviceBaseTime = datetime.datetime.now()
-                    print('收到Device/Base')
-                elif sensorPath == 'Route/Ipv4Routes':
-                    if totalFrag == 0:
-                        v4EndTime = datetime.datetime.now()
-                        v4StartTime = v4EndTime
-                        print('%s消息未分片' % sensorPath)
-                    elif nodeId == 1:
-                        v4StartTime = datetime.datetime.now()
-                        print('收到首个IPv4Routes Chunk')
-                    elif nodeId == totalFrag:
-                        v4EndTime = datetime.datetime.now()
-                        print('收到最后一个IPv4Routes Chunk')
-                elif sensorPath == 'Route/Ipv6Routes':
-                    if totalFrag == 0:
-                        v6EndTime = datetime.datetime.now()
-                        v6StartTime = v6EndTime
-                        print('%s消息未分片' % sensorPath)
-                    elif nodeId == 1:
-                        v6StartTime = datetime.datetime.now()
-                        print('收到首个IPv6Routes Chunk')
-                    elif nodeId == totalFrag:
-                        v6EndTime = datetime.datetime.now()
-                        print('收到最后一个IPv6Routes Chunk')
             except Exception as err:
                 print(request)
                 traceback.print_exc()

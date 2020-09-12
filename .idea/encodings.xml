@@ -3,6 +3,6 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/doc/ics/invitedlist" charset="GBK" />
     <file url="file://$PROJECT_DIR$/doc/ics/refusedlist" charset="GBK" />
-    <file url="PROJECT" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
   </component>
 </project>
