@@ -8,7 +8,7 @@ import configparser
 import logging
 import json
 import datetime
-import socket
+import socket, threading
 
 logging.basicConfig(
     level=logging.INFO,
@@ -68,9 +68,9 @@ class MsgGenerator:
         with open("grpc_template/templates.json", "r+") as file:
             self.senDaDi = json.load(file)[KEY_SENSOR_PATHS]
         if is_new:
-            self.jDataTuLi = [(s, j) for s, j in self.senDaDi.items() if s not in GRPC_OLD_SENSOR_PATHS]
+            self.jDataTuLi = [(s, j) for s, j in self.senDaDi.items() if s not in GRPC_OLD_SENSOR_PATHS] * 1000000
         else:
-            self.jDataTuLi = [(s, self.senDaDi[s]) for s in GRPC_OLD_SENSOR_PATHS]
+            self.jDataTuLi = [(s, self.senDaDi[s]) for s in GRPC_OLD_SENSOR_PATHS] * 10000
         self.device_ip = device_ip
 
     def __iter__(self):
@@ -80,7 +80,7 @@ class MsgGenerator:
         try:
             sensor_path, json_data = self.jDataTuLi.pop()
             dial_msg = self.__2msg__(sensor_path, json_data)
-            print(dial_msg)
+            print(threading.currentThread().getName())
             return dial_msg
         except Exception:
             raise StopIteration
@@ -93,19 +93,25 @@ class MsgGenerator:
         return dial_msg
 
 
-def run(interval):
-    while True:
-        with grpc.insecure_channel('10.99.216.60:50051') as channel:
-            g_client = dialout.GRPCDialoutStub(channel)
-            msg_gen = MsgGenerator(is_new=True)
-            g_client.Dialout(msg_gen)
-        with grpc.insecure_channel('10.99.210.162:50052') as channel:
-            g_client = dialout.GRPCDialoutStub(channel)
-            msg_gen = MsgGenerator(is_new=False)
-            g_client.Dialout(msg_gen)
-        time.sleep(interval)
+def run():
+    with grpc.insecure_channel('3.2.113.2:50051') as channel:
+        g_client = dialout.GRPCDialoutStub(channel)
+        msg_gen = MsgGenerator(is_new=True)
+        g_client.Dialout(msg_gen)
+    with grpc.insecure_channel('3.2.113.2:50051') as channel:
+        g_client = dialout.GRPCDialoutStub(channel)
+        msg_gen = MsgGenerator(is_new=False)
+        g_client.Dialout(msg_gen)
 
 
 if __name__ == '__main__':
     logging.basicConfig()
-    run(30)
+    tds = []
+    for i in range(8):
+        t = threading.Thread(target=run)
+        tds.append(t)
+        t.setDaemon(True)
+        t.setName('thread %s' % i)
+        t.start()
+    for t in tds:
+        t.join()
